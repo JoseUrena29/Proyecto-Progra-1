@@ -1182,11 +1182,12 @@ public class Mesa1 extends javax.swing.JFrame {
             double total18 = cantidad_chocolate * chocolate;
 
             subtotal += total + total2 + total3 + total4 + total5 + total6 + total7 + total8 + total9 + total10 + total11 + total12 + total13 + total14 + total15 + total16 + total17 + total18;
+            txtotal.setText(String.valueOf(subtotal));
             if (subtotal < 0) {
                 JOptionPane.showMessageDialog(null, "Error numero negativo ", "MENSAJE", JOptionPane.WARNING_MESSAGE);
-
+                txtotal.setText("");
             }
-            txtotal.setText(String.valueOf(subtotal));
+
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(null, "Error en numero ingresado ", "MENSAJE", JOptionPane.WARNING_MESSAGE);
 
