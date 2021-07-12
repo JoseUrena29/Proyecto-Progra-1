@@ -56,6 +56,12 @@ public class Login extends javax.swing.JFrame {
         LabelContraseña.setForeground(new java.awt.Color(0, 0, 51));
         LabelContraseña.setText("Contraseña");
 
+        txtusuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtusuarioActionPerformed(evt);
+            }
+        });
+
         LabelBienvenidos.setFont(new java.awt.Font("Monotype Corsiva", 3, 60)); // NOI18N
         LabelBienvenidos.setForeground(new java.awt.Color(204, 0, 0));
         LabelBienvenidos.setText("Bienvenidos");
@@ -77,13 +83,14 @@ public class Login extends javax.swing.JFrame {
         rol1.add(Rbadministrador);
         Rbadministrador.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         Rbadministrador.setText("Administrador");
+        Rbadministrador.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         Rbadministrador.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 RbadministradorActionPerformed(evt);
             }
         });
 
-        rol2.add(Rbempleados);
+        rol1.add(Rbempleados);
         Rbempleados.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         Rbempleados.setText("Empleados");
 
@@ -182,54 +189,60 @@ public class Login extends javax.swing.JFrame {
         //String usuario = txtusuario.getText();
         //String contraseña = String.valueOf(txtcontraseña.getText());
         //String rol = "";
-        
+
         //if(Rbadministrador.isSelected()){
-            //rol = "Rol1-Administrador";
+        //rol = "Rol1-Administrador";
         //}else if (Rbempleados.isSelected()){
-          //  rol = "Rol2-Empleados";
+        //  rol = "Rol2-Empleados";
         //}
-     
         //Datos d = new Datos();
         //d.setUsuario(usuario);
         //d.setPassword(contraseña);
         //d.setRoles(rol);
-  
         //Componentes.usuarios.add(d);
-          
         String usuario = txtusuario.getText();
         String contraseña = String.valueOf(txtcontraseña.getText());
         String rol = "";
-        
-        if(Rbadministrador.isSelected()){
+
+        if (Rbadministrador.isSelected()) {
             rol = "Rol1-Administrador";
-          
-            if (usuario.equals("admin") && contraseña.equals("admin1234")){
-                JOptionPane.showMessageDialog(rootPane, "USUARIO Y CONTRASEÑA CORRECTOS","Bienvenido al Sistema",JOptionPane.INFORMATION_MESSAGE);
+
+            if (usuario.equals("admin") && contraseña.equals("admin1234")) {
+                JOptionPane.showMessageDialog(rootPane, "USUARIO Y CONTRASEÑA CORRECTOS", "Bienvenido al Sistema", JOptionPane.INFORMATION_MESSAGE);
                 Principal P = new Principal();
                 P.setVisible(true);
                 this.dispose();
-            }else{
-                JOptionPane.showMessageDialog(rootPane, "USUARIO O CONTRASEÑA INCORRECTOS","Mensaje de Error",JOptionPane.ERROR_MESSAGE);
+            } else {
+                JOptionPane.showMessageDialog(rootPane, "USUARIO O CONTRASEÑA INCORRECTOS", "Mensaje de Error", JOptionPane.ERROR_MESSAGE);
+                txtusuario.setText("");
+                txtcontraseña.setText("");
             }
-                 
-        }else if (Rbempleados.isSelected()){
+
+        } else if (Rbempleados.isSelected()) {
             rol = "Rol2-Empleados";
-            if (usuario.equals("empleados") && contraseña.equals("empleados1234")){
+            if (usuario.equals("empleados") && contraseña.equals("empleados1234")) {
                 JOptionPane.showMessageDialog(rootPane, "USUARIO Y CONTRASEÑA CORRECTOS");
                 Principal P = new Principal();
                 P.setVisible(true);
                 this.dispose();
-            }else{
-                JOptionPane.showMessageDialog(rootPane, "USUARIO O CONTRASEÑA INCORRECTOS","Mensaje de Error",JOptionPane.ERROR_MESSAGE);
+            } else {
+                JOptionPane.showMessageDialog(rootPane, "USUARIO O CONTRASEÑA INCORRECTOS", "Mensaje de Error", JOptionPane.ERROR_MESSAGE);
+                txtusuario.setText("");
+                txtcontraseña.setText("");
             }
-              
+
         }
-          
+
+
     }//GEN-LAST:event_ButtoningresarActionPerformed
 
     private void RbadministradorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RbadministradorActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_RbadministradorActionPerformed
+
+    private void txtusuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtusuarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtusuarioActionPerformed
 
     /**
      * @param args the command line arguments
