@@ -5,6 +5,8 @@
  */
 package Proyecto;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author José
@@ -27,14 +29,14 @@ public class Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        buttonGroup1 = new javax.swing.ButtonGroup();
-        buttonGroup2 = new javax.swing.ButtonGroup();
+        rol1 = new javax.swing.ButtonGroup();
+        rol2 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         LabelUsuario = new javax.swing.JLabel();
         LabelContraseña = new javax.swing.JLabel();
-        Usuario = new javax.swing.JTextField();
+        txtusuario = new javax.swing.JTextField();
         LabelBienvenidos = new javax.swing.JLabel();
-        Contraseña = new javax.swing.JPasswordField();
+        txtcontraseña = new javax.swing.JPasswordField();
         BtnSalir = new javax.swing.JButton();
         LogoLogin = new javax.swing.JButton();
         Rbadministrador = new javax.swing.JRadioButton();
@@ -72,6 +74,7 @@ public class Login extends javax.swing.JFrame {
         LogoLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Loginn.png"))); // NOI18N
         LogoLogin.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
 
+        rol1.add(Rbadministrador);
         Rbadministrador.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         Rbadministrador.setText("Administrador");
         Rbadministrador.addActionListener(new java.awt.event.ActionListener() {
@@ -80,12 +83,13 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
+        rol2.add(Rbempleados);
         Rbempleados.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         Rbempleados.setText("Empleados");
 
         Buttoningresar.setBackground(new java.awt.Color(0, 0, 51));
         Buttoningresar.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
-        Buttoningresar.setForeground(new java.awt.Color(255, 255, 255));
+        Buttoningresar.setForeground(new java.awt.Color(255, 255, 0));
         Buttoningresar.setText("INGRESAR");
         Buttoningresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -110,11 +114,11 @@ public class Login extends javax.swing.JFrame {
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                             .addComponent(LabelContraseña)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(Contraseña, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtcontraseña, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                             .addComponent(LabelUsuario)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Usuario, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(txtusuario, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(Rbadministrador)
                         .addGap(58, 58, 58)
@@ -137,14 +141,14 @@ public class Login extends javax.swing.JFrame {
                 .addComponent(LabelBienvenidos)
                 .addGap(20, 20, 20)
                 .addComponent(LogoLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Usuario, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtusuario, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(LabelUsuario))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(LabelContraseña)
-                    .addComponent(Contraseña, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtcontraseña, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Rbadministrador, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -164,7 +168,7 @@ public class Login extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 430, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -175,7 +179,52 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_BtnSalirActionPerformed
 
     private void ButtoningresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtoningresarActionPerformed
-        // TODO add your handling code here:
+        //String usuario = txtusuario.getText();
+        //String contraseña = String.valueOf(txtcontraseña.getText());
+        //String rol = "";
+        
+        //if(Rbadministrador.isSelected()){
+            //rol = "Rol1-Administrador";
+        //}else if (Rbempleados.isSelected()){
+          //  rol = "Rol2-Empleados";
+        //}
+     
+        //Datos d = new Datos();
+        //d.setUsuario(usuario);
+        //d.setPassword(contraseña);
+        //d.setRoles(rol);
+  
+        //Componentes.usuarios.add(d);
+          
+        String usuario = txtusuario.getText();
+        String contraseña = String.valueOf(txtcontraseña.getText());
+        String rol = "";
+        
+        if(Rbadministrador.isSelected()){
+            rol = "Rol1-Administrador";
+          
+            if (usuario.equals("admin") && contraseña.equals("admin1234")){
+                JOptionPane.showMessageDialog(rootPane, "USUARIO Y CONTRASEÑA CORRECTOS","Bienvenido al Sistema",JOptionPane.INFORMATION_MESSAGE);
+                Principal P = new Principal();
+                P.setVisible(true);
+                this.dispose();
+            }else{
+                JOptionPane.showMessageDialog(rootPane, "USUARIO O CONTRASEÑA INCORRECTOS","Mensaje de Error",JOptionPane.ERROR_MESSAGE);
+            }
+                 
+        }else if (Rbempleados.isSelected()){
+            rol = "Rol2-Empleados";
+            if (usuario.equals("empleados") && contraseña.equals("empleados1234")){
+                JOptionPane.showMessageDialog(rootPane, "USUARIO Y CONTRASEÑA CORRECTOS");
+                Principal P = new Principal();
+                P.setVisible(true);
+                this.dispose();
+            }else{
+                JOptionPane.showMessageDialog(rootPane, "USUARIO O CONTRASEÑA INCORRECTOS","Mensaje de Error",JOptionPane.ERROR_MESSAGE);
+            }
+              
+        }
+          
     }//GEN-LAST:event_ButtoningresarActionPerformed
 
     private void RbadministradorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RbadministradorActionPerformed
@@ -220,16 +269,16 @@ public class Login extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BtnSalir;
     private javax.swing.JButton Buttoningresar;
-    private javax.swing.JPasswordField Contraseña;
     private javax.swing.JLabel LabelBienvenidos;
     private javax.swing.JLabel LabelContraseña;
     private javax.swing.JLabel LabelUsuario;
     private javax.swing.JButton LogoLogin;
     private javax.swing.JRadioButton Rbadministrador;
     private javax.swing.JRadioButton Rbempleados;
-    private javax.swing.JTextField Usuario;
-    private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.ButtonGroup rol1;
+    private javax.swing.ButtonGroup rol2;
+    private javax.swing.JPasswordField txtcontraseña;
+    private javax.swing.JTextField txtusuario;
     // End of variables declaration//GEN-END:variables
 }
