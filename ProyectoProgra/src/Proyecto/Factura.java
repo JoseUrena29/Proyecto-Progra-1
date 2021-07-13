@@ -409,17 +409,17 @@ public class Factura extends javax.swing.JFrame {
         double pago = Double.parseDouble(txtpago.getText().trim());
         double total = Double.parseDouble(txttotalcompra.getText());
         double cambio = pago - total;
-        
+
         txtcambio.setText(String.valueOf(cambio));
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         double total = Double.parseDouble(txttotalcompra.getText());
-        double division = total/2;
-        
+        double division = total / 2;
+
         txtcuenta1.setText(String.valueOf(division));
         txtcuenta2.setText(String.valueOf(division));
-        
+
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void visacardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_visacardActionPerformed
@@ -435,7 +435,13 @@ public class Factura extends javax.swing.JFrame {
     }//GEN-LAST:event_bcrcardActionPerformed
 
     private void TargetasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TargetasActionPerformed
-        // TODO add your handling code here:
+        Double visa = 0.10;
+        Double mastercard = 0.15;
+        Double bac = 0.13;
+        Double bcr = 0.09;
+        
+
+
     }//GEN-LAST:event_TargetasActionPerformed
 
     /**
