@@ -394,6 +394,11 @@ public class Factura extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
 
+        Double visa = 0.10;
+        Double mastercard = 0.15;
+        Double bac = 0.13;
+        Double bcr = 0.09;
+        
         double iva = 0.13;
 
         double totalcompra = Double.parseDouble(txtrecibirsubtotal.getText().trim());
@@ -435,13 +440,7 @@ public class Factura extends javax.swing.JFrame {
     }//GEN-LAST:event_bcrcardActionPerformed
 
     private void TargetasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TargetasActionPerformed
-        Double visa = 0.10;
-        Double mastercard = 0.15;
-        Double bac = 0.13;
-        Double bcr = 0.09;
-        
-
-
+        // TODO add your handling code here:
     }//GEN-LAST:event_TargetasActionPerformed
 
     /**
