@@ -58,11 +58,6 @@ public class Factura extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         Targetas = new javax.swing.JComboBox<>();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu3 = new javax.swing.JMenu();
-        visacard = new javax.swing.JMenuItem();
-        baccard = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        bcrcard = new javax.swing.JMenuItem();
 
         jMenu1.setText("jMenu1");
 
@@ -198,10 +193,6 @@ public class Factura extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(223, 223, 223)
-                .addComponent(facturacion, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -231,10 +222,10 @@ public class Factura extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(txtapellido, javax.swing.GroupLayout.DEFAULT_SIZE, 157, Short.MAX_VALUE)
+                                .addComponent(txtapellido)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(Targetas, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(Targetas, 0, 157, Short.MAX_VALUE)
                                 .addGap(6, 6, 6)))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -249,6 +240,10 @@ public class Factura extends javax.swing.JFrame {
                     .addComponent(txtcuenta1, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(txtcuenta2, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(123, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(219, 219, 219)
+                .addComponent(facturacion, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -279,7 +274,7 @@ public class Factura extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(Targetas, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txttotalcompra, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -306,37 +301,6 @@ public class Factura extends javax.swing.JFrame {
                 .addGap(99, 99, 99))
         );
 
-        jMenu3.setText("Mantenimiento Targetas");
-
-        visacard.setText("VISA");
-        visacard.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                visacardActionPerformed(evt);
-            }
-        });
-        jMenu3.add(visacard);
-
-        baccard.setText("MASTERCARD");
-        baccard.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                baccardActionPerformed(evt);
-            }
-        });
-        jMenu3.add(baccard);
-
-        jMenuItem3.setText("BAC");
-        jMenu3.add(jMenuItem3);
-
-        bcrcard.setText("BCR");
-        bcrcard.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bcrcardActionPerformed(evt);
-            }
-        });
-        jMenu3.add(bcrcard);
-
-        jMenuBar1.add(jMenu3);
-
         setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -348,7 +312,6 @@ public class Factura extends javax.swing.JFrame {
                 .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(41, 41, 41))
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
@@ -427,18 +390,6 @@ public class Factura extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jButton4ActionPerformed
 
-    private void visacardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_visacardActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_visacardActionPerformed
-
-    private void baccardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_baccardActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_baccardActionPerformed
-
-    private void bcrcardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bcrcardActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_bcrcardActionPerformed
-
     private void TargetasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TargetasActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TargetasActionPerformed
@@ -480,8 +431,6 @@ public class Factura extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> Targetas;
-    private javax.swing.JMenuItem baccard;
-    private javax.swing.JMenuItem bcrcard;
     private javax.swing.JLabel facturacion;
     private javax.swing.Box.Filler filler1;
     private javax.swing.JButton jButton1;
@@ -499,10 +448,8 @@ public class Factura extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField txtapellido;
     private javax.swing.JTextField txtcambio;
@@ -512,6 +459,5 @@ public class Factura extends javax.swing.JFrame {
     private javax.swing.JTextField txtpago;
     public static javax.swing.JTextField txtrecibirsubtotal;
     private javax.swing.JTextField txttotalcompra;
-    private javax.swing.JMenuItem visacard;
     // End of variables declaration//GEN-END:variables
 }
