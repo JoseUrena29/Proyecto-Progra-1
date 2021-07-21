@@ -1063,13 +1063,12 @@ public class Mesa1 extends javax.swing.JFrame {
 
     private void Button3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button3ActionPerformed
 
-
         try {
 
             //COMIDAS
             Double total = C.getCantidadhamSimple() * P.getHamburguesa_sim();
             Double total2 = C.getCantidadhamdoble() * P.getHamburguesa_doble();
-            Double total3 = C.getCantidadtacosPequeño() *P.getTaco_pequeno();
+            Double total3 = C.getCantidadtacosPequeño() * P.getTaco_pequeno();
             Double total4 = C.getCantidadtacosGrande() * P.getTaco_grande();
             Double total5 = C.getCantidadpapasPequeñas() * P.getPapas_pequeno();
             Double total6 = C.getCantidadpapasGrandes() * P.getPapas_grande();
@@ -1089,14 +1088,13 @@ public class Mesa1 extends javax.swing.JFrame {
             Double total18 = C.getCantidadChocolate() * P.getChocolate();
 
             Double subtotal = total + total2 + total3 + total4 + total5 + total6 + total7 + total8 + total9 + total10 + total11 + total12 + total13 + total14 + total15 + total16 + total17 + total18;
-            String Subtotal = String.valueOf(subtotal);
-            txtotal.setText(Subtotal);
-
             if (subtotal < 0) {
                 JOptionPane.showMessageDialog(null, "Error numero negativo ", "MENSAJE", JOptionPane.WARNING_MESSAGE);
                 txtotal.setText("");
+            } else {
+                String Subtotal = String.valueOf(subtotal);
+                txtotal.setText(Subtotal);
             }
-
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(null, "Error en numero ingresado ", "MENSAJE", JOptionPane.WARNING_MESSAGE);
 
@@ -1255,7 +1253,7 @@ public class Mesa1 extends javax.swing.JFrame {
 
         C.setCantidadFrescoDeNaranja(cantidad_jugonaranja);
         C.setCantidadFrescoDeMora(cantidad_frescomora);
-        
+
         C.setCantidadBatidoDeFresa(cantidad_batidofresa);
         C.setCantidadBatidoDeMora(cantidad_batidomora);
 
@@ -1295,29 +1293,29 @@ public class Mesa1 extends javax.swing.JFrame {
         jTextPrecio_burrito_pequeño.setText("Precio = ¢" + precioburritospequeños);
         String precioburritosgrandes = String.valueOf(P.getBurrito_grande());
         jTextPrecio_burrito_grande.setText("Precio = ¢" + precioburritosgrandes);
-        
+
         //bebidas
         String preciococacola = String.valueOf(P.getCoca_cola());
-        jTextFieldCocacola.setText("Precio = ¢" +preciococacola);
+        jTextFieldCocacola.setText("Precio = ¢" + preciococacola);
         String preciofresca = String.valueOf(P.getFresca());
-        jTextFieldFresca.setText("Precio = ¢" +preciofresca);
-        
+        jTextFieldFresca.setText("Precio = ¢" + preciofresca);
+
         String preciojugodenaranja = String.valueOf(P.getJugo_naranja());
-        jTextFieldJugo_de_naranja.setText("Precio = ¢" +preciojugodenaranja);
+        jTextFieldJugo_de_naranja.setText("Precio = ¢" + preciojugodenaranja);
         String preciofrescodemora = String.valueOf(P.getFresco_mora());
-        jTextFieldFresco_de_mora.setText("Precio = ¢" +preciofrescodemora);
-        
+        jTextFieldFresco_de_mora.setText("Precio = ¢" + preciofrescodemora);
+
         String preciobatidodefresa = String.valueOf(P.getBatido_fresa());
-        jTextFieldBatido_de_fresa.setText("Precio = ¢" +preciobatidodefresa);
+        jTextFieldBatido_de_fresa.setText("Precio = ¢" + preciobatidodefresa);
         String preciobatidodemora = String.valueOf(P.getBatido_mora());
-        jTextFieldBatido_de_mora.setText("Precio = ¢" +preciobatidodemora);
-        
+        jTextFieldBatido_de_mora.setText("Precio = ¢" + preciobatidodemora);
+
         String preciocafe = String.valueOf(P.getCafe());
-        jTextFieldCafe.setText("Precio = ¢" +preciocafe);
+        jTextFieldCafe.setText("Precio = ¢" + preciocafe);
         String preciochocolate = String.valueOf(P.getChocolate());
-        jTextFieldChocolate.setText("Precio = ¢" +preciochocolate);
-        
-        
+        jTextFieldChocolate.setText("Precio = ¢" + preciochocolate);
+
+
     }//GEN-LAST:event_jButtonRefrescasrPreciosActionPerformed
 
     private void jTextFieldBatido_de_fresaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldBatido_de_fresaActionPerformed
