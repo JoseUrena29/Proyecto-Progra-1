@@ -22,7 +22,7 @@ public class Principal extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         BtnSalir = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
+        MT = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -142,11 +142,9 @@ public class Principal extends javax.swing.JFrame {
                             .addComponent(BtnMesa5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(104, 104, 104)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(BtnMesa6, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addComponent(BtnMesa6, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(BtnMesa3, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(118, 118, 118))
+                        .addGap(118, 120, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -188,26 +186,26 @@ public class Principal extends javax.swing.JFrame {
                 .addComponent(BtnSalir))
         );
 
-        jMenu1.setText("MantenimientoTargetas");
-        jMenu1.addActionListener(new java.awt.event.ActionListener() {
+        MT.setText("MantenimientoTargetas");
+        MT.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenu1ActionPerformed(evt);
+                MTActionPerformed(evt);
             }
         });
 
         jMenuItem3.setText("VISA");
-        jMenu1.add(jMenuItem3);
+        MT.add(jMenuItem3);
 
         jMenuItem2.setText("MASTERCARD");
-        jMenu1.add(jMenuItem2);
+        MT.add(jMenuItem2);
 
         jMenuItem1.setText("BAC");
-        jMenu1.add(jMenuItem1);
+        MT.add(jMenuItem1);
 
         jMenu2.setText("BCR");
-        jMenu1.add(jMenu2);
+        MT.add(jMenu2);
 
-        jMenuBar1.add(jMenu1);
+        jMenuBar1.add(MT);
 
         setJMenuBar(jMenuBar1);
 
@@ -279,9 +277,9 @@ public class Principal extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_BtnMesa6ActionPerformed
 
-    private void jMenu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu1ActionPerformed
+    private void MTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MTActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenu1ActionPerformed
+    }//GEN-LAST:event_MTActionPerformed
 
     /**
      * @param args the command line arguments
@@ -327,9 +325,9 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JButton BtnMesa6;
     private javax.swing.JButton BtnSalir;
     private javax.swing.JButton Logo;
+    public static javax.swing.JMenu MT;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;

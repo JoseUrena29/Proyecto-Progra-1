@@ -5,6 +5,7 @@
  */
 package Proyecto;
 
+import static Proyecto.Principal.MT;
 import javax.swing.JOptionPane;
 
 /**
@@ -208,6 +209,8 @@ public class Login extends javax.swing.JFrame {
                 Principal P = new Principal();
                 P.setVisible(true);
                 this.dispose();
+                
+                
             } else {
                 JOptionPane.showMessageDialog(rootPane, "USUARIO O CONTRASEÑA INCORRECTOS", "Mensaje de Error", JOptionPane.ERROR_MESSAGE);
                 txtusuario.setText("");
@@ -221,6 +224,8 @@ public class Login extends javax.swing.JFrame {
                 Principal P = new Principal();
                 P.setVisible(true);
                 this.dispose();
+                MT.setVisible(false);
+                
             } else {
                 JOptionPane.showMessageDialog(rootPane, "USUARIO O CONTRASEÑA INCORRECTOS", "Mensaje de Error", JOptionPane.ERROR_MESSAGE);
                 txtusuario.setText("");
