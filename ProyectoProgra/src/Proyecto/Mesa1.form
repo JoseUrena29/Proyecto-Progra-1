@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup1">
+    </Component>
+  </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
   </Properties>
@@ -75,7 +79,7 @@
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Component id="filler1" min="-2" max="-2" attributes="0"/>
                                       </Group>
-                                      <Component id="hamburguesaSimple" min="-2" pref="168" max="-2" attributes="0"/>
+                                      <Component id="Rbhamburguesasimple" min="-2" pref="168" max="-2" attributes="0"/>
                                       <Component id="Hamburguesa" min="-2" pref="185" max="-2" attributes="0"/>
                                       <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                                           <Group type="102" attributes="0">
@@ -88,7 +92,7 @@
                                               <EmptySpace max="32767" attributes="0"/>
                                               <Component id="cantidadhamSimple" min="-2" pref="42" max="-2" attributes="0"/>
                                           </Group>
-                                          <Component id="hamburguesaDoble" alignment="0" min="-2" pref="168" max="-2" attributes="0"/>
+                                          <Component id="Rbhamburguesadoble" alignment="0" min="-2" pref="168" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -105,7 +109,7 @@
                                       <EmptySpace max="32767" attributes="0"/>
                                       <Component id="cantidadtacoPequeño" min="-2" pref="42" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="tacoPequeño" alignment="0" min="-2" pref="166" max="-2" attributes="0"/>
+                                  <Component id="Rbtacopequeño" alignment="0" min="-2" pref="166" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="jTextFieldJugo_de_naranja" min="-2" pref="130" max="-2" attributes="0"/>
@@ -118,7 +122,7 @@
                                   <Component id="cantidadtacoGrande" min="-2" pref="42" max="-2" attributes="0"/>
                               </Group>
                               <Component id="JugoNaranja" alignment="0" min="-2" pref="168" max="-2" attributes="0"/>
-                              <Component id="tacoGrande" min="-2" pref="166" max="-2" attributes="0"/>
+                              <Component id="Rbtacogrande" min="-2" pref="166" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -282,7 +286,7 @@
                                   </Group>
                                   <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="Frutas" min="-2" pref="168" max="-2" attributes="0"/>
+                                      <Component id="Frescomora" min="-2" pref="168" max="-2" attributes="0"/>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="jTextFieldFresco_de_mora" min="-2" pref="130" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -292,7 +296,7 @@
                               </Group>
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
-                          <Component id="Comprar" min="-2" pref="146" max="-2" attributes="0"/>
+                          <Component id="ButtonComprar" min="-2" pref="146" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -394,8 +398,8 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="hamburguesaSimple" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="tacoPequeño" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="Rbhamburguesasimple" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="Rbtacopequeño" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -411,10 +415,10 @@
                           <EmptySpace max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="103" alignment="1" groupAlignment="3" attributes="0">
-                                  <Component id="tacoGrande" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Rbtacogrande" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="papasGrandes" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="hamburguesaDoble" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="Rbhamburguesadoble" alignment="1" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
@@ -512,7 +516,7 @@
                                                       </Group>
                                                       <Group type="102" alignment="0" attributes="0">
                                                           <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
-                                                          <Component id="Frutas" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="Frescomora" min="-2" max="-2" attributes="0"/>
                                                       </Group>
                                                   </Group>
                                                   <EmptySpace max="-2" attributes="0"/>
@@ -554,7 +558,7 @@
                               <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="txtotal" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="Comprar" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
+                              <Component id="ButtonComprar" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -607,7 +611,7 @@
             <Property name="text" type="java.lang.String" value="Bebidas"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="Comprar">
+        <Component class="javax.swing.JButton" name="ButtonComprar">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="0" red="0" type="rgb"/>
@@ -621,7 +625,7 @@
             <Property name="text" type="java.lang.String" value="Comprar"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ComprarActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonComprarActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="Tacos">
@@ -695,12 +699,12 @@
             <Property name="text" type="java.lang.String" value="Hamburguesas"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="hamburguesaSimple">
+        <Component class="javax.swing.JRadioButton" name="Rbhamburguesasimple">
           <Properties>
             <Property name="text" type="java.lang.String" value="Hamburguesa Simple"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hamburguesaSimpleActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RbhamburguesasimpleActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel9">
@@ -714,32 +718,35 @@
             <Property name="text" type="java.lang.String" value="Nachos Supremos"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="hamburguesaDoble">
+        <Component class="javax.swing.JRadioButton" name="Rbhamburguesadoble">
           <Properties>
             <Property name="text" type="java.lang.String" value="Hamburguesa Doble"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hamburguesaDobleActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RbhamburguesadobleActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="tacoPeque&#xf1;o">
+        <Component class="javax.swing.JRadioButton" name="Rbtacopeque&#xf1;o">
           <Properties>
             <Property name="text" type="java.lang.String" value="Taco Peque&#xf1;o"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tacoPeque&#xf1;oActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Rbtacopeque&#xf1;oActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="tacoGrande">
+        <Component class="javax.swing.JRadioButton" name="Rbtacogrande">
           <Properties>
             <Property name="text" type="java.lang.String" value="Taco Grande"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tacoGrandeActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RbtacograndeActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="papasPeque&#xf1;as">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="buttonGroup1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Papas Peque&#xf1;as"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
           </Properties>
@@ -749,6 +756,9 @@
         </Component>
         <Component class="javax.swing.JRadioButton" name="papasGrandes">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="buttonGroup1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Papas Grandes"/>
           </Properties>
           <Events>
@@ -757,6 +767,9 @@
         </Component>
         <Component class="javax.swing.JRadioButton" name="nachosPeque&#xf1;os">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="buttonGroup1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Nachos Peque&#xf1;os"/>
           </Properties>
           <Events>
@@ -765,6 +778,9 @@
         </Component>
         <Component class="javax.swing.JRadioButton" name="nachosGrandes">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="buttonGroup1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Nachos Grandes"/>
           </Properties>
           <Events>
@@ -888,6 +904,9 @@
         </Component>
         <Component class="javax.swing.JRadioButton" name="burritosGrande">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="buttonGroup1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Burrito Grande"/>
           </Properties>
           <Events>
@@ -896,6 +915,9 @@
         </Component>
         <Component class="javax.swing.JRadioButton" name="burritosPeque&#xf1;os">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="buttonGroup1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Burrito Peque&#xf1;o"/>
           </Properties>
           <Events>
@@ -1029,6 +1051,9 @@
         </Component>
         <Component class="javax.swing.JRadioButton" name="CocaCola">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="buttonGroup1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Coca Cola"/>
           </Properties>
           <Events>
@@ -1045,6 +1070,9 @@
         </Component>
         <Component class="javax.swing.JRadioButton" name="Fresca">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="buttonGroup1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Fresca"/>
           </Properties>
           <Events>
@@ -1061,6 +1089,9 @@
         </Component>
         <Component class="javax.swing.JRadioButton" name="JugoNaranja">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="buttonGroup1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Jugo de Naranja"/>
           </Properties>
           <Events>
@@ -1075,13 +1106,16 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cantidadjugonaranjaActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="Frutas">
+        <Component class="javax.swing.JRadioButton" name="Frescomora">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="buttonGroup1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Fresco de Mora"/>
             <Property name="actionCommand" type="java.lang.String" value="Fresco de Frutas"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="FrutasActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="FrescomoraActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="cantidadfrescomora">
@@ -1094,6 +1128,9 @@
         </Component>
         <Component class="javax.swing.JRadioButton" name="BatidoMora">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="buttonGroup1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Batido de Mora"/>
           </Properties>
           <Events>
@@ -1102,6 +1139,9 @@
         </Component>
         <Component class="javax.swing.JRadioButton" name="BatidoFresa">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="buttonGroup1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Batido de Fresa"/>
           </Properties>
           <Events>
@@ -1126,6 +1166,9 @@
         </Component>
         <Component class="javax.swing.JRadioButton" name="Chocolate">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="buttonGroup1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Chocolate"/>
           </Properties>
           <Events>
@@ -1134,6 +1177,9 @@
         </Component>
         <Component class="javax.swing.JRadioButton" name="Cafe">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="buttonGroup1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Caf&#xe9;"/>
           </Properties>
           <Events>
@@ -1192,9 +1238,6 @@
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="jTextPrecioHAmburguesasimple">
-          <Properties>
-            <Property name="editable" type="boolean" value="false"/>
-          </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextPrecioHAmburguesasimpleActionPerformed"/>
           </Events>
