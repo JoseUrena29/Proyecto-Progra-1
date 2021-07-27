@@ -26,11 +26,172 @@ public class Mesa1 extends javax.swing.JFrame {
     Cantidades C = new Cantidades(0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
     Precios P = new Precios(1000.0, 2000.0, 1200.0, 1500.0, 1300.0, 1600.0, 900.0, 1350.0, 1100.0, 1700.0, 1000.0, 1000.0, 600.0, 700.0, 1300.0, 1350.0, 700.0, 850.0);
 
+    
+    public void cargarproductos(){
+    try {
+            String hamburguesasimple = "";
+            String hamburguesadoble = "";
+            String tacopequeño = "";
+            String tacogrande = "";
+            String papaspequeñas= "";
+            String papasgrandes= "";
+            String nachospequeños= "";
+            String nachosgrandes= "";
+            String burritopequeño= "";
+            String burritogrande= "";
+            String cocacola= "";
+            String fresca= "";
+            String jugonaranja= "";
+            String frescomora= "";
+            String batidofresa= "";
+            String batidomora= "";
+            String cafe= "";
+            String chocolate= "";
+            
+            if(Rbhamburguesasimple.isSelected()){
+                hamburguesasimple = "Hamburguesa Simple";
+                int cantidadhamsimple = Integer.parseInt(Txtcantidadhamsimple.getText());
+  
+                Datos H_Simple = new Datos();
+                H_Simple.setProductos(hamburguesasimple);
+                H_Simple.setCantidad(cantidadhamsimple);
+                
+                Componentes.productos.add(H_Simple);
+            }
+                  
+            if(Rbhamburguesadoble.isSelected()){
+                hamburguesadoble = "Hamburguesa Doble";
+                int cantidadhamdoble = Integer.parseInt(Txtcantidadhamdoble.getText());
+
+                Datos H_Doble = new Datos();
+                H_Doble.setProductos(hamburguesadoble);
+                H_Doble.setCantidad(cantidadhamdoble);
+                
+                Componentes.productos.add(H_Doble);
+            }
+            
+            if(Rbtacopequeño.isSelected()){
+                tacopequeño = "Taco Pequeño";
+                Datos T_Pequeño = new Datos();
+                T_Pequeño.setProductos(tacopequeño);
+                Componentes.productos.add(T_Pequeño);
+            }
+            
+            if(Rbtacogrande.isSelected()){
+                tacogrande = "Taco Grande";
+                Datos T_Grande = new Datos();
+                T_Grande.setProductos(tacogrande);
+                Componentes.productos.add(T_Grande);
+            }
+            
+            if(Rbpapaspequeñas.isSelected()){
+                papaspequeñas = "Papas Pequeñas";
+                Datos P_Pequeñas = new Datos();
+                P_Pequeñas.setProductos(papaspequeñas);
+                Componentes.productos.add(P_Pequeñas);
+            }
+            
+            if(Rbpapasgrandes.isSelected()){
+                papasgrandes = "Papas Grandes";
+                Datos P_Grandes = new Datos();
+                P_Grandes.setProductos(papasgrandes);
+                Componentes.productos.add(P_Grandes);
+            }
+            
+            if(Rbnachospequeños.isSelected()){
+                nachospequeños = "Nachos Pequeños";
+                Datos N_Pequeños = new Datos();
+                N_Pequeños.setProductos(nachospequeños);
+                Componentes.productos.add(N_Pequeños);
+            }
+            
+            if(Rbnachosgrandes.isSelected()){
+                nachosgrandes = "Nachos Grandes";
+                Datos N_Grandes = new Datos();
+                N_Grandes.setProductos(nachosgrandes);
+                Componentes.productos.add(N_Grandes);
+            }
+            
+            if(Rbburritopequeño.isSelected()){
+                burritopequeño = "Burrito Pequeño";
+                Datos B_Pequeño = new Datos();
+                B_Pequeño.setProductos(burritopequeño);
+                Componentes.productos.add(B_Pequeño);
+            }
+            
+            if(Rbburritogrande.isSelected()){
+                burritogrande = "Burrito Grande";
+                Datos B_Grande = new Datos();
+                B_Grande.setProductos(burritogrande);
+                Componentes.productos.add(B_Grande);
+            }
+            
+            if(Rbcocacola.isSelected()){
+                cocacola = "Gaseosa Coca-Cola";
+                Datos Cocacola = new Datos();
+                Cocacola.setProductos(cocacola);
+                Componentes.productos.add(Cocacola);
+            }
+            
+            if(Rbfresca.isSelected()){
+                fresca = "Gaseosa Fresca";
+                Datos Fresca = new Datos();
+                Fresca.setProductos(fresca);
+                Componentes.productos.add(Fresca);
+            }
+            
+            if(Rbjugonaranja.isSelected()){
+                jugonaranja = "Jugo de Naranja";
+                Datos Jugo_Naranja = new Datos();
+                Jugo_Naranja.setProductos(jugonaranja);
+                Componentes.productos.add(Jugo_Naranja);
+            }
+            
+            if(Rbfrescomora.isSelected()){
+                frescomora = "Fresco de Mora";
+                Datos Fresco_Mora = new Datos();
+                Fresco_Mora.setProductos(frescomora);
+                Componentes.productos.add(Fresco_Mora);
+            }
+            
+            if(Rbbatidofresa.isSelected()){
+                batidofresa = "Batido de Fresa";
+                Datos Batido_Fresa = new Datos();
+                Batido_Fresa.setProductos(batidofresa);
+                Componentes.productos.add(Batido_Fresa);
+            }
+            
+            if(Rbbatidofresa.isSelected()){
+                batidomora = "Batido de Mora";
+                Datos Batido_Mora = new Datos();
+                Batido_Mora.setProductos(batidomora);
+                Componentes.productos.add(Batido_Mora);
+            }
+            
+            if(Rbcafe.isSelected()){
+                cafe = "Café";
+                Datos Cafe = new Datos();
+                Cafe.setProductos(cafe);
+                Componentes.productos.add(Cafe);
+            }
+            
+            if(Rbchocolate.isSelected()){
+                chocolate = "Chocolate";
+                Datos Chocolate = new Datos();
+                Chocolate.setProductos(chocolate);
+                Componentes.productos.add(Chocolate);
+            }
+                           
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(rootPane, "Verifique los productos agregados en la mesa","Mensaje de Error", JOptionPane.ERROR_MESSAGE);
+            
+        }
+    }
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        buttonGroup1 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         BtnInicio = new javax.swing.JButton();
@@ -48,13 +209,13 @@ public class Mesa1 extends javax.swing.JFrame {
         Rbhamburguesadoble = new javax.swing.JRadioButton();
         Rbtacopequeño = new javax.swing.JRadioButton();
         Rbtacogrande = new javax.swing.JRadioButton();
-        papasPequeñas = new javax.swing.JRadioButton();
-        papasGrandes = new javax.swing.JRadioButton();
-        nachosPequeños = new javax.swing.JRadioButton();
-        nachosGrandes = new javax.swing.JRadioButton();
-        cantidadhamSimple = new javax.swing.JTextField();
+        Rbpapaspequeñas = new javax.swing.JRadioButton();
+        Rbpapasgrandes = new javax.swing.JRadioButton();
+        Rbnachospequeños = new javax.swing.JRadioButton();
+        Rbnachosgrandes = new javax.swing.JRadioButton();
+        Txtcantidadhamsimple = new javax.swing.JTextField();
         txtotal = new javax.swing.JTextField();
-        cantidadhamDoble = new javax.swing.JTextField();
+        Txtcantidadhamdoble = new javax.swing.JTextField();
         cantidadtacoPequeño = new javax.swing.JTextField();
         cantidadtacoGrande = new javax.swing.JTextField();
         cantidadpapasPequeñas = new javax.swing.JTextField();
@@ -64,8 +225,8 @@ public class Mesa1 extends javax.swing.JFrame {
         Button3 = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
         NachosSupremos = new javax.swing.JButton();
-        burritosGrande = new javax.swing.JRadioButton();
-        burritosPequeños = new javax.swing.JRadioButton();
+        Rbburritogrande = new javax.swing.JRadioButton();
+        Rbburritopequeño = new javax.swing.JRadioButton();
         cantidadburritogrande = new javax.swing.JTextField();
         cantidadburritopequeño = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
@@ -79,20 +240,20 @@ public class Mesa1 extends javax.swing.JFrame {
         Gaseosas = new javax.swing.JButton();
         RefrescoNatural = new javax.swing.JButton();
         Batidos = new javax.swing.JButton();
-        CocaCola = new javax.swing.JRadioButton();
+        Rbcocacola = new javax.swing.JRadioButton();
         cantidadcocacola = new javax.swing.JTextField();
-        Fresca = new javax.swing.JRadioButton();
+        Rbfresca = new javax.swing.JRadioButton();
         cantidadfresca = new javax.swing.JTextField();
-        JugoNaranja = new javax.swing.JRadioButton();
+        Rbjugonaranja = new javax.swing.JRadioButton();
         cantidadjugonaranja = new javax.swing.JTextField();
-        Frescomora = new javax.swing.JRadioButton();
+        Rbfrescomora = new javax.swing.JRadioButton();
         cantidadfrescomora = new javax.swing.JTextField();
-        BatidoMora = new javax.swing.JRadioButton();
-        BatidoFresa = new javax.swing.JRadioButton();
+        Rbbatidomora = new javax.swing.JRadioButton();
+        Rbbatidofresa = new javax.swing.JRadioButton();
         cantidadbatidomora = new javax.swing.JTextField();
         cantidadbatidofresa = new javax.swing.JTextField();
-        Chocolate = new javax.swing.JRadioButton();
-        Cafe = new javax.swing.JRadioButton();
+        Rbchocolate = new javax.swing.JRadioButton();
+        Rbcafe = new javax.swing.JRadioButton();
         cantidadchocolate = new javax.swing.JTextField();
         cantidadcafe = new javax.swing.JTextField();
         filler1 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 32767));
@@ -221,43 +382,39 @@ public class Mesa1 extends javax.swing.JFrame {
             }
         });
 
-        buttonGroup1.add(papasPequeñas);
-        papasPequeñas.setText("Papas Pequeñas");
-        papasPequeñas.setToolTipText("");
-        papasPequeñas.addActionListener(new java.awt.event.ActionListener() {
+        Rbpapaspequeñas.setText("Papas Pequeñas");
+        Rbpapaspequeñas.setToolTipText("");
+        Rbpapaspequeñas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                papasPequeñasActionPerformed(evt);
+                RbpapaspequeñasActionPerformed(evt);
             }
         });
 
-        buttonGroup1.add(papasGrandes);
-        papasGrandes.setText("Papas Grandes");
-        papasGrandes.addActionListener(new java.awt.event.ActionListener() {
+        Rbpapasgrandes.setText("Papas Grandes");
+        Rbpapasgrandes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                papasGrandesActionPerformed(evt);
+                RbpapasgrandesActionPerformed(evt);
             }
         });
 
-        buttonGroup1.add(nachosPequeños);
-        nachosPequeños.setText("Nachos Pequeños");
-        nachosPequeños.addActionListener(new java.awt.event.ActionListener() {
+        Rbnachospequeños.setText("Nachos Pequeños");
+        Rbnachospequeños.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nachosPequeñosActionPerformed(evt);
+                RbnachospequeñosActionPerformed(evt);
             }
         });
 
-        buttonGroup1.add(nachosGrandes);
-        nachosGrandes.setText("Nachos Grandes");
-        nachosGrandes.addActionListener(new java.awt.event.ActionListener() {
+        Rbnachosgrandes.setText("Nachos Grandes");
+        Rbnachosgrandes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nachosGrandesActionPerformed(evt);
+                RbnachosgrandesActionPerformed(evt);
             }
         });
 
-        cantidadhamSimple.setText("0");
-        cantidadhamSimple.addActionListener(new java.awt.event.ActionListener() {
+        Txtcantidadhamsimple.setText("0");
+        Txtcantidadhamsimple.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cantidadhamSimpleActionPerformed(evt);
+                TxtcantidadhamsimpleActionPerformed(evt);
             }
         });
 
@@ -270,10 +427,10 @@ public class Mesa1 extends javax.swing.JFrame {
             }
         });
 
-        cantidadhamDoble.setText("0");
-        cantidadhamDoble.addActionListener(new java.awt.event.ActionListener() {
+        Txtcantidadhamdoble.setText("0");
+        Txtcantidadhamdoble.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cantidadhamDobleActionPerformed(evt);
+                TxtcantidadhamdobleActionPerformed(evt);
             }
         });
 
@@ -331,19 +488,17 @@ public class Mesa1 extends javax.swing.JFrame {
             }
         });
 
-        buttonGroup1.add(burritosGrande);
-        burritosGrande.setText("Burrito Grande");
-        burritosGrande.addActionListener(new java.awt.event.ActionListener() {
+        Rbburritogrande.setText("Burrito Grande");
+        Rbburritogrande.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                burritosGrandeActionPerformed(evt);
+                RbburritograndeActionPerformed(evt);
             }
         });
 
-        buttonGroup1.add(burritosPequeños);
-        burritosPequeños.setText("Burrito Pequeño");
-        burritosPequeños.addActionListener(new java.awt.event.ActionListener() {
+        Rbburritopequeño.setText("Burrito Pequeño");
+        Rbburritopequeño.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                burritosPequeñosActionPerformed(evt);
+                RbburritopequeñoActionPerformed(evt);
             }
         });
 
@@ -401,11 +556,10 @@ public class Mesa1 extends javax.swing.JFrame {
         Batidos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Proyecto/Batidos.jpg"))); // NOI18N
         Batidos.setText("jButton1");
 
-        buttonGroup1.add(CocaCola);
-        CocaCola.setText("Coca Cola");
-        CocaCola.addActionListener(new java.awt.event.ActionListener() {
+        Rbcocacola.setText("Coca Cola");
+        Rbcocacola.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CocaColaActionPerformed(evt);
+                RbcocacolaActionPerformed(evt);
             }
         });
 
@@ -416,11 +570,10 @@ public class Mesa1 extends javax.swing.JFrame {
             }
         });
 
-        buttonGroup1.add(Fresca);
-        Fresca.setText("Fresca");
-        Fresca.addActionListener(new java.awt.event.ActionListener() {
+        Rbfresca.setText("Fresca");
+        Rbfresca.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                FrescaActionPerformed(evt);
+                RbfrescaActionPerformed(evt);
             }
         });
 
@@ -431,11 +584,10 @@ public class Mesa1 extends javax.swing.JFrame {
             }
         });
 
-        buttonGroup1.add(JugoNaranja);
-        JugoNaranja.setText("Jugo de Naranja");
-        JugoNaranja.addActionListener(new java.awt.event.ActionListener() {
+        Rbjugonaranja.setText("Jugo de Naranja");
+        Rbjugonaranja.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JugoNaranjaActionPerformed(evt);
+                RbjugonaranjaActionPerformed(evt);
             }
         });
 
@@ -446,12 +598,11 @@ public class Mesa1 extends javax.swing.JFrame {
             }
         });
 
-        buttonGroup1.add(Frescomora);
-        Frescomora.setText("Fresco de Mora");
-        Frescomora.setActionCommand("Fresco de Frutas");
-        Frescomora.addActionListener(new java.awt.event.ActionListener() {
+        Rbfrescomora.setText("Fresco de Mora");
+        Rbfrescomora.setActionCommand("Fresco de Frutas");
+        Rbfrescomora.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                FrescomoraActionPerformed(evt);
+                RbfrescomoraActionPerformed(evt);
             }
         });
 
@@ -462,19 +613,17 @@ public class Mesa1 extends javax.swing.JFrame {
             }
         });
 
-        buttonGroup1.add(BatidoMora);
-        BatidoMora.setText("Batido de Mora");
-        BatidoMora.addActionListener(new java.awt.event.ActionListener() {
+        Rbbatidomora.setText("Batido de Mora");
+        Rbbatidomora.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BatidoMoraActionPerformed(evt);
+                RbbatidomoraActionPerformed(evt);
             }
         });
 
-        buttonGroup1.add(BatidoFresa);
-        BatidoFresa.setText("Batido de Fresa");
-        BatidoFresa.addActionListener(new java.awt.event.ActionListener() {
+        Rbbatidofresa.setText("Batido de Fresa");
+        Rbbatidofresa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BatidoFresaActionPerformed(evt);
+                RbbatidofresaActionPerformed(evt);
             }
         });
 
@@ -492,19 +641,17 @@ public class Mesa1 extends javax.swing.JFrame {
             }
         });
 
-        buttonGroup1.add(Chocolate);
-        Chocolate.setText("Chocolate");
-        Chocolate.addActionListener(new java.awt.event.ActionListener() {
+        Rbchocolate.setText("Chocolate");
+        Rbchocolate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ChocolateActionPerformed(evt);
+                RbchocolateActionPerformed(evt);
             }
         });
 
-        buttonGroup1.add(Cafe);
-        Cafe.setText("Café");
-        Cafe.addActionListener(new java.awt.event.ActionListener() {
+        Rbcafe.setText("Café");
+        Rbcafe.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CafeActionPerformed(evt);
+                RbcafeActionPerformed(evt);
             }
         });
 
@@ -620,11 +767,11 @@ public class Mesa1 extends javax.swing.JFrame {
                                         .addGroup(jPanel1Layout.createSequentialGroup()
                                             .addComponent(jTextPrecioHamburguesadoble, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(cantidadhamDoble, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(Txtcantidadhamdoble, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                                             .addComponent(jTextPrecioHAmburguesasimple, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(cantidadhamSimple, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(Txtcantidadhamsimple, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addComponent(Rbhamburguesadoble, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                         .addGap(15, 15, 15)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -646,7 +793,7 @@ public class Mesa1 extends javax.swing.JFrame {
                                 .addComponent(jTextPrecio_taco_grande, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(cantidadtacoGrande, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(JugoNaranja, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Rbjugonaranja, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Rbtacogrande, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -666,28 +813,26 @@ public class Mesa1 extends javax.swing.JFrame {
                                                     .addComponent(jTextFieldBatido_de_mora, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                     .addGap(18, 18, 18)
                                                     .addComponent(cantidadbatidomora, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addComponent(BatidoMora, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                                        .addComponent(jTextFieldBatido_de_fresa, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addGap(18, 18, 18)
-                                                        .addComponent(cantidadbatidofresa, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                    .addComponent(BatidoFresa, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                                .addComponent(Rbbatidomora, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGroup(jPanel1Layout.createSequentialGroup()
+                                                    .addComponent(jTextFieldBatido_de_fresa, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addGap(18, 18, 18)
+                                                    .addComponent(cantidadbatidofresa, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(Rbbatidofresa, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                                 .addGap(39, 39, 39))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(papasGrandes, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addComponent(jTextPrecio_papas_pequeño, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(18, 18, 18)
-                                                .addComponent(cantidadpapasPequeñas, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addComponent(papasPequeñas, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jTextPrecio_papas_grandes, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(cantidadpapasGrandes, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(Rbpapasgrandes, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addGroup(jPanel1Layout.createSequentialGroup()
+                                            .addComponent(jTextPrecio_papas_pequeño, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGap(18, 18, 18)
+                                            .addComponent(cantidadpapasPequeñas, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(Rbpapaspequeñas, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(jPanel1Layout.createSequentialGroup()
+                                            .addComponent(jTextPrecio_papas_grandes, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(cantidadpapasGrandes, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                 .addGap(43, 43, 43)))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -702,19 +847,19 @@ public class Mesa1 extends javax.swing.JFrame {
                                         .addComponent(jTextFieldChocolate, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
                                         .addComponent(cantidadchocolate, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(Chocolate, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Rbchocolate, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addComponent(jTextFieldCafe, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
                                         .addComponent(cantidadcafe, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(Cafe, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(Rbcafe, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(6, 6, 6)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addGap(6, 6, 6)
                                         .addComponent(NachosSupremos, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(nachosGrandes, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Rbnachosgrandes, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addComponent(jTextPrecio_nachos_grandes, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
@@ -723,17 +868,17 @@ public class Mesa1 extends javax.swing.JFrame {
                                         .addComponent(jTextPrecio_nachos_pequeño, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
                                         .addComponent(cantidadnachosPequeños, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(nachosPequeños, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(Rbnachospequeños, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(62, 62, 62)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(burritosGrande, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Rbburritogrande, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                         .addComponent(BtnInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addComponent(Burritos, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(burritosPequeños, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(Rbburritopequeño, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addComponent(jTextPrecio_burrito_pequeño, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
@@ -768,11 +913,11 @@ public class Mesa1 extends javax.swing.JFrame {
                                         .addGap(18, 18, 18)
                                         .addComponent(cantidadfresca, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(CocaCola, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(Fresca, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(Rbcocacola, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(Rbfresca, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGap(64, 64, 64)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(Frescomora, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Rbfrescomora, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addComponent(jTextFieldFresco_de_mora, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
@@ -822,31 +967,35 @@ public class Mesa1 extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(papasPequeñas)
+                                .addComponent(Rbpapaspequeñas)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jTextPrecio_papas_pequeño, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(cantidadpapasPequeñas, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(cantidadpapasPequeñas, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jTextPrecio_papas_pequeño)
+                                        .addGap(2, 2, 2)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(Rbpapasgrandes))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(burritosPequeños)
+                                .addComponent(Rbburritopequeño)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jTextPrecio_burrito_pequeño, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(cantidadburritopequeño, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(burritosGrande)
+                                .addComponent(Rbburritogrande)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jTextPrecio_burrito_grande, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(cantidadburritogrande, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(nachosPequeños)
+                                .addComponent(Rbnachospequeños)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jTextPrecio_nachos_pequeño, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(cantidadnachosPequeños, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(4, 4, 4)
-                                .addComponent(nachosGrandes)
+                                .addComponent(Rbnachosgrandes)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jTextPrecio_nachos_grandes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -863,17 +1012,15 @@ public class Mesa1 extends javax.swing.JFrame {
                                 .addComponent(cantidadtacoPequeño, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(jTextPrecioHAmburguesasimple, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(cantidadhamSimple, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(Txtcantidadhamsimple, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(Rbtacogrande)
-                                .addComponent(papasGrandes))
+                            .addComponent(Rbtacogrande, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(Rbhamburguesadoble, javax.swing.GroupLayout.Alignment.TRAILING))
                         .addGap(5, 5, 5)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jTextPrecioHamburguesadoble, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cantidadhamDoble, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Txtcantidadhamdoble, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jTextPrecio_taco_grande, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(cantidadtacoGrande)
                             .addComponent(jTextPrecio_papas_grandes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -901,26 +1048,23 @@ public class Mesa1 extends javax.swing.JFrame {
                                 .addGap(6, 6, 6)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(BatidoFresa)
+                                        .addComponent(Rbbatidofresa)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(jTextFieldBatido_de_fresa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                                 .addComponent(cantidadbatidofresa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addGap(15, 15, 15)
-                                                .addComponent(BatidoMora)))
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addComponent(jTextFieldBatido_de_mora, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                .addComponent(cantidadbatidomora, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(7, 7, 7))))
+                                                .addComponent(Rbbatidomora)))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                            .addComponent(cantidadbatidomora, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jTextFieldBatido_de_mora, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(7, 7, 7))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addComponent(Cafe)
+                                                .addComponent(Rbcafe)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                                     .addComponent(jTextFieldCafe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -928,7 +1072,7 @@ public class Mesa1 extends javax.swing.JFrame {
                                                 .addGap(18, 18, 18)
                                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                                        .addComponent(Chocolate)
+                                                        .addComponent(Rbchocolate)
                                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                                         .addComponent(jTextFieldChocolate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
@@ -937,16 +1081,16 @@ public class Mesa1 extends javax.swing.JFrame {
                                             .addGroup(jPanel1Layout.createSequentialGroup()
                                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                                        .addComponent(CocaCola)
+                                                        .addComponent(Rbcocacola)
                                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                                             .addComponent(jTextFieldCocacola, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                             .addComponent(cantidadcocacola, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                        .addGap(18, 18, 18)
-                                                        .addComponent(Fresca, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addGap(13, 13, 13)
+                                                        .addComponent(Rbfresca))
                                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                                         .addGap(60, 60, 60)
-                                                        .addComponent(Frescomora)))
+                                                        .addComponent(Rbfrescomora)))
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                     .addComponent(jTextFieldFresco_de_mora, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -957,7 +1101,7 @@ public class Mesa1 extends javax.swing.JFrame {
                                         .addGap(0, 3, Short.MAX_VALUE))))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(101, 101, 101)
-                                .addComponent(JugoNaranja)
+                                .addComponent(Rbjugonaranja)
                                 .addGap(2, 2, 2)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jTextFieldJugo_de_naranja, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1006,13 +1150,13 @@ public class Mesa1 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_cantidadchocolateActionPerformed
 
-    private void CafeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CafeActionPerformed
+    private void RbcafeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RbcafeActionPerformed
         cantidadcafe.setText("");
-    }//GEN-LAST:event_CafeActionPerformed
+    }//GEN-LAST:event_RbcafeActionPerformed
 
-    private void ChocolateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ChocolateActionPerformed
+    private void RbchocolateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RbchocolateActionPerformed
         cantidadchocolate.setText("");
-    }//GEN-LAST:event_ChocolateActionPerformed
+    }//GEN-LAST:event_RbchocolateActionPerformed
 
     private void cantidadbatidofresaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cantidadbatidofresaActionPerformed
         // TODO add your handling code here:
@@ -1022,45 +1166,45 @@ public class Mesa1 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_cantidadbatidomoraActionPerformed
 
-    private void BatidoFresaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BatidoFresaActionPerformed
+    private void RbbatidofresaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RbbatidofresaActionPerformed
         cantidadbatidofresa.setText("");
-    }//GEN-LAST:event_BatidoFresaActionPerformed
+    }//GEN-LAST:event_RbbatidofresaActionPerformed
 
-    private void BatidoMoraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BatidoMoraActionPerformed
+    private void RbbatidomoraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RbbatidomoraActionPerformed
         cantidadbatidomora.setText("");
-    }//GEN-LAST:event_BatidoMoraActionPerformed
+    }//GEN-LAST:event_RbbatidomoraActionPerformed
 
     private void cantidadfrescomoraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cantidadfrescomoraActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cantidadfrescomoraActionPerformed
 
-    private void FrescomoraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FrescomoraActionPerformed
+    private void RbfrescomoraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RbfrescomoraActionPerformed
         cantidadfrescomora.setText("");
-    }//GEN-LAST:event_FrescomoraActionPerformed
+    }//GEN-LAST:event_RbfrescomoraActionPerformed
 
     private void cantidadjugonaranjaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cantidadjugonaranjaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cantidadjugonaranjaActionPerformed
 
-    private void JugoNaranjaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JugoNaranjaActionPerformed
+    private void RbjugonaranjaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RbjugonaranjaActionPerformed
         cantidadjugonaranja.setText("");
-    }//GEN-LAST:event_JugoNaranjaActionPerformed
+    }//GEN-LAST:event_RbjugonaranjaActionPerformed
 
     private void cantidadfrescaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cantidadfrescaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cantidadfrescaActionPerformed
 
-    private void FrescaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FrescaActionPerformed
+    private void RbfrescaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RbfrescaActionPerformed
         cantidadfresca.setText("");
-    }//GEN-LAST:event_FrescaActionPerformed
+    }//GEN-LAST:event_RbfrescaActionPerformed
 
     private void cantidadcocacolaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cantidadcocacolaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cantidadcocacolaActionPerformed
 
-    private void CocaColaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CocaColaActionPerformed
+    private void RbcocacolaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RbcocacolaActionPerformed
         cantidadcocacola.setText("");
-    }//GEN-LAST:event_CocaColaActionPerformed
+    }//GEN-LAST:event_RbcocacolaActionPerformed
 
     private void cantidadburritopequeñoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cantidadburritopequeñoActionPerformed
         // TODO add your handling code here:
@@ -1132,36 +1276,36 @@ public class Mesa1 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_cantidadtacoGrandeActionPerformed
 
-    private void cantidadhamDobleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cantidadhamDobleActionPerformed
+    private void TxtcantidadhamdobleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtcantidadhamdobleActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_cantidadhamDobleActionPerformed
+    }//GEN-LAST:event_TxtcantidadhamdobleActionPerformed
 
     private void txtotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtotalActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtotalActionPerformed
 
-    private void cantidadhamSimpleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cantidadhamSimpleActionPerformed
+    private void TxtcantidadhamsimpleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtcantidadhamsimpleActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_cantidadhamSimpleActionPerformed
+    }//GEN-LAST:event_TxtcantidadhamsimpleActionPerformed
 
-    private void papasGrandesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_papasGrandesActionPerformed
+    private void RbpapasgrandesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RbpapasgrandesActionPerformed
         cantidadpapasGrandes.setText("");
-    }//GEN-LAST:event_papasGrandesActionPerformed
+    }//GEN-LAST:event_RbpapasgrandesActionPerformed
 
-    private void papasPequeñasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_papasPequeñasActionPerformed
+    private void RbpapaspequeñasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RbpapaspequeñasActionPerformed
         cantidadpapasPequeñas.setText("");
-    }//GEN-LAST:event_papasPequeñasActionPerformed
+    }//GEN-LAST:event_RbpapaspequeñasActionPerformed
 
     private void RbtacopequeñoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RbtacopequeñoActionPerformed
         cantidadtacoPequeño.setText("");
     }//GEN-LAST:event_RbtacopequeñoActionPerformed
 
     private void RbhamburguesadobleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RbhamburguesadobleActionPerformed
-        cantidadhamDoble.setText("");
+        Txtcantidadhamdoble.setText("");
     }//GEN-LAST:event_RbhamburguesadobleActionPerformed
 
     private void RbhamburguesasimpleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RbhamburguesasimpleActionPerformed
-        cantidadhamSimple.setText("");
+        Txtcantidadhamsimple.setText("");
     }//GEN-LAST:event_RbhamburguesasimpleActionPerformed
 
     private void BurritosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BurritosActionPerformed
@@ -1179,44 +1323,7 @@ public class Mesa1 extends javax.swing.JFrame {
         this.dispose();
         Factura.txtrecibirsubtotal.setText(txtotal.getText());
         
-        try {
-            String hamburguesasimple = "";
-            String hamburguesadoble = "";
-            String tacopequeño = "";
-            String tacogrande = "";
-            
-            if(Rbhamburguesasimple.isSelected()){
-                hamburguesasimple = "Hamburguesa Simple";
-                Datos H_Simple = new Datos();
-                H_Simple.setProductos(hamburguesasimple);
-                Componentes.productos.add(H_Simple);
-            }
-                  
-            if(Rbhamburguesadoble.isSelected()){
-                hamburguesadoble = "Hamburguesa Doble";
-                Datos H_Doble = new Datos();
-                H_Doble.setProductos(hamburguesadoble);
-                Componentes.productos.add(H_Doble);
-            }
-            
-            if(Rbtacopequeño.isSelected()){
-                tacopequeño = "Taco Pequeño";
-                Datos T_Pequeño = new Datos();
-                T_Pequeño.setProductos(tacopequeño);
-                Componentes.productos.add(T_Pequeño);
-            }
-            
-            if(Rbtacogrande.isSelected()){
-                tacogrande = "Taco Grande";
-                Datos T_Grande = new Datos();
-                T_Grande.setProductos(tacogrande);
-                Componentes.productos.add(T_Grande);
-            }
-            
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(rootPane, "Verifique los productos agregados en la mesa","Mensaje de Error", JOptionPane.ERROR_MESSAGE);
-            
-        }  
+       cargarproductos();
     }//GEN-LAST:event_ButtonComprarActionPerformed
 
     private void BtnInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnInicioActionPerformed
@@ -1233,21 +1340,21 @@ public class Mesa1 extends javax.swing.JFrame {
         cantidadtacoGrande.setText("");
     }//GEN-LAST:event_RbtacograndeActionPerformed
 
-    private void nachosPequeñosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nachosPequeñosActionPerformed
+    private void RbnachospequeñosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RbnachospequeñosActionPerformed
         cantidadnachosPequeños.setText("");
-    }//GEN-LAST:event_nachosPequeñosActionPerformed
+    }//GEN-LAST:event_RbnachospequeñosActionPerformed
 
-    private void nachosGrandesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nachosGrandesActionPerformed
+    private void RbnachosgrandesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RbnachosgrandesActionPerformed
         cantidadnachosGrandes.setText("");
-    }//GEN-LAST:event_nachosGrandesActionPerformed
+    }//GEN-LAST:event_RbnachosgrandesActionPerformed
 
-    private void burritosPequeñosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_burritosPequeñosActionPerformed
+    private void RbburritopequeñoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RbburritopequeñoActionPerformed
         cantidadburritopequeño.setText("");
-    }//GEN-LAST:event_burritosPequeñosActionPerformed
+    }//GEN-LAST:event_RbburritopequeñoActionPerformed
 
-    private void burritosGrandeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_burritosGrandeActionPerformed
+    private void RbburritograndeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RbburritograndeActionPerformed
         cantidadburritogrande.setText("");
-    }//GEN-LAST:event_burritosGrandeActionPerformed
+    }//GEN-LAST:event_RbburritograndeActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
@@ -1255,8 +1362,8 @@ public class Mesa1 extends javax.swing.JFrame {
 //////////////////////////////////////////////////Crear los setter////////////////////////////////
     private void jBGuardarcompraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBGuardarcompraActionPerformed
         //comidas
-        double cantidadhamsimple = Double.parseDouble(cantidadhamSimple.getText().trim());
-        double cantidadhamdoble = Double.parseDouble(cantidadhamDoble.getText().trim());
+        double cantidadhamsimple = Double.parseDouble(Txtcantidadhamsimple.getText().trim());
+        double cantidadhamdoble = Double.parseDouble(Txtcantidadhamdoble.getText().trim());
 
         double cantidadtacopequeno = Double.parseDouble(cantidadtacoPequeño.getText().trim());
         double cantidadtacogrande = Double.parseDouble(cantidadtacoGrande.getText().trim());
@@ -1413,33 +1520,38 @@ public class Mesa1 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JRadioButton BatidoFresa;
-    private javax.swing.JRadioButton BatidoMora;
     private javax.swing.JButton Batidos;
     private javax.swing.JButton BtnInicio;
     private javax.swing.JButton Burritos;
     private javax.swing.JButton Button3;
     private javax.swing.JButton ButtonComprar;
-    private javax.swing.JRadioButton Cafe;
-    private javax.swing.JRadioButton Chocolate;
-    private javax.swing.JRadioButton CocaCola;
-    private javax.swing.JRadioButton Fresca;
-    private javax.swing.JRadioButton Frescomora;
     private javax.swing.JButton Gaseosas;
     private javax.swing.JButton Hamburguesa;
-    private javax.swing.JRadioButton JugoNaranja;
     private javax.swing.JButton NachosSupremos;
     private javax.swing.JButton OtrasBebidas;
     private javax.swing.JButton PapasSupremas;
+    private javax.swing.JRadioButton Rbbatidofresa;
+    private javax.swing.JRadioButton Rbbatidomora;
+    private javax.swing.JRadioButton Rbburritogrande;
+    private javax.swing.JRadioButton Rbburritopequeño;
+    private javax.swing.JRadioButton Rbcafe;
+    private javax.swing.JRadioButton Rbchocolate;
+    private javax.swing.JRadioButton Rbcocacola;
+    private javax.swing.JRadioButton Rbfresca;
+    private javax.swing.JRadioButton Rbfrescomora;
     private javax.swing.JRadioButton Rbhamburguesadoble;
     private javax.swing.JRadioButton Rbhamburguesasimple;
+    private javax.swing.JRadioButton Rbjugonaranja;
+    private javax.swing.JRadioButton Rbnachosgrandes;
+    private javax.swing.JRadioButton Rbnachospequeños;
+    private javax.swing.JRadioButton Rbpapasgrandes;
+    private javax.swing.JRadioButton Rbpapaspequeñas;
     private javax.swing.JRadioButton Rbtacogrande;
     private javax.swing.JRadioButton Rbtacopequeño;
     private javax.swing.JButton RefrescoNatural;
     private javax.swing.JButton Tacos;
-    private javax.swing.JRadioButton burritosGrande;
-    private javax.swing.JRadioButton burritosPequeños;
-    private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JTextField Txtcantidadhamdoble;
+    private javax.swing.JTextField Txtcantidadhamsimple;
     private javax.swing.JTextField cantidadbatidofresa;
     private javax.swing.JTextField cantidadbatidomora;
     private javax.swing.JTextField cantidadburritogrande;
@@ -1449,8 +1561,6 @@ public class Mesa1 extends javax.swing.JFrame {
     private javax.swing.JTextField cantidadcocacola;
     private javax.swing.JTextField cantidadfresca;
     private javax.swing.JTextField cantidadfrescomora;
-    private javax.swing.JTextField cantidadhamDoble;
-    private javax.swing.JTextField cantidadhamSimple;
     private javax.swing.JTextField cantidadjugonaranja;
     private javax.swing.JTextField cantidadnachosGrandes;
     private javax.swing.JTextField cantidadnachosPequeños;
@@ -1495,10 +1605,6 @@ public class Mesa1 extends javax.swing.JFrame {
     private javax.swing.JTextField jTextPrecio_papas_pequeño;
     private javax.swing.JTextField jTextPrecio_taco_grande;
     private javax.swing.JTextField jTextPrecio_taco_pequeño;
-    private javax.swing.JRadioButton nachosGrandes;
-    private javax.swing.JRadioButton nachosPequeños;
-    private javax.swing.JRadioButton papasGrandes;
-    private javax.swing.JRadioButton papasPequeñas;
     private javax.swing.JTextField txtotal;
     // End of variables declaration//GEN-END:variables
 }

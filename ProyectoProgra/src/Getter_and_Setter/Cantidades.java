@@ -9,6 +9,7 @@ package Getter_and_Setter;
 
 public class Cantidades {
 
+    private Double cantidades;
     private Double CantidadhamSimple;
     private Double Cantidadhamdoble;
 
@@ -58,6 +59,10 @@ public class Cantidades {
 
     private Double CantidadCafe;
     private Double CantidadChocolate;
+
+    public Cantidades() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
     public Double getCantidadhamSimple() {
         return CantidadhamSimple;
@@ -201,6 +206,14 @@ public class Cantidades {
 
     public void setCantidadChocolate(Double CantidadChocolate) {
         this.CantidadChocolate = CantidadChocolate;
+    }
+
+    public Double getCantidades() {
+        return cantidades;
+    }
+
+    public void setCantidades(Double cantidades) {
+        this.cantidades = cantidades;
     }
     
     
