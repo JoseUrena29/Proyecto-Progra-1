@@ -26,232 +26,302 @@ public class Mesa1 extends javax.swing.JFrame {
     Cantidades C = new Cantidades(0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
     Precios P = new Precios(1000.0, 2000.0, 1200.0, 1500.0, 1300.0, 1600.0, 900.0, 1350.0, 1100.0, 1700.0, 1000.0, 1000.0, 600.0, 700.0, 1300.0, 1350.0, 700.0, 850.0);
 
-    
-    public void cargarproductos(){
-    try {
+    public void cargarproductos() {
+        try {
             String hamburguesasimple = "";
             String hamburguesadoble = "";
             String tacopequeño = "";
             String tacogrande = "";
-            String papaspequeñas= "";
-            String papasgrandes= "";
-            String nachospequeños= "";
-            String nachosgrandes= "";
-            String burritopequeño= "";
-            String burritogrande= "";
-            String cocacola= "";
-            String fresca= "";
-            String jugonaranja= "";
-            String frescomora= "";
-            String batidofresa= "";
-            String batidomora= "";
-            String cafe= "";
-            String chocolate= "";
-            
-            if(Rbhamburguesasimple.isSelected()){
+            String papaspequeñas = "";
+            String papasgrandes = "";
+            String nachospequeños = "";
+            String nachosgrandes = "";
+            String burritopequeño = "";
+            String burritogrande = "";
+            String cocacola = "";
+            String fresca = "";
+            String jugonaranja = "";
+            String frescomora = "";
+            String batidofresa = "";
+            String batidomora = "";
+            String cafe = "";
+            String chocolate = "";
+
+            if (Rbhamburguesasimple.isSelected()) {
                 hamburguesasimple = "Hamburguesa Simple";
                 int cantidadhamsimple = Integer.parseInt(Txtcantidadhamsimple.getText());
-  
+                double preciounitariohamsimple = Double.parseDouble(jTextPrecioHAmburguesasimple.getText());
+                double preciototal = preciounitariohamsimple * cantidadhamsimple;
+
                 Datos H_Simple = new Datos();
                 H_Simple.setProductos(hamburguesasimple);
                 H_Simple.setCantidad(cantidadhamsimple);
-                
+                H_Simple.setPreciounitario(preciounitariohamsimple);
+                H_Simple.setPreciototal(preciototal);
+
                 Componentes.productos.add(H_Simple);
             }
-                  
-            if(Rbhamburguesadoble.isSelected()){
+
+            if (Rbhamburguesadoble.isSelected()) {
                 hamburguesadoble = "Hamburguesa Doble";
                 int cantidadhamdoble = Integer.parseInt(Txtcantidadhamdoble.getText());
+                double preciounitariohamdoble = Double.parseDouble(jTextPrecioHamburguesadoble.getText());
+                double preciototal = preciounitariohamdoble * cantidadhamdoble;
 
                 Datos H_Doble = new Datos();
                 H_Doble.setProductos(hamburguesadoble);
                 H_Doble.setCantidad(cantidadhamdoble);
-                
+                H_Doble.setPreciounitario(preciounitariohamdoble);
+                H_Doble.setPreciototal(preciototal);
+
                 Componentes.productos.add(H_Doble);
             }
-            
-            if(Rbtacopequeño.isSelected()){
+
+            if (Rbtacopequeño.isSelected()) {
                 tacopequeño = "Taco Pequeño";
                 int cantidadtacopequeño = Integer.parseInt(Txtcantidadtacopequeño.getText());
-                
+                double preciounitariotacopequeño = Double.parseDouble(jTextPrecio_taco_pequeño.getText());
+                double preciototal = preciounitariotacopequeño * cantidadtacopequeño;
+
                 Datos T_Pequeño = new Datos();
                 T_Pequeño.setProductos(tacopequeño);
                 T_Pequeño.setCantidad(cantidadtacopequeño);
-                
+                T_Pequeño.setPreciounitario(preciounitariotacopequeño);
+                T_Pequeño.setPreciototal(preciototal);
+
                 Componentes.productos.add(T_Pequeño);
             }
-            
-            if(Rbtacogrande.isSelected()){
+
+            if (Rbtacogrande.isSelected()) {
                 tacogrande = "Taco Grande";
                 int cantidadtacopequeño = Integer.parseInt(Txtcantidadtacogrande.getText());
-                
+                double preciounitariotacogrande = Double.parseDouble(jTextPrecio_taco_grande.getText());
+                double preciototal = preciounitariotacogrande * cantidadtacopequeño;
+
                 Datos T_Grande = new Datos();
                 T_Grande.setProductos(tacogrande);
                 T_Grande.setCantidad(cantidadtacopequeño);
-                
+                T_Grande.setPreciounitario(preciounitariotacogrande);
+                T_Grande.setPreciototal(preciototal);
+
                 Componentes.productos.add(T_Grande);
             }
-            
-            if(Rbpapaspequeñas.isSelected()){
+
+            if (Rbpapaspequeñas.isSelected()) {
                 papaspequeñas = "Papas Pequeñas";
                 int cantidadpapaspequeñas = Integer.parseInt(Txtcantidadpapaspequeñas.getText());
-                
+                double preciounitariopapaspequeñas = Double.parseDouble(jTextPrecio_papas_pequeño.getText());
+                double preciototal = preciounitariopapaspequeñas * cantidadpapaspequeñas;
+
                 Datos P_Pequeñas = new Datos();
                 P_Pequeñas.setProductos(papaspequeñas);
                 P_Pequeñas.setCantidad(cantidadpapaspequeñas);
-                
+                P_Pequeñas.setPreciounitario(preciounitariopapaspequeñas);
+                P_Pequeñas.setPreciototal(preciototal);
+
                 Componentes.productos.add(P_Pequeñas);
             }
-            
-            if(Rbpapasgrandes.isSelected()){
+
+            if (Rbpapasgrandes.isSelected()) {
                 papasgrandes = "Papas Grandes";
                 int cantidadpapasgrandes = Integer.parseInt(Txtcantidadpapasgrandes.getText());
-                
+                double preciounitariopapasgrandes = Double.parseDouble(jTextPrecio_papas_grandes.getText());
+                double preciototal = preciounitariopapasgrandes * cantidadpapasgrandes;
+
                 Datos P_Grandes = new Datos();
                 P_Grandes.setProductos(papasgrandes);
                 P_Grandes.setCantidad(cantidadpapasgrandes);
-                
+                P_Grandes.setPreciounitario(preciounitariopapasgrandes);
+                P_Grandes.setPreciototal(preciototal);
+
                 Componentes.productos.add(P_Grandes);
             }
-            
-            if(Rbnachospequeños.isSelected()){
+
+            if (Rbnachospequeños.isSelected()) {
                 nachospequeños = "Nachos Pequeños";
                 int cantidadnachospequeños = Integer.parseInt(Txtcantidadnachospequeños.getText());
-                
+                double preciounitarionachospequeños = Double.parseDouble(jTextPrecio_nachos_pequeño.getText());
+                double preciototal = preciounitarionachospequeños * cantidadnachospequeños;
+
                 Datos N_Pequeños = new Datos();
                 N_Pequeños.setProductos(nachospequeños);
                 N_Pequeños.setCantidad(cantidadnachospequeños);
-                
+                N_Pequeños.setPreciounitario(preciounitarionachospequeños);
+                N_Pequeños.setPreciototal(preciototal);
                 Componentes.productos.add(N_Pequeños);
             }
-            
-            if(Rbnachosgrandes.isSelected()){
+
+            if (Rbnachosgrandes.isSelected()) {
                 nachosgrandes = "Nachos Grandes";
                 int cantidadnachosgrandes = Integer.parseInt(Txtcantidadnachosgrandes.getText());
-                
+                double preciounitarionachosgrandes = Double.parseDouble(jTextPrecio_nachos_grandes.getText());
+                double preciototal = preciounitarionachosgrandes * cantidadnachosgrandes;
+
                 Datos N_Grandes = new Datos();
                 N_Grandes.setProductos(nachosgrandes);
                 N_Grandes.setCantidad(cantidadnachosgrandes);
-                
+                N_Grandes.setPreciounitario(preciounitarionachosgrandes);
+                N_Grandes.setPreciototal(preciototal);
+
                 Componentes.productos.add(N_Grandes);
             }
-            
-            if(Rbburritopequeño.isSelected()){
+
+            if (Rbburritopequeño.isSelected()) {
                 burritopequeño = "Burrito Pequeño";
                 int cantidadburritopequeño = Integer.parseInt(Txtcantidadburritopequeño.getText());
-                
+                double preciounitarioburritopequeño = Double.parseDouble(jTextPrecio_burrito_pequeño.getText());
+                double preciototal = preciounitarioburritopequeño * cantidadburritopequeño;
+
                 Datos B_Pequeño = new Datos();
                 B_Pequeño.setProductos(burritopequeño);
                 B_Pequeño.setCantidad(cantidadburritopequeño);
-                
+                B_Pequeño.setPreciounitario(preciounitarioburritopequeño);
+                B_Pequeño.setPreciototal(preciototal);
+
                 Componentes.productos.add(B_Pequeño);
             }
-            
-            if(Rbburritogrande.isSelected()){
+
+            if (Rbburritogrande.isSelected()) {
                 burritogrande = "Burrito Grande";
                 int cantidadburritogrande = Integer.parseInt(Txtcantidadburritogrande.getText());
-                
+                double preciounitarioburritogrande = Double.parseDouble(jTextPrecio_burrito_grande.getText());
+                double preciototal = preciounitarioburritogrande * cantidadburritogrande;
+
                 Datos B_Grande = new Datos();
                 B_Grande.setProductos(burritogrande);
                 B_Grande.setCantidad(cantidadburritogrande);
-                
+                B_Grande.setPreciounitario(preciounitarioburritogrande);
+                B_Grande.setPreciototal(preciototal);
+
                 Componentes.productos.add(B_Grande);
             }
-            
-            if(Rbcocacola.isSelected()){
+
+            if (Rbcocacola.isSelected()) {
                 cocacola = "Gaseosa Coca-Cola";
                 int cantidadcocacola = Integer.parseInt(Txtcantidadcocacola.getText());
-                
+                double preciounitariococacola = Double.parseDouble(jTextFieldCocacola.getText());
+                double preciototal = preciounitariococacola * cantidadcocacola;
+
                 Datos Cocacola = new Datos();
                 Cocacola.setProductos(cocacola);
                 Cocacola.setCantidad(cantidadcocacola);
-                
+                Cocacola.setPreciounitario(preciounitariococacola);
+                Cocacola.setPreciototal(preciototal);
+
                 Componentes.productos.add(Cocacola);
             }
-            
-            if(Rbfresca.isSelected()){
+
+            if (Rbfresca.isSelected()) {
                 fresca = "Gaseosa Fresca";
                 int cantidadfresca = Integer.parseInt(Txtcantidadfresca.getText());
-                
+                double preciounitariohamdoble = Double.parseDouble(jTextPrecioHamburguesadoble.getText());
+                double preciototal = preciounitariohamdoble * cantidadfresca;
+
                 Datos Fresca = new Datos();
                 Fresca.setProductos(fresca);
                 Fresca.setCantidad(cantidadfresca);
-                
+                Fresca.setPreciounitario(preciounitariohamdoble);
+                Fresca.setPreciototal(preciototal);
+
                 Componentes.productos.add(Fresca);
             }
-            
-            if(Rbjugonaranja.isSelected()){
+
+            if (Rbjugonaranja.isSelected()) {
                 jugonaranja = "Jugo de Naranja";
                 int cantidadjugonaranja = Integer.parseInt(Txtcantidadjugonaranja.getText());
-                
+                double preciounitarioJugodenaranja = Double.parseDouble(jTextFieldJugo_de_naranja.getText());
+                double preciototal = preciounitarioJugodenaranja * cantidadjugonaranja;
+
                 Datos Jugo_Naranja = new Datos();
                 Jugo_Naranja.setProductos(jugonaranja);
                 Jugo_Naranja.setCantidad(cantidadjugonaranja);
-                
+                Jugo_Naranja.setPreciounitario(preciounitarioJugodenaranja);
+                Jugo_Naranja.setPreciototal(preciototal);
+
                 Componentes.productos.add(Jugo_Naranja);
             }
-            
-            if(Rbfrescomora.isSelected()){
+
+            if (Rbfrescomora.isSelected()) {
                 frescomora = "Fresco de Mora";
                 int cantidadfrescomora = Integer.parseInt(Txtcantidadfrescomora.getText());
-                
+                double preciounitariofrescodemora = Double.parseDouble(jTextFieldFresco_de_mora.getText());
+                double preciototal = preciounitariofrescodemora * cantidadfrescomora;
+
                 Datos Fresco_Mora = new Datos();
                 Fresco_Mora.setProductos(frescomora);
                 Fresco_Mora.setCantidad(cantidadfrescomora);
-                
+                Fresco_Mora.setPreciounitario(preciounitariofrescodemora);
+                Fresco_Mora.setPreciototal(preciototal);
+
                 Componentes.productos.add(Fresco_Mora);
             }
-            
-            if(Rbbatidofresa.isSelected()){
+
+            if (Rbbatidofresa.isSelected()) {
                 batidofresa = "Batido de Fresa";
                 int cantidadbatidofresa = Integer.parseInt(Txtcantidadbatidofresa.getText());
-                
+                double preciounitariobatidodefresa = Double.parseDouble(jTextFieldBatido_de_fresa.getText());
+                double preciototal = preciounitariobatidodefresa * cantidadbatidofresa;
+
                 Datos Batido_Fresa = new Datos();
                 Batido_Fresa.setProductos(batidofresa);
                 Batido_Fresa.setCantidad(cantidadbatidofresa);
-                
+                Batido_Fresa.setPreciounitario(preciounitariobatidodefresa);
+                Batido_Fresa.setPreciototal(preciototal);
+
                 Componentes.productos.add(Batido_Fresa);
             }
-            
-            if(Rbbatidofresa.isSelected()){
+
+            if (Rbbatidofresa.isSelected()) {
                 batidomora = "Batido de Mora";
                 int cantidadbatidomora = Integer.parseInt(Txtcantidadbatidomora.getText());
-                
+                double preciounitariobatidodemora = Double.parseDouble(jTextFieldBatido_de_mora.getText());
+                double preciototal = preciounitariobatidodemora * cantidadbatidomora;
+
                 Datos Batido_Mora = new Datos();
                 Batido_Mora.setProductos(batidomora);
                 Batido_Mora.setCantidad(cantidadbatidomora);
-                
+                Batido_Mora.setPreciounitario(preciounitariobatidodemora);
+                Batido_Mora.setPreciototal(preciototal);
+
                 Componentes.productos.add(Batido_Mora);
             }
-            
-            if(Rbcafe.isSelected()){
+
+            if (Rbcafe.isSelected()) {
                 cafe = "Café";
                 int cantidadcafe = Integer.parseInt(Txtcantidadcafe.getText());
-                
+                double preciounitariocafe = Double.parseDouble(jTextFieldCafe.getText());
+                double preciototal = preciounitariocafe * cantidadcafe;
+
                 Datos Cafe = new Datos();
                 Cafe.setProductos(cafe);
                 Cafe.setCantidad(cantidadcafe);
-                
+                Cafe.setPreciounitario(preciounitariocafe);
+                Cafe.setPreciototal(preciototal);
+
                 Componentes.productos.add(Cafe);
             }
-            
-            if(Rbchocolate.isSelected()){
+
+            if (Rbchocolate.isSelected()) {
                 chocolate = "Chocolate";
                 int cantidadchocolate = Integer.parseInt(Txtcantidadchocolate.getText());
-                
+                double preciounitariochocolate = Double.parseDouble(jTextFieldChocolate.getText());
+                double preciototal = preciounitariochocolate * cantidadchocolate;
+
                 Datos Chocolate = new Datos();
                 Chocolate.setProductos(chocolate);
                 Chocolate.setCantidad(cantidadchocolate);
-                
+                Chocolate.setPreciounitario(preciounitariochocolate);
+                Chocolate.setPreciototal(preciototal);
+
                 Componentes.productos.add(Chocolate);
             }
-                           
+
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(rootPane, "Verifique los productos agregados en la mesa","Mensaje de Error", JOptionPane.ERROR_MESSAGE);
-            
+            JOptionPane.showMessageDialog(rootPane, "Verifique los productos agregados en la mesa", "Mensaje de Error", JOptionPane.ERROR_MESSAGE);
+
         }
     }
-    
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -1412,8 +1482,8 @@ public class Mesa1 extends javax.swing.JFrame {
         f.setVisible(true);
         this.dispose();
         Factura.txtrecibirsubtotal.setText(txtotal.getText());
-        
-       cargarproductos();
+
+        cargarproductos();
     }//GEN-LAST:event_ButtonComprarActionPerformed
 
     private void BtnInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnInicioActionPerformed
@@ -1519,50 +1589,50 @@ public class Mesa1 extends javax.swing.JFrame {
     private void jButtonRefrescasrPreciosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRefrescasrPreciosActionPerformed
         //comidas
         String preciohamsimple = String.valueOf(P.getHamburguesa_sim());
-        jTextPrecioHAmburguesasimple.setText("Precio = ¢" + preciohamsimple);
+        jTextPrecioHAmburguesasimple.setText(preciohamsimple);
         String preciohamDoble = String.valueOf(P.getHamburguesa_doble());
-        jTextPrecioHamburguesadoble.setText("Precio = ¢" + preciohamDoble);
+        jTextPrecioHamburguesadoble.setText(preciohamDoble);
 
         String precioTacospequeños = String.valueOf(P.getTaco_pequeno());
-        jTextPrecio_taco_pequeño.setText("Precio = ¢" + precioTacospequeños);
+        jTextPrecio_taco_pequeño.setText(precioTacospequeños);
         String precioTacosgrandes = String.valueOf(P.getTaco_grande());
-        jTextPrecio_taco_grande.setText("Precio = ¢" + precioTacosgrandes);
+        jTextPrecio_taco_grande.setText(precioTacosgrandes);
 
         String preciopapaspequeñas = String.valueOf(P.getPapas_pequeno());
-        jTextPrecio_papas_pequeño.setText("Precio = ¢" + preciopapaspequeñas);
+        jTextPrecio_papas_pequeño.setText(preciopapaspequeñas);
         String preciopapasgrandes = String.valueOf(P.getPapas_grande());
-        jTextPrecio_papas_grandes.setText("Precio = ¢" + preciopapasgrandes);
+        jTextPrecio_papas_grandes.setText(preciopapasgrandes);
 
         String precionachospequeños = String.valueOf(P.getNachos_pequeno());
-        jTextPrecio_nachos_pequeño.setText("Precio = ¢" + precionachospequeños);
+        jTextPrecio_nachos_pequeño.setText(precionachospequeños);
         String precionachosgrandes = String.valueOf(P.getNachos_grande());
-        jTextPrecio_nachos_grandes.setText("Precio = ¢" + precionachosgrandes);
+        jTextPrecio_nachos_grandes.setText(precionachosgrandes);
 
         String precioburritospequeños = String.valueOf(P.getBurrito_pequeno());
-        jTextPrecio_burrito_pequeño.setText("Precio = ¢" + precioburritospequeños);
+        jTextPrecio_burrito_pequeño.setText(precioburritospequeños);
         String precioburritosgrandes = String.valueOf(P.getBurrito_grande());
-        jTextPrecio_burrito_grande.setText("Precio = ¢" + precioburritosgrandes);
+        jTextPrecio_burrito_grande.setText(precioburritosgrandes);
 
         //bebidas
         String preciococacola = String.valueOf(P.getCoca_cola());
-        jTextFieldCocacola.setText("Precio = ¢" + preciococacola);
+        jTextFieldCocacola.setText(preciococacola);
         String preciofresca = String.valueOf(P.getFresca());
-        jTextFieldFresca.setText("Precio = ¢" + preciofresca);
+        jTextFieldFresca.setText(preciofresca);
 
         String preciojugodenaranja = String.valueOf(P.getJugo_naranja());
-        jTextFieldJugo_de_naranja.setText("Precio = ¢" + preciojugodenaranja);
+        jTextFieldJugo_de_naranja.setText(preciojugodenaranja);
         String preciofrescodemora = String.valueOf(P.getFresco_mora());
-        jTextFieldFresco_de_mora.setText("Precio = ¢" + preciofrescodemora);
+        jTextFieldFresco_de_mora.setText(preciofrescodemora);
 
         String preciobatidodefresa = String.valueOf(P.getBatido_fresa());
-        jTextFieldBatido_de_fresa.setText("Precio = ¢" + preciobatidodefresa);
+        jTextFieldBatido_de_fresa.setText(preciobatidodefresa);
         String preciobatidodemora = String.valueOf(P.getBatido_mora());
-        jTextFieldBatido_de_mora.setText("Precio = ¢" + preciobatidodemora);
+        jTextFieldBatido_de_mora.setText(preciobatidodemora);
 
         String preciocafe = String.valueOf(P.getCafe());
-        jTextFieldCafe.setText("Precio = ¢" + preciocafe);
+        jTextFieldCafe.setText(preciocafe);
         String preciochocolate = String.valueOf(P.getChocolate());
-        jTextFieldChocolate.setText("Precio = ¢" + preciochocolate);
+        jTextFieldChocolate.setText(preciochocolate);
 
 
     }//GEN-LAST:event_jButtonRefrescasrPreciosActionPerformed

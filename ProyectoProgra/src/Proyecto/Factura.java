@@ -10,6 +10,7 @@ import Getter_and_Setter.Nombre;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
+
 /**
  *
  * @author José
@@ -19,7 +20,7 @@ public class Factura extends javax.swing.JFrame {
     /**
      * Creates new form Factura
      */
-    
+   
     DefaultTableModel T = new DefaultTableModel();
     
     public Factura() {

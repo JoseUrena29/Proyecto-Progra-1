@@ -12,8 +12,8 @@ package Getter_and_Setter;
 public class Datos {
     private String productos;
     private int cantidad;
-    private int preciounitario;
-    private int preciototal;
+    private double preciounitario;
+    private double preciototal;
     
     private String hamburguesasimple;
     private String hamburguesadoble;
@@ -195,20 +195,25 @@ public class Datos {
         this.cantidad = cantidad;
     }
 
-    public int getPreciounitario() {
+    public double getPreciounitario() {
         return preciounitario;
     }
 
-    public void setPreciounitario(int preciounitario) {
+    public void setPreciounitario(double preciounitario) {
         this.preciounitario = preciounitario;
     }
 
-    public int getPreciototal() {
+    public double getPreciototal() {
         return preciototal;
     }
 
-    public void setPreciototal(int preciototal) {
+    public void setPreciototal(double preciototal) {
         this.preciototal = preciototal;
     }
+
+   
+    
+
+    
   
 }
