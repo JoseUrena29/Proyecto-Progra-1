@@ -24,19 +24,14 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="61" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace max="32767" attributes="0"/>
-              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-          </Group>
+          <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -65,7 +60,7 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="jTextFieldCocacola" min="-2" pref="130" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="cantidadcocacola" min="-2" pref="42" max="-2" attributes="0"/>
+                                  <Component id="Txtcantidadcocacola" min="-2" pref="42" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
                                   <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
@@ -75,20 +70,20 @@
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Component id="filler1" min="-2" max="-2" attributes="0"/>
                                       </Group>
-                                      <Component id="hamburguesaSimple" min="-2" pref="168" max="-2" attributes="0"/>
+                                      <Component id="Rbhamburguesasimple" min="-2" pref="168" max="-2" attributes="0"/>
                                       <Component id="Hamburguesa" min="-2" pref="185" max="-2" attributes="0"/>
                                       <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                                           <Group type="102" attributes="0">
                                               <Component id="jTextPrecioHamburguesadoble" min="-2" pref="130" max="-2" attributes="0"/>
                                               <EmptySpace max="32767" attributes="0"/>
-                                              <Component id="cantidadhamDoble" min="-2" pref="42" max="-2" attributes="0"/>
+                                              <Component id="Txtcantidadhamdoble" min="-2" pref="42" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="0" attributes="0">
                                               <Component id="jTextPrecioHAmburguesasimple" min="-2" pref="130" max="-2" attributes="0"/>
                                               <EmptySpace max="32767" attributes="0"/>
-                                              <Component id="cantidadhamSimple" min="-2" pref="42" max="-2" attributes="0"/>
+                                              <Component id="Txtcantidadhamsimple" min="-2" pref="42" max="-2" attributes="0"/>
                                           </Group>
-                                          <Component id="hamburguesaDoble" alignment="0" min="-2" pref="168" max="-2" attributes="0"/>
+                                          <Component id="Rbhamburguesadoble" alignment="0" min="-2" pref="168" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -103,22 +98,22 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jTextPrecio_taco_pequeño" min="-2" pref="130" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="cantidadtacoPequeño" min="-2" pref="42" max="-2" attributes="0"/>
+                                      <Component id="Txtcantidadtacopequeño" min="-2" pref="42" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="tacoPequeño" alignment="0" min="-2" pref="166" max="-2" attributes="0"/>
+                                  <Component id="Rbtacopequeño" alignment="0" min="-2" pref="166" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="jTextFieldJugo_de_naranja" min="-2" pref="130" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="cantidadjugonaranja" min="-2" pref="42" max="-2" attributes="0"/>
+                                  <Component id="Txtcantidadjugonaranja" min="-2" pref="42" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="jTextPrecio_taco_grande" min="-2" pref="130" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="cantidadtacoGrande" min="-2" pref="42" max="-2" attributes="0"/>
+                                  <Component id="Txtcantidadtacogrande" min="-2" pref="42" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="JugoNaranja" alignment="0" min="-2" pref="168" max="-2" attributes="0"/>
-                              <Component id="tacoGrande" min="-2" pref="166" max="-2" attributes="0"/>
+                              <Component id="Rbjugonaranja" alignment="0" min="-2" pref="168" max="-2" attributes="0"/>
+                              <Component id="Rbtacogrande" min="-2" pref="166" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -137,17 +132,15 @@
                                                   <Group type="102" alignment="0" attributes="0">
                                                       <Component id="jTextFieldBatido_de_mora" min="-2" pref="130" max="-2" attributes="0"/>
                                                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                      <Component id="cantidadbatidomora" min="-2" pref="42" max="-2" attributes="0"/>
+                                                      <Component id="Txtcantidadbatidomora" min="-2" pref="42" max="-2" attributes="0"/>
                                                   </Group>
-                                                  <Component id="BatidoMora" alignment="0" min="-2" pref="168" max="-2" attributes="0"/>
-                                                  <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                                                      <Group type="102" alignment="0" attributes="0">
-                                                          <Component id="jTextFieldBatido_de_fresa" min="-2" pref="130" max="-2" attributes="0"/>
-                                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                          <Component id="cantidadbatidofresa" min="-2" pref="42" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <Component id="BatidoFresa" min="-2" pref="168" max="-2" attributes="0"/>
+                                                  <Component id="Rbbatidomora" alignment="0" min="-2" pref="168" max="-2" attributes="0"/>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="jTextFieldBatido_de_fresa" min="-2" pref="130" max="-2" attributes="0"/>
+                                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                      <Component id="Txtcantidadbatidofresa" min="-2" pref="42" max="-2" attributes="0"/>
                                                   </Group>
+                                                  <Component id="Rbbatidofresa" alignment="0" min="-2" pref="168" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
@@ -155,23 +148,19 @@
                                   <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Group type="103" groupAlignment="1" attributes="0">
-                                          <Component id="papasGrandes" min="-2" pref="166" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="jTextPrecio_papas_pequeño" min="-2" pref="130" max="-2" attributes="0"/>
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="cantidadpapasPequeñas" min="-2" pref="42" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Component id="papasPequeñas" min="-2" pref="166" max="-2" attributes="0"/>
-                                          </Group>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="jTextPrecio_papas_pequeño" min="-2" pref="130" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="Txtcantidadpapaspequeñas" min="-2" pref="42" max="-2" attributes="0"/>
                                       </Group>
-                                      <Group type="102" attributes="0">
+                                      <Component id="Rbpapaspequeñas" min="-2" pref="166" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="1" attributes="0">
                                           <Component id="jTextPrecio_papas_grandes" min="-2" pref="130" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="cantidadpapasGrandes" min="-2" pref="46" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="Txtcantidadpapasgrandes" min="-2" pref="46" max="-2" attributes="0"/>
                                       </Group>
+                                      <Component id="Rbpapasgrandes" alignment="0" min="-2" pref="166" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
                               </Group>
@@ -189,15 +178,15 @@
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="jTextFieldChocolate" min="-2" pref="130" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="cantidadchocolate" min="-2" pref="42" max="-2" attributes="0"/>
+                                          <Component id="Txtcantidadchocolate" min="-2" pref="42" max="-2" attributes="0"/>
                                       </Group>
-                                      <Component id="Chocolate" alignment="0" min="-2" pref="168" max="-2" attributes="0"/>
+                                      <Component id="Rbchocolate" alignment="0" min="-2" pref="168" max="-2" attributes="0"/>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="jTextFieldCafe" min="-2" pref="130" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="cantidadcafe" min="-2" pref="42" max="-2" attributes="0"/>
+                                          <Component id="Txtcantidadcafe" min="-2" pref="42" max="-2" attributes="0"/>
                                       </Group>
-                                      <Component id="Cafe" alignment="0" min="-2" pref="168" max="-2" attributes="0"/>
+                                      <Component id="Rbcafe" alignment="0" min="-2" pref="168" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
@@ -207,18 +196,18 @@
                                           <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                                           <Component id="NachosSupremos" min="-2" pref="185" max="-2" attributes="0"/>
                                       </Group>
-                                      <Component id="nachosGrandes" alignment="0" min="-2" pref="191" max="-2" attributes="0"/>
+                                      <Component id="Rbnachosgrandes" alignment="0" min="-2" pref="191" max="-2" attributes="0"/>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="jTextPrecio_nachos_grandes" min="-2" pref="130" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="cantidadnachosGrandes" min="-2" pref="42" max="-2" attributes="0"/>
+                                          <Component id="Txtcantidadnachosgrandes" min="-2" pref="42" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="jTextPrecio_nachos_pequeño" min="-2" pref="130" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="cantidadnachosPequeños" min="-2" pref="42" max="-2" attributes="0"/>
+                                          <Component id="Txtcantidadnachospequeños" min="-2" pref="42" max="-2" attributes="0"/>
                                       </Group>
-                                      <Component id="nachosPequeños" alignment="0" min="-2" pref="191" max="-2" attributes="0"/>
+                                      <Component id="Rbnachospequeños" alignment="0" min="-2" pref="191" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -227,21 +216,21 @@
                                   <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="jLabel10" min="-2" pref="169" max="-2" attributes="0"/>
-                                      <Component id="burritosGrande" alignment="0" min="-2" pref="191" max="-2" attributes="0"/>
+                                      <Component id="Rbburritogrande" alignment="0" min="-2" pref="191" max="-2" attributes="0"/>
                                       <Group type="103" alignment="0" groupAlignment="1" attributes="0">
                                           <Component id="BtnInicio" min="-2" pref="91" max="-2" attributes="0"/>
                                           <Component id="Burritos" min="-2" pref="185" max="-2" attributes="0"/>
-                                          <Component id="burritosPequeños" alignment="1" min="-2" pref="191" max="-2" attributes="0"/>
+                                          <Component id="Rbburritopequeño" alignment="1" min="-2" pref="191" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="jTextPrecio_burrito_pequeño" min="-2" pref="130" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="cantidadburritopequeño" min="-2" pref="42" max="-2" attributes="0"/>
+                                          <Component id="Txtcantidadburritopequeño" min="-2" pref="42" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" attributes="0">
                                           <Component id="jTextPrecio_burrito_grande" min="-2" pref="130" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="cantidadburritogrande" min="-2" pref="42" max="-2" attributes="0"/>
+                                          <Component id="Txtcantidadburritogrande" min="-2" pref="42" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
@@ -273,26 +262,26 @@
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="jTextFieldFresca" min="-2" pref="130" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="cantidadfresca" min="-2" pref="42" max="-2" attributes="0"/>
+                                          <Component id="Txtcantidadfresca" min="-2" pref="42" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                                          <Component id="CocaCola" min="-2" pref="168" max="-2" attributes="0"/>
-                                          <Component id="Fresca" alignment="1" min="-2" pref="168" max="-2" attributes="0"/>
+                                          <Component id="Rbcocacola" min="-2" pref="168" max="-2" attributes="0"/>
+                                          <Component id="Rbfresca" alignment="1" min="-2" pref="168" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="Frutas" min="-2" pref="168" max="-2" attributes="0"/>
+                                      <Component id="Rbfrescomora" min="-2" pref="168" max="-2" attributes="0"/>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="jTextFieldFresco_de_mora" min="-2" pref="130" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="cantidadfrescomora" min="-2" pref="42" max="-2" attributes="0"/>
+                                          <Component id="Txtcantidadfrescomora" min="-2" pref="42" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
-                          <Component id="Comprar" min="-2" pref="146" max="-2" attributes="0"/>
+                          <Component id="ButtonComprar" min="-2" pref="146" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -352,41 +341,45 @@
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
-                                  <Component id="papasPequeñas" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Rbpapaspequeñas" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="Txtcantidadpapaspequeñas" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                                  <Component id="Rbpapasgrandes" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jTextPrecio_papas_pequeño" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="cantidadpapasPequeñas" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                                      <Component id="jTextPrecio_papas_grandes" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="Txtcantidadpapasgrandes" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" attributes="0">
-                                  <Component id="burritosPequeños" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Rbburritopequeño" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jTextPrecio_burrito_pequeño" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="cantidadburritopequeño" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="Txtcantidadburritopequeño" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="burritosGrande" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Rbburritogrande" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jTextPrecio_burrito_grande" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="cantidadburritogrande" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="Txtcantidadburritogrande" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="nachosPequeños" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Rbnachospequeños" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jTextPrecio_nachos_pequeño" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="cantidadnachosPequeños" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="Txtcantidadnachospequeños" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
-                                  <Component id="nachosGrandes" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Rbnachosgrandes" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jTextPrecio_nachos_grandes" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="cantidadnachosGrandes" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="Txtcantidadnachosgrandes" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -394,38 +387,41 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="hamburguesaSimple" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="tacoPequeño" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="Rbhamburguesasimple" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="Rbtacopequeño" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                  <Component id="jTextPrecio_taco_pequeño" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="cantidadtacoPequeño" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                          <Component id="jTextPrecio_taco_pequeño" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="Txtcantidadtacopequeño" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                          <Component id="jTextPrecioHAmburguesasimple" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="Txtcantidadhamsimple" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="Rbtacogrande" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="Rbhamburguesadoble" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="jTextPrecioHamburguesadoble" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="Txtcantidadhamdoble" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jTextPrecio_taco_grande" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="Txtcantidadtacogrande" alignment="3" max="32767" attributes="0"/>
+                                  </Group>
                               </Group>
-                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                  <Component id="jTextPrecioHAmburguesasimple" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="cantidadhamSimple" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Component id="jTextPrecio_papas_pequeño" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace pref="4" max="32767" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="103" alignment="1" groupAlignment="3" attributes="0">
-                                  <Component id="tacoGrande" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="papasGrandes" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Component id="hamburguesaDoble" alignment="1" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jTextPrecioHamburguesadoble" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="cantidadhamDoble" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jTextPrecio_taco_grande" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="cantidadtacoGrande" alignment="3" max="32767" attributes="0"/>
-                              <Component id="jTextPrecio_papas_grandes" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="cantidadpapasGrandes" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="103" groupAlignment="0" attributes="0">
@@ -453,97 +449,102 @@
                                   </Group>
                                   <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" attributes="0">
-                                          <Component id="BatidoFresa" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jTextFieldBatido_de_fresa" min="-2" max="-2" attributes="0"/>
-                                              <Group type="102" alignment="1" attributes="0">
-                                                  <Component id="cantidadbatidofresa" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-                                                  <Component id="BatidoMora" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
+                                      <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="102" attributes="0">
-                                                  <Component id="jTextFieldBatido_de_mora" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace max="32767" attributes="0"/>
+                                                  <Component id="Rbcocacola" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                      <Component id="jTextFieldCocacola" pref="24" max="32767" attributes="0"/>
+                                                      <Component id="Txtcantidadcocacola" max="32767" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Component id="Rbfresca" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+                                                  <Component id="Rbfrescomora" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                                                  <Component id="jTextFieldFresco_de_mora" max="32767" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="1" attributes="0">
-                                                  <EmptySpace max="32767" attributes="0"/>
-                                                  <Component id="cantidadbatidomora" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="jTextFieldFresca" max="32767" attributes="0"/>
+                                                      <Group type="102" attributes="0">
+                                                          <Group type="103" groupAlignment="0" attributes="0">
+                                                              <Group type="103" groupAlignment="3" attributes="0">
+                                                                  <Component id="jTextFieldBatido_de_mora" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                                                  <Component id="Txtcantidadbatidomora" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                                              </Group>
+                                                              <Component id="Txtcantidadfrescomora" alignment="0" min="-2" pref="30" max="-2" attributes="0"/>
+                                                          </Group>
+                                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="Txtcantidadfresca" max="32767" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace min="0" pref="13" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="Rbbatidofresa" min="-2" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                                                  <Component id="Txtcantidadbatidofresa" min="-2" pref="26" max="-2" attributes="0"/>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Component id="Rbbatidomora" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" attributes="0">
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="jTextFieldBatido_de_fresa" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
-                                      <Group type="102" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="Rbcafe" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                              <Component id="Txtcantidadcafe" max="32767" attributes="0"/>
+                                              <Component id="jTextFieldCafe" pref="29" max="32767" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="Rbchocolate" min="-2" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="Cafe" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Group type="103" groupAlignment="3" attributes="0">
-                                                      <Component id="jTextFieldCafe" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="cantidadcafe" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                  </Group>
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Group type="102" attributes="0">
-                                                          <Component id="Chocolate" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                          <Component id="jTextFieldChocolate" min="-2" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <Group type="102" alignment="1" attributes="0">
-                                                          <Component id="cantidadchocolate" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
-                                                      </Group>
-                                                  </Group>
+                                              <Group type="102" attributes="0">
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Component id="jTextFieldChocolate" min="-2" pref="28" max="-2" attributes="0"/>
                                               </Group>
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Group type="102" attributes="0">
-                                                          <Component id="CocaCola" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace max="-2" attributes="0"/>
-                                                          <Group type="103" groupAlignment="3" attributes="0">
-                                                              <Component id="jTextFieldCocacola" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                              <Component id="cantidadcocacola" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                          </Group>
-                                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                          <Component id="Fresca" min="-2" pref="18" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <Group type="102" alignment="0" attributes="0">
-                                                          <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
-                                                          <Component id="Frutas" min="-2" max="-2" attributes="0"/>
-                                                      </Group>
-                                                  </Group>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Component id="jTextFieldFresco_de_mora" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="cantidadfrescomora" min="-2" max="-2" attributes="0"/>
-                                                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                                          <Component id="jTextFieldFresca" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="cantidadfresca" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      </Group>
-                                                  </Group>
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+                                                  <Component id="Txtcantidadchocolate" min="-2" pref="30" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
-                                          <EmptySpace min="0" pref="3" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
                               <Group type="102" attributes="0">
                                   <EmptySpace min="-2" pref="101" max="-2" attributes="0"/>
-                                  <Component id="JugoNaranja" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Rbjugonaranja" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jTextFieldJugo_de_naranja" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="cantidadjugonaranja" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jTextFieldJugo_de_naranja" min="-2" pref="26" max="-2" attributes="0"/>
+                                      <Component id="Txtcantidadjugonaranja" alignment="1" min="-2" pref="26" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
+                          <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="jBGuardarcompra" min="-2" pref="40" max="-2" attributes="0"/>
                               <Component id="Button3" min="-2" pref="29" max="-2" attributes="0"/>
+                              <Component id="jBGuardarcompra" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
@@ -554,7 +555,7 @@
                               <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="txtotal" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="Comprar" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
+                              <Component id="ButtonComprar" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -572,7 +573,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="cc" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Bienvenido a Mesa #3"/>
+            <Property name="text" type="java.lang.String" value="Bienvenido a Mesa #1"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="BtnInicio">
@@ -607,7 +608,7 @@
             <Property name="text" type="java.lang.String" value="Bebidas"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="Comprar">
+        <Component class="javax.swing.JButton" name="ButtonComprar">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="0" red="0" type="rgb"/>
@@ -621,7 +622,7 @@
             <Property name="text" type="java.lang.String" value="Comprar"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ComprarActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonComprarActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="Tacos">
@@ -695,12 +696,12 @@
             <Property name="text" type="java.lang.String" value="Hamburguesas"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="hamburguesaSimple">
+        <Component class="javax.swing.JRadioButton" name="Rbhamburguesasimple">
           <Properties>
             <Property name="text" type="java.lang.String" value="Hamburguesa Simple"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hamburguesaSimpleActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RbhamburguesasimpleActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel9">
@@ -714,69 +715,70 @@
             <Property name="text" type="java.lang.String" value="Nachos Supremos"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="hamburguesaDoble">
+        <Component class="javax.swing.JRadioButton" name="Rbhamburguesadoble">
           <Properties>
             <Property name="text" type="java.lang.String" value="Hamburguesa Doble"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hamburguesaDobleActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RbhamburguesadobleActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="tacoPeque&#xf1;o">
+        <Component class="javax.swing.JRadioButton" name="Rbtacopeque&#xf1;o">
           <Properties>
             <Property name="text" type="java.lang.String" value="Taco Peque&#xf1;o"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tacoPeque&#xf1;oActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Rbtacopeque&#xf1;oActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="tacoGrande">
+        <Component class="javax.swing.JRadioButton" name="Rbtacogrande">
           <Properties>
             <Property name="text" type="java.lang.String" value="Taco Grande"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tacoGrandeActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RbtacograndeActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="papasPeque&#xf1;as">
+        <Component class="javax.swing.JRadioButton" name="Rbpapaspeque&#xf1;as">
           <Properties>
             <Property name="text" type="java.lang.String" value="Papas Peque&#xf1;as"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="papasPeque&#xf1;asActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Rbpapaspeque&#xf1;asActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="papasGrandes">
+        <Component class="javax.swing.JRadioButton" name="Rbpapasgrandes">
           <Properties>
             <Property name="text" type="java.lang.String" value="Papas Grandes"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="papasGrandesActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RbpapasgrandesActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="nachosPeque&#xf1;os">
+        <Component class="javax.swing.JRadioButton" name="Rbnachospeque&#xf1;os">
           <Properties>
             <Property name="text" type="java.lang.String" value="Nachos Peque&#xf1;os"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nachosPeque&#xf1;osActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Rbnachospeque&#xf1;osActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="nachosGrandes">
+        <Component class="javax.swing.JRadioButton" name="Rbnachosgrandes">
           <Properties>
             <Property name="text" type="java.lang.String" value="Nachos Grandes"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nachosGrandesActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RbnachosgrandesActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="cantidadhamSimple">
+        <Component class="javax.swing.JTextField" name="Txtcantidadhamsimple">
           <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cantidadhamSimpleActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtcantidadhamsimpleActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txtotal">
@@ -797,53 +799,60 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtotalActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="cantidadhamDoble">
+        <Component class="javax.swing.JTextField" name="Txtcantidadhamdoble">
           <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cantidadhamDobleActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtcantidadhamdobleActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="cantidadtacoPeque&#xf1;o">
+        <Component class="javax.swing.JTextField" name="Txtcantidadtacopeque&#xf1;o">
           <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="cantidadtacoGrande">
+        <Component class="javax.swing.JTextField" name="Txtcantidadtacogrande">
           <Properties>
-            <Property name="text" type="java.lang.String" value="0"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cantidadtacoGrandeActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JTextField" name="cantidadpapasPeque&#xf1;as">
-          <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cantidadpapasPeque&#xf1;asActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtcantidadtacograndeActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="cantidadpapasGrandes">
+        <Component class="javax.swing.JTextField" name="Txtcantidadpapaspeque&#xf1;as">
           <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cantidadpapasGrandesActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Txtcantidadpapaspeque&#xf1;asActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="cantidadnachosPeque&#xf1;os">
+        <Component class="javax.swing.JTextField" name="Txtcantidadpapasgrandes">
           <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cantidadnachosPeque&#xf1;osActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtcantidadpapasgrandesActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="cantidadnachosGrandes">
+        <Component class="javax.swing.JTextField" name="Txtcantidadnachospeque&#xf1;os">
           <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="0"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Txtcantidadnachospeque&#xf1;osActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="Txtcantidadnachosgrandes">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
         </Component>
@@ -886,36 +895,38 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="NachosSupremosActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="burritosGrande">
+        <Component class="javax.swing.JRadioButton" name="Rbburritogrande">
           <Properties>
             <Property name="text" type="java.lang.String" value="Burrito Grande"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="burritosGrandeActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RbburritograndeActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="burritosPeque&#xf1;os">
+        <Component class="javax.swing.JRadioButton" name="Rbburritopeque&#xf1;o">
           <Properties>
             <Property name="text" type="java.lang.String" value="Burrito Peque&#xf1;o"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="burritosPeque&#xf1;osActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Rbburritopeque&#xf1;oActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="cantidadburritogrande">
+        <Component class="javax.swing.JTextField" name="Txtcantidadburritogrande">
           <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cantidadburritograndeActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtcantidadburritograndeActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="cantidadburritopeque&#xf1;o">
+        <Component class="javax.swing.JTextField" name="Txtcantidadburritopeque&#xf1;o">
           <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cantidadburritopeque&#xf1;oActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Txtcantidadburritopeque&#xf1;oActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel4">
@@ -1027,133 +1038,141 @@
             <Property name="text" type="java.lang.String" value="jButton1"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="CocaCola">
+        <Component class="javax.swing.JRadioButton" name="Rbcocacola">
           <Properties>
             <Property name="text" type="java.lang.String" value="Coca Cola"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CocaColaActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RbcocacolaActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="cantidadcocacola">
+        <Component class="javax.swing.JTextField" name="Txtcantidadcocacola">
           <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cantidadcocacolaActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtcantidadcocacolaActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="Fresca">
+        <Component class="javax.swing.JRadioButton" name="Rbfresca">
           <Properties>
             <Property name="text" type="java.lang.String" value="Fresca"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="FrescaActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RbfrescaActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="cantidadfresca">
+        <Component class="javax.swing.JTextField" name="Txtcantidadfresca">
           <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cantidadfrescaActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtcantidadfrescaActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="JugoNaranja">
+        <Component class="javax.swing.JRadioButton" name="Rbjugonaranja">
           <Properties>
             <Property name="text" type="java.lang.String" value="Jugo de Naranja"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JugoNaranjaActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RbjugonaranjaActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="cantidadjugonaranja">
+        <Component class="javax.swing.JTextField" name="Txtcantidadjugonaranja">
           <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cantidadjugonaranjaActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtcantidadjugonaranjaActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="Frutas">
+        <Component class="javax.swing.JRadioButton" name="Rbfrescomora">
           <Properties>
             <Property name="text" type="java.lang.String" value="Fresco de Mora"/>
             <Property name="actionCommand" type="java.lang.String" value="Fresco de Frutas"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="FrutasActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RbfrescomoraActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="cantidadfrescomora">
+        <Component class="javax.swing.JTextField" name="Txtcantidadfrescomora">
           <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cantidadfrescomoraActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtcantidadfrescomoraActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="BatidoMora">
+        <Component class="javax.swing.JRadioButton" name="Rbbatidomora">
           <Properties>
             <Property name="text" type="java.lang.String" value="Batido de Mora"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BatidoMoraActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RbbatidomoraActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="BatidoFresa">
+        <Component class="javax.swing.JRadioButton" name="Rbbatidofresa">
           <Properties>
             <Property name="text" type="java.lang.String" value="Batido de Fresa"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BatidoFresaActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RbbatidofresaActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="cantidadbatidomora">
+        <Component class="javax.swing.JTextField" name="Txtcantidadbatidomora">
           <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cantidadbatidomoraActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtcantidadbatidomoraActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="cantidadbatidofresa">
+        <Component class="javax.swing.JTextField" name="Txtcantidadbatidofresa">
           <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cantidadbatidofresaActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtcantidadbatidofresaActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="Chocolate">
+        <Component class="javax.swing.JRadioButton" name="Rbchocolate">
           <Properties>
             <Property name="text" type="java.lang.String" value="Chocolate"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ChocolateActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RbchocolateActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="Cafe">
+        <Component class="javax.swing.JRadioButton" name="Rbcafe">
           <Properties>
             <Property name="text" type="java.lang.String" value="Caf&#xe9;"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CafeActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RbcafeActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="cantidadchocolate">
+        <Component class="javax.swing.JTextField" name="Txtcantidadchocolate">
           <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cantidadchocolateActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtcantidadchocolateActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="cantidadcafe">
+        <Component class="javax.swing.JTextField" name="Txtcantidadcafe">
           <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cantidadcafeActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtcantidadcafeActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.Box$Filler" name="filler1">
@@ -1192,9 +1211,6 @@
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="jTextPrecioHAmburguesasimple">
-          <Properties>
-            <Property name="editable" type="boolean" value="false"/>
-          </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextPrecioHAmburguesasimpleActionPerformed"/>
           </Events>
