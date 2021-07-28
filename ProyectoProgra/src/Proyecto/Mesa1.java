@@ -391,7 +391,7 @@ public class Mesa1 extends javax.swing.JFrame {
         Txtcantidadchocolate = new javax.swing.JTextField();
         Txtcantidadcafe = new javax.swing.JTextField();
         filler1 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 32767));
-        jTextField1 = new javax.swing.JTextField();
+        Txt₡ = new javax.swing.JTextField();
         jBGuardarcompra = new javax.swing.JButton();
         jButtonRefrescasrPrecios = new javax.swing.JButton();
         jTextPrecioHAmburguesasimple = new javax.swing.JTextField();
@@ -821,11 +821,11 @@ public class Mesa1 extends javax.swing.JFrame {
             }
         });
 
-        jTextField1.setEditable(false);
-        jTextField1.setText("₡");
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        Txt₡.setEditable(false);
+        Txt₡.setText("₡");
+        Txt₡.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                Txt₡ActionPerformed(evt);
             }
         });
 
@@ -843,6 +843,7 @@ public class Mesa1 extends javax.swing.JFrame {
             }
         });
 
+        jTextPrecioHAmburguesasimple.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextPrecioHAmburguesasimple.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextPrecioHAmburguesasimpleActionPerformed(evt);
@@ -850,32 +851,46 @@ public class Mesa1 extends javax.swing.JFrame {
         });
 
         jTextPrecioHamburguesadoble.setEditable(false);
+        jTextPrecioHamburguesadoble.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         jTextPrecio_taco_pequeño.setEditable(false);
+        jTextPrecio_taco_pequeño.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         jTextPrecio_taco_grande.setEditable(false);
+        jTextPrecio_taco_grande.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         jTextPrecio_papas_pequeño.setEditable(false);
+        jTextPrecio_papas_pequeño.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         jTextPrecio_papas_grandes.setEditable(false);
+        jTextPrecio_papas_grandes.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         jTextPrecio_nachos_pequeño.setEditable(false);
+        jTextPrecio_nachos_pequeño.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         jTextPrecio_nachos_grandes.setEditable(false);
+        jTextPrecio_nachos_grandes.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         jTextPrecio_burrito_pequeño.setEditable(false);
+        jTextPrecio_burrito_pequeño.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         jTextPrecio_burrito_grande.setEditable(false);
+        jTextPrecio_burrito_grande.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         jTextFieldCocacola.setEditable(false);
+        jTextFieldCocacola.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         jTextFieldFresca.setEditable(false);
+        jTextFieldFresca.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         jTextFieldJugo_de_naranja.setEditable(false);
+        jTextFieldJugo_de_naranja.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         jTextFieldFresco_de_mora.setEditable(false);
+        jTextFieldFresco_de_mora.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         jTextFieldBatido_de_fresa.setEditable(false);
+        jTextFieldBatido_de_fresa.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextFieldBatido_de_fresa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextFieldBatido_de_fresaActionPerformed(evt);
@@ -883,10 +898,13 @@ public class Mesa1 extends javax.swing.JFrame {
         });
 
         jTextFieldBatido_de_mora.setEditable(false);
+        jTextFieldBatido_de_mora.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         jTextFieldCafe.setEditable(false);
+        jTextFieldCafe.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         jTextFieldChocolate.setEditable(false);
+        jTextFieldChocolate.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -1052,7 +1070,7 @@ public class Mesa1 extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Txt₡, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(txtotal, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(Gaseosas, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1073,7 +1091,7 @@ public class Mesa1 extends javax.swing.JFrame {
                                         .addComponent(jTextFieldFresco_de_mora, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
                                         .addComponent(Txtcantidadfrescomora, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 319, Short.MAX_VALUE)
                         .addComponent(ButtonComprar, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(70, 70, 70))))
         );
@@ -1231,46 +1249,41 @@ public class Mesa1 extends javax.swing.JFrame {
                                                         .addGap(0, 0, Short.MAX_VALUE))))
                                             .addGroup(jPanel1Layout.createSequentialGroup()
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(Txtcantidadfresca)))
-                                        .addGap(0, 13, Short.MAX_VALUE))
+                                                .addComponent(Txtcantidadfresca))))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                                .addComponent(Rbbatidofresa)
-                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                                        .addGap(1, 1, 1)
-                                                        .addComponent(Txtcantidadbatidofresa, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                        .addComponent(Rbbatidomora))
-                                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                        .addComponent(jTextFieldBatido_de_fresa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                                .addComponent(Rbcafe)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                    .addComponent(Txtcantidadcafe)
-                                                    .addComponent(jTextFieldCafe, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE))
+                                        .addComponent(Rbbatidofresa)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                                .addGap(1, 1, 1)
+                                                .addComponent(Txtcantidadbatidofresa, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(Rbchocolate)
-                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                        .addComponent(jTextFieldChocolate, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                                        .addGap(5, 5, 5)
-                                                        .addComponent(Txtcantidadchocolate, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                                .addComponent(Rbbatidomora))
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(jTextFieldBatido_de_fresa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(Rbcafe)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(Txtcantidadcafe)
+                                            .addComponent(jTextFieldCafe, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(Rbchocolate)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(jTextFieldChocolate, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                                .addGap(5, 5, 5)
+                                                .addComponent(Txtcantidadchocolate, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(101, 101, 101)
                                 .addComponent(Rbjugonaranja)
                                 .addGap(2, 2, 2)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jTextFieldJugo_de_naranja, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Txtcantidadjugonaranja, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                        .addGap(11, 11, 11)
+                                    .addComponent(Txtcantidadjugonaranja, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(11, 19, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(Button3, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jBGuardarcompra)))
@@ -1280,7 +1293,7 @@ public class Mesa1 extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel11)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Txt₡, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtotal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(ButtonComprar, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap())
@@ -1516,9 +1529,9 @@ public class Mesa1 extends javax.swing.JFrame {
         Txtcantidadburritogrande.setText("");
     }//GEN-LAST:event_RbburritograndeActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void Txt₡ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Txt₡ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_Txt₡ActionPerformed
 //////////////////////////////////////////////////Crear los setter////////////////////////////////
     private void jBGuardarcompraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBGuardarcompraActionPerformed
         //comidas
@@ -1728,6 +1741,7 @@ public class Mesa1 extends javax.swing.JFrame {
     private javax.swing.JTextField Txtcantidadpapaspequeñas;
     private javax.swing.JTextField Txtcantidadtacogrande;
     private javax.swing.JTextField Txtcantidadtacopequeño;
+    private javax.swing.JTextField Txt₡;
     private javax.swing.Box.Filler filler1;
     private javax.swing.JButton jBGuardarcompra;
     private javax.swing.JButton jButtonRefrescasrPrecios;
@@ -1746,7 +1760,6 @@ public class Mesa1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextFieldBatido_de_fresa;
     private javax.swing.JTextField jTextFieldBatido_de_mora;
     private javax.swing.JTextField jTextFieldCafe;

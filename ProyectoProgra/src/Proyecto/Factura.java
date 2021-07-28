@@ -459,11 +459,18 @@ public class Factura extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonMetodoPagoActionPerformed
 
     private void jButtonIngresarPagoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonIngresarPagoActionPerformed
-        double pago = Double.parseDouble(txtpago.getText().trim());
-        double total = Double.parseDouble(txttotalcompra.getText());
-        double cambio = pago - total;
+        if (Double.parseDouble(txtpago.getText().trim()) < Double.parseDouble(txttotalcompra.getText())) {
+            JOptionPane.showMessageDialog(rootPane, "El monto digitado es menor al total de la compra", "Mensaje de Error", JOptionPane.ERROR_MESSAGE);
+            
+        }else{
+            double pago = Double.parseDouble(txtpago.getText().trim());
+            double total = Double.parseDouble(txttotalcompra.getText());
+            double cambio = pago - total;
 
-        txtcambio.setText(String.valueOf(cambio));
+            txtcambio.setText(String.valueOf(cambio));
+        
+        }
+
     }//GEN-LAST:event_jButtonIngresarPagoActionPerformed
 
     private void jButtonDividirCuentasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDividirCuentasActionPerformed
