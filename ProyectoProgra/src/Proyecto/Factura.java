@@ -185,6 +185,12 @@ public class Factura extends javax.swing.JFrame {
             }
         });
 
+        txtcambio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtcambioActionPerformed(evt);
+            }
+        });
+
         txtcuenta2.setEditable(false);
         txtcuenta2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
@@ -193,27 +199,21 @@ public class Factura extends javax.swing.JFrame {
         jLabel1.setText("Introduzca el nombre del cliente:");
 
         jLabel2.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Introduzca el apellido del cliente:");
 
         jLabel3.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Subtotal de la compra.");
 
         jLabel4.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Metodo de pago.");
 
         jLabel5.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Total de la compra.");
 
         jLabel6.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Ingresar el pago.");
 
         jLabel7.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("Cambio:");
 
         Targetas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "EFECTIVO", "VISA", "MASTERCARD", "BAC", "BRC" }));
@@ -461,6 +461,8 @@ public class Factura extends javax.swing.JFrame {
     private void jButtonIngresarPagoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonIngresarPagoActionPerformed
         if (Double.parseDouble(txtpago.getText().trim()) < Double.parseDouble(txttotalcompra.getText())) {
             JOptionPane.showMessageDialog(rootPane, "El monto digitado es menor al total de la compra", "Mensaje de Error", JOptionPane.ERROR_MESSAGE);
+            txtpago.setText("");
+            txtcambio.setText("");
             
         }else{
             double pago = Double.parseDouble(txtpago.getText().trim());
@@ -499,6 +501,10 @@ public class Factura extends javax.swing.JFrame {
        cargar();
        JOptionPane.showMessageDialog(rootPane, "Productos Agregados");
     }//GEN-LAST:event_ButtonCargarActionPerformed
+
+    private void txtcambioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtcambioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtcambioActionPerformed
 
     /**
      * @param args the command line arguments

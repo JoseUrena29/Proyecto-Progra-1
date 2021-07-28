@@ -398,6 +398,9 @@
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txtcambio">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtcambioActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txtcuenta2">
           <Properties>
