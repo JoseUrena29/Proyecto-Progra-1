@@ -5,11 +5,11 @@
  */
 package Proyecto;
 
-import Getter_and_Setter.Datos;
 import Getter_and_Setter.Nombre;
+import static Proyecto.Componentes.productos;
+import java.util.Date;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-
 
 /**
  *
@@ -20,37 +20,34 @@ public class Factura extends javax.swing.JFrame {
     /**
      * Creates new form Factura
      */
-   
     DefaultTableModel T = new DefaultTableModel();
-    
+
     public Factura() {
         initComponents();
-        
-        
+
         Tablafactura.setModel(T);
         T.addColumn("Producto");
         T.addColumn("Cantidad");
         T.addColumn("Precio Unitario");
         T.addColumn("Precio Total");
-        
+
         cargar();
     }
-    
-    public void cargar() {
-    T.setRowCount(0);
-    for (int i = 0; i < Componentes.productos.size(); i++) {
-        T.addRow(new Object[]{
-            Componentes.productos.get(i).getProductos(),
-            Componentes.productos.get(i).getCantidad(),
-            Componentes.productos.get(i).getPreciounitario(),
-            Componentes.productos.get(i).getPreciototal(),    
-        });
-    }
-    
-    
-}
 
-    Nombre N = new Nombre ();
+    public void cargar() {
+        T.setRowCount(0);
+        for (int i = 0; i < Componentes.productos.size(); i++) {
+            T.addRow(new Object[]{
+                Componentes.productos.get(i).getProductos(),
+                Componentes.productos.get(i).getCantidad(),
+                Componentes.productos.get(i).getPreciounitario(),
+                Componentes.productos.get(i).getPreciototal(),});
+        }
+
+    }
+
+    Nombre N = new Nombre();
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -418,7 +415,7 @@ public class Factura extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    
+
     private void txttotalcompraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txttotalcompraActionPerformed
 
 
@@ -446,7 +443,7 @@ public class Factura extends javax.swing.JFrame {
         Double mastercard = 0.15;
         Double bac = 0.13;
         Double bcr = 0.09;
-        
+
         double iva = 0.13;
 
         double totalcompra = Double.parseDouble(txtrecibirsubtotal.getText().trim());
@@ -463,14 +460,14 @@ public class Factura extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(rootPane, "El monto digitado es menor al total de la compra", "Mensaje de Error", JOptionPane.ERROR_MESSAGE);
             txtpago.setText("");
             txtcambio.setText("");
-            
-        }else{
+
+        } else {
             double pago = Double.parseDouble(txtpago.getText().trim());
             double total = Double.parseDouble(txttotalcompra.getText());
             double cambio = pago - total;
 
             txtcambio.setText(String.valueOf(cambio));
-        
+
         }
 
     }//GEN-LAST:event_jButtonIngresarPagoActionPerformed
@@ -489,7 +486,10 @@ public class Factura extends javax.swing.JFrame {
     }//GEN-LAST:event_TargetasActionPerformed
 
     private void ButtonpagarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonpagarActionPerformed
-        // TODO add your handling code here:
+        Comprobante reporte = new Comprobante(txtnombre.getText(), txtapellido.getText(), new Date().toString(), productos,"D:\\LEANDRO\\Trabajos de la U\\Programación de Computadoras I\\Proyecto-Progra-Punto-Venta\\ProyectoProgra\\src\\Imagenes\\comprobante.png");
+        reporte.crearReporte();
+
+
     }//GEN-LAST:event_ButtonpagarActionPerformed
 
     private void ButtonClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonClienteActionPerformed
@@ -498,8 +498,8 @@ public class Factura extends javax.swing.JFrame {
     }//GEN-LAST:event_ButtonClienteActionPerformed
 
     private void ButtonCargarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonCargarActionPerformed
-       cargar();
-       JOptionPane.showMessageDialog(rootPane, "Productos Agregados");
+        cargar();
+        JOptionPane.showMessageDialog(rootPane, "Productos Agregados");
     }//GEN-LAST:event_ButtonCargarActionPerformed
 
     private void txtcambioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtcambioActionPerformed
