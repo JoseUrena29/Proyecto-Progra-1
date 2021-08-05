@@ -486,7 +486,7 @@ public class Factura extends javax.swing.JFrame {
     }//GEN-LAST:event_TargetasActionPerformed
 
     private void ButtonpagarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonpagarActionPerformed
-        Comprobante reporte = new Comprobante(txtnombre.getText(), txtapellido.getText(), new Date().toString(), productos,"D:\\LEANDRO\\Trabajos de la U\\Programación de Computadoras I\\Proyecto-Progra-Punto-Venta\\ProyectoProgra\\src\\Imagenes\\comprobante.png");
+        Comprobante reporte = new Comprobante(txtnombre.getText(), txtapellido.getText(), new Date().toString(), productos);
         reporte.crearReporte();
 
 

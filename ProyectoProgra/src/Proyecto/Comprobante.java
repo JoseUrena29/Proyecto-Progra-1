@@ -5,7 +5,6 @@ import com.itextpdf.text.BaseColor;
 import com.itextpdf.text.Chunk;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.Element;
-import com.itextpdf.text.Image;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.Phrase;
 import com.itextpdf.text.pdf.PdfPCell;
@@ -24,19 +23,18 @@ public class Comprobante {
     String nombre;
     String apellido;
     String fecha;
-    String rutaimagen;
     ArrayList<Datos> productos;
 
     Document documento;
     FileOutputStream archivo;
     Paragraph titulo;
 
-    public Comprobante(String nombre, String apellido, String fecha, ArrayList<Datos> productos, String rutaImagen) {
+    public Comprobante(String nombre, String apellido, String fecha, ArrayList<Datos> productos) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.fecha = fecha;
         this.productos = productos;
-        this.rutaimagen = rutaImagen;
+     
 
         documento = new Document();
         titulo = new Paragraph("Comprobante de Pago Punto de Venta");
@@ -50,7 +48,7 @@ public class Comprobante {
             documento.open();
             titulo.setAlignment(1);
 
-            Image imagen = null;
+            /*Image imagen = null;
             try {
                 imagen = Image.getInstance(rutaimagen);
                 imagen.scaleAbsolute(140, 100);
@@ -58,8 +56,8 @@ public class Comprobante {
 
             } catch (Exception e) {
             }
-
-            documento.add(imagen);
+            */
+            /*documento.add(imagen);*/
             documento.add(titulo);
             documento.add(new Paragraph("Nombre Cliente: " + nombre));
             documento.add(Chunk.NEWLINE);
