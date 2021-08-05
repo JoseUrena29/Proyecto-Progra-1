@@ -52,8 +52,8 @@ public class Comprobante {
 
             Image imagen = null;
             try {
-                imagen = Image.getInstance("src\\Imagenes\\comprobante.png");
-                imagen.scaleAbsolute(140, 100);
+                imagen = Image.getInstance("src\\Imagenes\\LogoProyecto.JPG");
+                imagen.scaleAbsolute(140, 70);
                 imagen.setAbsolutePosition(415, 750);
 
             } catch (Exception e) {
