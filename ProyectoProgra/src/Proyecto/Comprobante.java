@@ -102,7 +102,7 @@ public class Comprobante {
 
             documento.close();
 
-            JOptionPane.showMessageDialog(null, "Reporte Creado Correctamente");
+            JOptionPane.showMessageDialog(null, "Su pago y reporte han sido procesados satisfactoriamente");
 
         } catch (Exception e) {
         }
