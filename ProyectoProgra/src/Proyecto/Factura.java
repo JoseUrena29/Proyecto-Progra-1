@@ -33,9 +33,36 @@ public class Factura extends javax.swing.JFrame {
         T.addColumn("Precio Unitario");
         T.addColumn("Precio Total");
 
+        ComboboxTarjetas.addItem("Efectivo");
+        ComboboxTarjetas.addItem("Visa");
+        ComboboxTarjetas.addItem("Mastercard");
+        ComboboxTarjetas.addItem("BAC");
+        ComboboxTarjetas.addItem("BCR");
+        
         cargar();
+       
     }
 
+    
+    public void tarjetas(){
+
+      
+      String descuentos=(String)ComboboxTarjetas.getSelectedItem();
+      
+        if (descuentos.equals("Visa")) {
+            System.out.println("Descuento Visa");
+        }
+        if (descuentos.equals("Mastercard")) {
+            System.out.println("Descuento Mastercard");
+        }
+        if (descuentos.equals("BAC")) {
+            System.out.println("Descuento BAC");
+        }
+        if (descuentos.equals("BCR")) {
+            System.out.println("Descuento BCR");
+        }
+    }
+    
     public void cargar() {
         T.setRowCount(0);
         for (int i = 0; i < Componentes.productos.size(); i++) {
@@ -79,7 +106,7 @@ public class Factura extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        Targetas = new javax.swing.JComboBox<>();
+        ComboboxTarjetas = new javax.swing.JComboBox<>();
         jScrollPane1 = new javax.swing.JScrollPane();
         Tablafactura = new javax.swing.JTable();
         ButtonCargar = new javax.swing.JButton();
@@ -206,11 +233,15 @@ public class Factura extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         jLabel7.setText("Cambio:");
 
-        Targetas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "EFECTIVO", "VISA", "MASTERCARD", "BAC", "BRC" }));
-        Targetas.setToolTipText("");
-        Targetas.addActionListener(new java.awt.event.ActionListener() {
+        ComboboxTarjetas.setToolTipText("");
+        ComboboxTarjetas.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                ComboboxTarjetasItemStateChanged(evt);
+            }
+        });
+        ComboboxTarjetas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TargetasActionPerformed(evt);
+                ComboboxTarjetasActionPerformed(evt);
             }
         });
 
@@ -257,6 +288,11 @@ public class Factura extends javax.swing.JFrame {
         });
 
         jButton1.setText("jButton1");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -274,7 +310,7 @@ public class Factura extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(Targetas, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(ComboboxTarjetas, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(jButtonMetodoPago, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(txtrecibirsubtotal, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -358,7 +394,7 @@ public class Factura extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel4)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(Targetas, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(ComboboxTarjetas, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jButtonMetodoPago)))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -437,11 +473,6 @@ public class Factura extends javax.swing.JFrame {
 
     private void jButtonMetodoPagoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonMetodoPagoActionPerformed
 
-        Double visa = 0.10;
-        Double mastercard = 0.15;
-        Double bac = 0.13;
-        Double bcr = 0.09;
-
         double iva = 0.13;
 
         double totalcompra = Double.parseDouble(txtrecibirsubtotal.getText().trim());
@@ -450,6 +481,7 @@ public class Factura extends javax.swing.JFrame {
 
         txttotalcompra.setText(String.valueOf(total));
 
+        tarjetas();
 
     }//GEN-LAST:event_jButtonMetodoPagoActionPerformed
 
@@ -479,10 +511,10 @@ public class Factura extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jButtonDividirCuentasActionPerformed
 
-    private void TargetasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TargetasActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TargetasActionPerformed
+    private void ComboboxTarjetasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComboboxTarjetasActionPerformed
 
+    }//GEN-LAST:event_ComboboxTarjetasActionPerformed
+  
     private void ButtonpagarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonpagarActionPerformed
         Comprobante reporte = new Comprobante(txtnombre.getText(), txtapellido.getText(), new Date().toString(), productos,"src\\Imagenes\\comprobante.png");
         reporte.crearReporte();
@@ -511,6 +543,14 @@ public class Factura extends javax.swing.JFrame {
         
      
     }//GEN-LAST:event_ButtonabrirreporteActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void ComboboxTarjetasItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_ComboboxTarjetasItemStateChanged
+
+    }//GEN-LAST:event_ComboboxTarjetasItemStateChanged
 
     /**
      * @param args the command line arguments
@@ -551,8 +591,8 @@ public class Factura extends javax.swing.JFrame {
     private javax.swing.JButton ButtonCargar;
     private javax.swing.JButton Buttonabrirreporte;
     private javax.swing.JButton Buttonpagar;
+    public static javax.swing.JComboBox<String> ComboboxTarjetas;
     private javax.swing.JTable Tablafactura;
-    private javax.swing.JComboBox<String> Targetas;
     private javax.swing.JLabel facturacion;
     private javax.swing.Box.Filler filler1;
     private javax.swing.JButton jButton1;

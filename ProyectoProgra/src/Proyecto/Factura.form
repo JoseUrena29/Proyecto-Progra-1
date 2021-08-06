@@ -108,7 +108,7 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Component id="Targetas" min="-2" pref="157" max="-2" attributes="0"/>
+                                          <Component id="ComboboxTarjetas" min="-2" pref="157" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Component id="jButtonMetodoPago" min="-2" pref="81" max="-2" attributes="0"/>
                                       </Group>
@@ -218,7 +218,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                               <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                  <Component id="Targetas" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                                  <Component id="ComboboxTarjetas" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                                   <Component id="jButtonMetodoPago" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -441,24 +441,20 @@
             <Property name="text" type="java.lang.String" value="Cambio:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JComboBox" name="Targetas">
+        <Component class="javax.swing.JComboBox" name="ComboboxTarjetas">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="5">
-                <StringItem index="0" value="EFECTIVO"/>
-                <StringItem index="1" value="VISA"/>
-                <StringItem index="2" value="MASTERCARD"/>
-                <StringItem index="3" value="BAC"/>
-                <StringItem index="4" value="BRC"/>
-              </StringArray>
+              <StringArray count="0"/>
             </Property>
             <Property name="toolTipText" type="java.lang.String" value=""/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TargetasActionPerformed"/>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="ComboboxTarjetasItemStateChanged"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ComboboxTarjetasActionPerformed"/>
           </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
           </AuxValues>
         </Component>
         <Container class="javax.swing.JScrollPane" name="jScrollPane1">
@@ -511,6 +507,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="jButton1"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
