@@ -46,7 +46,6 @@ public class Factura extends javax.swing.JFrame {
     
     public void tarjetas(){
         Double iva = 0.13;
-        Double Efectivo = 0.0;
         Double Visa = 0.10;
         Double Mastercard = 0.15;
         Double BAC = 0.13;
@@ -54,6 +53,7 @@ public class Factura extends javax.swing.JFrame {
       
       String descuentos=(String)ComboboxTarjetas.getSelectedItem();
       
+      //PAGO EN EFECTIVO
         if (descuentos.equals("Efectivo")) {
             double totalcompra = Double.parseDouble(txtrecibirsubtotal.getText().trim());
             double totaliva = totalcompra * iva;
@@ -61,23 +61,62 @@ public class Factura extends javax.swing.JFrame {
             txttotalcompra.setText(String.valueOf(total));
         }
       
+        //DESCUENTO TARJETA VISA
         if (descuentos.equals("Visa")) {
             
             double totalcompra = Double.parseDouble(txtrecibirsubtotal.getText().trim());
+            
             double descuentovisa = totalcompra * Visa;
-            double totaliva = totalcompra * iva;
-            double totalvisa = totalcompra - descuentovisa + (totaliva);
-            txttotalcompra.setText(String.valueOf(totalvisa));
-            JOptionPane.showMessageDialog(rootPane, "\"Se realizo un descuento de un 10% en la compra por el pago con Tarjeta VISA");
+            double totaldescuentovisa = totalcompra - descuentovisa;
+            
+            double totaliva = totaldescuentovisa * iva;
+            double total = totaldescuentovisa + totaliva;
+            
+            txttotalcompra.setText(String.valueOf(total));
+            JOptionPane.showMessageDialog(rootPane, "Se realizo un descuento de un 10% en la compra por el pago con Tarjeta VISA","Descuento Visa",JOptionPane.INFORMATION_MESSAGE);
         }
+        
+        //DESCUENTO TARJETA MASTERCARD
         if (descuentos.equals("Mastercard")) {
-            System.out.println("Descuento Mastercard");
+            
+            double totalcompra = Double.parseDouble(txtrecibirsubtotal.getText().trim());
+            
+            double descuentomastercard = totalcompra * Mastercard;
+            double totaldescuentomastercard = totalcompra - descuentomastercard;
+            
+            double totaliva = totaldescuentomastercard * iva;
+            double total = totaldescuentomastercard + totaliva;
+            
+            txttotalcompra.setText(String.valueOf(total));
+            JOptionPane.showMessageDialog(rootPane, "Se realizo un descuento de un 15% en la compra por el pago con Tarjeta Mastercard","Descuento Mastercard",JOptionPane.INFORMATION_MESSAGE);
         }
+        
+        //DESCUENTO TARJETA BAC
         if (descuentos.equals("BAC")) {
-            System.out.println("Descuento BAC");
+            double totalcompra = Double.parseDouble(txtrecibirsubtotal.getText().trim());
+            
+            double descuentoBAC = totalcompra * BAC;
+            double totaldescuentoBAC = totalcompra - descuentoBAC;
+            
+            double totaliva = totaldescuentoBAC * iva;
+            double total = totaldescuentoBAC + totaliva;
+            
+            txttotalcompra.setText(String.valueOf(total));
+            JOptionPane.showMessageDialog(rootPane, "Se realizo un descuento de un 13% en la compra por el pago con Tarjeta BAC","Descuento BAC",JOptionPane.INFORMATION_MESSAGE);
         }
+        
+        //DESCUENTO TARJETA BCR
         if (descuentos.equals("BCR")) {
-            System.out.println("Descuento BCR");
+            double totalcompra = Double.parseDouble(txtrecibirsubtotal.getText().trim());
+            
+            double descuentoBCR = totalcompra * BCR;
+            double totaldescuentoBCR = totalcompra - descuentoBCR;
+            
+            double totaliva = totaldescuentoBCR * iva;
+            double total = totaldescuentoBCR + totaliva;
+            
+            txttotalcompra.setText(String.valueOf(total));
+            JOptionPane.showMessageDialog(rootPane, "Se realizo un descuento de un 9% en la compra por el pago con Tarjeta BCR","Descuento BCR",JOptionPane.INFORMATION_MESSAGE);
         }
     }
     
@@ -492,7 +531,6 @@ public class Factura extends javax.swing.JFrame {
     private void jButtonMetodoPagoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonMetodoPagoActionPerformed
 
         tarjetas();
-
     }//GEN-LAST:event_jButtonMetodoPagoActionPerformed
 
     private void jButtonIngresarPagoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonIngresarPagoActionPerformed
