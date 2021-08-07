@@ -45,12 +45,30 @@ public class Factura extends javax.swing.JFrame {
 
     
     public void tarjetas(){
-
+        Double iva = 0.13;
+        Double Efectivo = 0.0;
+        Double Visa = 0.10;
+        Double Mastercard = 0.15;
+        Double BAC = 0.13;
+        Double BCR = 0.09;        
       
       String descuentos=(String)ComboboxTarjetas.getSelectedItem();
       
+        if (descuentos.equals("Efectivo")) {
+            double totalcompra = Double.parseDouble(txtrecibirsubtotal.getText().trim());
+            double totaliva = totalcompra * iva;
+            double total = totalcompra + totaliva;
+            txttotalcompra.setText(String.valueOf(total));
+        }
+      
         if (descuentos.equals("Visa")) {
-            System.out.println("Descuento Visa");
+            
+            double totalcompra = Double.parseDouble(txtrecibirsubtotal.getText().trim());
+            double descuentovisa = totalcompra * Visa;
+            double totaliva = totalcompra * iva;
+            double totalvisa = totalcompra - descuentovisa + (totaliva);
+            txttotalcompra.setText(String.valueOf(totalvisa));
+            JOptionPane.showMessageDialog(rootPane, "\"Se realizo un descuento de un 10% en la compra por el pago con Tarjeta VISA");
         }
         if (descuentos.equals("Mastercard")) {
             System.out.println("Descuento Mastercard");
@@ -472,14 +490,6 @@ public class Factura extends javax.swing.JFrame {
     }//GEN-LAST:event_txtrecibirsubtotalActionPerformed
 
     private void jButtonMetodoPagoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonMetodoPagoActionPerformed
-
-        double iva = 0.13;
-
-        double totalcompra = Double.parseDouble(txtrecibirsubtotal.getText().trim());
-        double totaliva = totalcompra * iva;
-        double total = totalcompra + totaliva;
-
-        txttotalcompra.setText(String.valueOf(total));
 
         tarjetas();
 
