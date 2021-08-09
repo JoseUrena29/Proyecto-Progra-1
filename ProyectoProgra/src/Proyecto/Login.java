@@ -204,11 +204,12 @@ public class Login extends javax.swing.JFrame {
         if (Rbadministrador.isSelected()) {
             rol = "Rol1-Administrador";
 
-            if (usuario.equals("admin") && contraseña.equals("admin1234")) {
+            if (usuario.equals("3") && contraseña.equals("4")) {
                 JOptionPane.showMessageDialog(rootPane, "USUARIO Y CONTRASEÑA CORRECTOS", "Bienvenido al Sistema", JOptionPane.INFORMATION_MESSAGE);
                 Principal P = new Principal();
                 P.setVisible(true);
                 this.dispose();
+                
 
             } else {
                 JOptionPane.showMessageDialog(rootPane, "USUARIO O CONTRASEÑA INCORRECTOS", "Mensaje de Error", JOptionPane.ERROR_MESSAGE);
@@ -224,6 +225,7 @@ public class Login extends javax.swing.JFrame {
                 P.setVisible(true);
                 this.dispose();
                 MT.setVisible(false);
+                
 
             } else {
                 JOptionPane.showMessageDialog(rootPane, "USUARIO O CONTRASEÑA INCORRECTOS", "Mensaje de Error", JOptionPane.ERROR_MESSAGE);
