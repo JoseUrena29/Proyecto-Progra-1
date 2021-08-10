@@ -221,10 +221,10 @@ public class Login extends javax.swing.JFrame {
             rol = "Rol2-Empleados";
             if (usuario.equals("1") && contraseña.equals("2")) {
                 JOptionPane.showMessageDialog(rootPane, "USUARIO Y CONTRASEÑA CORRECTOS");
-                Principal P = new Principal();
+                Principal1 P = new Principal1();
                 P.setVisible(true);
                 this.dispose();
-                MT.setVisible(false);
+               // MT.setVisible(false);
                 
 
             } else {

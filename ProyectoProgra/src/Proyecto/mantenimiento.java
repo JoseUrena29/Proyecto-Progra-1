@@ -383,7 +383,7 @@ public class mantenimiento extends javax.swing.JFrame {
     }//GEN-LAST:event_jguardar_preciosActionPerformed
 
     private void jByeByeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jByeByeActionPerformed
-        Mesa1 M1 = new Mesa1();
+        Menu M1 = new Menu();
         M1.setVisible(true);
         this.dispose();
 

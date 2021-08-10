@@ -174,7 +174,6 @@ public class Factura extends javax.swing.JFrame {
         jButtonseleccionarfila1 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jMenuBar1 = new javax.swing.JMenuBar();
 
         jMenu1.setText("jMenu1");
 
@@ -391,11 +390,6 @@ public class Factura extends javax.swing.JFrame {
         });
 
         jButton2.setText("Atras");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -550,8 +544,6 @@ public class Factura extends javax.swing.JFrame {
                         .addComponent(jButton1)
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
-
-        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -730,12 +722,6 @@ public class Factura extends javax.swing.JFrame {
         eliminarfilasfactura();
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-      Mesa1 m = new Mesa1();
-      m.setVisible(true);
-      this.setVisible(false);
-    }//GEN-LAST:event_jButton2ActionPerformed
-
     public void eliminarfilasfactura() {
         DefaultTableModel U = (DefaultTableModel) Tablafactura.getModel();
         U.removeRow(Tablafactura.getSelectedRow());
@@ -806,7 +792,6 @@ public class Factura extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
