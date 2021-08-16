@@ -22,18 +22,34 @@
     </Container>
     <Menu class="javax.swing.JMenuBar" name="jMenuBar2">
       <SubComponents>
-        <Menu class="javax.swing.JMenu" name="jMenu1">
+        <Menu class="javax.swing.JMenu" name="cantidadMesas">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Mantenimiento de botones "/>
+            <Property name="text" type="java.lang.String" value="Mantenimiento General "/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cantidadMesasActionPerformed"/>
+          </Events>
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem4">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Botones"/>
+                <Property name="text" type="java.lang.String" value="Num.Mesas"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem4ActionPerformed"/>
               </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="cambiarPrecios">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Cambiar Precios"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cambiarPreciosActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="descuentoTargetas">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Descuentos Targetas"/>
+              </Properties>
             </MenuItem>
           </SubComponents>
         </Menu>

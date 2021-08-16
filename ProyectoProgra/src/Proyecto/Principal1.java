@@ -26,8 +26,10 @@ public class Principal1 extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         jPanelbotones = new javax.swing.JPanel();
         jMenuBar2 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
+        cantidadMesas = new javax.swing.JMenu();
         jMenuItem4 = new javax.swing.JMenuItem();
+        cambiarPrecios = new javax.swing.JMenuItem();
+        descuentoTargetas = new javax.swing.JMenuItem();
 
         jMenu4.setText("File");
         jMenuBar3.add(jMenu4);
@@ -103,17 +105,33 @@ public class Principal1 extends javax.swing.JFrame {
                         .addContainerGap())))
         );
 
-        jMenu1.setText("Mantenimiento de botones ");
+        cantidadMesas.setText("Mantenimiento General ");
+        cantidadMesas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cantidadMesasActionPerformed(evt);
+            }
+        });
 
-        jMenuItem4.setText("Botones");
+        jMenuItem4.setText("Num.Mesas");
         jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem4ActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem4);
+        cantidadMesas.add(jMenuItem4);
 
-        jMenuBar2.add(jMenu1);
+        cambiarPrecios.setText("Cambiar Precios");
+        cambiarPrecios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cambiarPreciosActionPerformed(evt);
+            }
+        });
+        cantidadMesas.add(cambiarPrecios);
+
+        descuentoTargetas.setText("Descuentos Targetas");
+        cantidadMesas.add(descuentoTargetas);
+
+        jMenuBar2.add(cantidadMesas);
 
         setJMenuBar(jMenuBar2);
 
@@ -144,24 +162,35 @@ public class Principal1 extends javax.swing.JFrame {
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
         Botones b = new Botones();
-        b .setVisible(true);
+        b.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jMenuItem4ActionPerformed
-    private void crear_botones(){
-        for (int i = 1; i < Botones.bottotnes+1; i++) {
-            JButton bo = new JButton("Mesa"+i);
+
+    private void cantidadMesasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cantidadMesasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cantidadMesasActionPerformed
+
+    private void cambiarPreciosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cambiarPreciosActionPerformed
+        mantenimiento m = new mantenimiento();
+        m.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_cambiarPreciosActionPerformed
+    private void crear_botones() {
+        for (int i = 1; i < Botones.bottotnes + 1; i++) {
+            JButton bo = new JButton("Mesa" + i);
             jPanelbotones.add(bo);
             Menu M = new Menu(i);
             bo.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     M.setVisible(true);
-                    
+
                 }
             });
-            
+
         }
-    } 
+    }
+
     /**
      * @param args the command line arguments
      */
@@ -201,9 +230,11 @@ public class Principal1 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BtnSalir;
     private javax.swing.JButton Logo;
+    private javax.swing.JMenuItem cambiarPrecios;
+    private javax.swing.JMenu cantidadMesas;
+    private javax.swing.JMenuItem descuentoTargetas;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar2;

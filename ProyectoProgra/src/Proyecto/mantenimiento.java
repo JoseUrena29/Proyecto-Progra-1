@@ -17,11 +17,11 @@ public class mantenimiento extends javax.swing.JFrame {
      * Creates new form mantenimiento
      */
     public mantenimiento() {
-      
+
         initComponents();
     }
-     Precios P = new Precios(0.0, 0.0, 0.0, 0.0, 0.0,0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,0.0,0.0); 
-      
+    Precios P = new Precios(0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -307,14 +307,13 @@ public class mantenimiento extends javax.swing.JFrame {
     private void FrescaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FrescaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_FrescaActionPerformed
-    
-      
-    public void getter(){
-      
+
+    public void getter() {
+
         //comidas
         String hamsimple = Hamsim.getText();
         double phamsimple = Double.parseDouble(hamsimple);
-        
+
         double phamdoble = Double.parseDouble(Hamdoble.getText().trim());
 
         double ptacopequeno = Double.parseDouble(Tapequeño.getText().trim());
@@ -322,7 +321,7 @@ public class mantenimiento extends javax.swing.JFrame {
 
         double ppapaspequena = Double.parseDouble(Pappequeña.getText().trim());
         double ppapasgrande = Double.parseDouble(Papgrande.getText().trim());
-        
+
         double pnachospequeno = Double.parseDouble(Napequeños.getText().trim());
         double pnachosgrande = Double.parseDouble(Nagrandes.getText().trim());
 
@@ -370,21 +369,20 @@ public class mantenimiento extends javax.swing.JFrame {
 
         P.setCafe(p_cafe);
         P.setChocolate(p_chocolate);
-        System.out.println("cc"+ P.getHamburguesa_sim());
-}
+        System.out.println("cc" + P.getHamburguesa_sim());
+    }
 
-        
-   
+
     private void jguardar_preciosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jguardar_preciosActionPerformed
+
         getter();
-        
-       
-        
+
+
     }//GEN-LAST:event_jguardar_preciosActionPerformed
 
     private void jByeByeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jByeByeActionPerformed
-        Menu M1 = new Menu();
-        M1.setVisible(true);
+        Principal1 p = new Principal1();
+        p.setVisible(true);
         this.dispose();
 
     }//GEN-LAST:event_jByeByeActionPerformed
@@ -395,18 +393,18 @@ public class mantenimiento extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         //comidas
-        
+
         String preciohamsimple = String.valueOf(1000.0);
         Hamsim.setText(preciohamsimple);
-        String preciohamDoble = String.valueOf( 2000.0);
+        String preciohamDoble = String.valueOf(2000.0);
         Hamdoble.setText(preciohamDoble);
 
         String precioTacospequeños = String.valueOf(1200.0);
         Tapequeño.setText(precioTacospequeños);
-        String precioTacosgrandes = String.valueOf( 1500.0);
+        String precioTacosgrandes = String.valueOf(1500.0);
         Tagrande.setText(precioTacosgrandes);
 
-        String preciopapaspequeñas = String.valueOf( 1300.0);
+        String preciopapaspequeñas = String.valueOf(1300.0);
         Pappequeña.setText(preciopapaspequeñas);
         String preciopapasgrandes = String.valueOf(1600.0);
         Papgrande.setText(preciopapasgrandes);
@@ -441,7 +439,7 @@ public class mantenimiento extends javax.swing.JFrame {
         Cafe.setText(preciocafe);
         String preciochocolate = String.valueOf(850.0);
         Chocolate.setText(preciochocolate);
-        
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void BatmoraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BatmoraActionPerformed
@@ -493,7 +491,7 @@ public class mantenimiento extends javax.swing.JFrame {
     private javax.swing.JTextField FresMora;
     private javax.swing.JTextField Fresca;
     private javax.swing.JTextField Hamdoble;
-    private javax.swing.JTextField Hamsim;
+    public static javax.swing.JTextField Hamsim;
     private javax.swing.JTextField Jugnaranja;
     private javax.swing.JTextField Nagrandes;
     private javax.swing.JTextField Napequeños;

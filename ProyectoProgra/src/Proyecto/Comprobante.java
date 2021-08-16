@@ -26,17 +26,21 @@ public class Comprobante {
     String fecha;
     String rutaimagen;
     ArrayList<Datos> productos;
+    String pago;
+    String cambio;
 
     Document documento;
     FileOutputStream archivo;
     Paragraph titulo;
 
-    public Comprobante(String nombre, String apellido, String fecha, ArrayList<Datos> productos, String rutaimagen) {
+    public Comprobante(String nombre, String apellido, String fecha, ArrayList<Datos> productos, String rutaimagen, String pago, String cambio) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.fecha = fecha;
         this.productos = productos;
         this.rutaimagen = rutaimagen;
+        this.pago = pago;
+        this.cambio = cambio;
 
         documento = new Document();
         titulo = new Paragraph("Comprobante de Pago Punto de Venta");
@@ -66,10 +70,11 @@ public class Comprobante {
             documento.add(new Paragraph("Apellido Cliente: " + apellido));
             documento.add(Chunk.NEWLINE);
 
-            Paragraph texto = new Paragraph("Cliente Frecuente");
+            Paragraph texto = new Paragraph("Lista de Compra ");
             texto.setAlignment(Element.ALIGN_JUSTIFIED);
             documento.add(texto);
             documento.add(Chunk.NEWLINE);
+         
 
             PdfPTable tabla = new PdfPTable(4);
             tabla.setWidthPercentage(100);
@@ -98,7 +103,12 @@ public class Comprobante {
 
             documento.add(tabla);
             documento.add(Chunk.NEWLINE);
-            documento.add(new Paragraph("Fecha" + fecha));
+            documento.add(new Paragraph("Monto de la compra: " + pago));
+            documento.add(Chunk.NEWLINE);
+            documento.add(new Paragraph("Cambio: " + cambio));
+
+            documento.add(Chunk.NEWLINE);
+            documento.add(new Paragraph("Fecha: " + fecha));
 
             documento.close();
 

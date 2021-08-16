@@ -1023,6 +1023,11 @@ public class Menu extends javax.swing.JFrame {
 
         jTextPrecioHamburguesadoble.setEditable(false);
         jTextPrecioHamburguesadoble.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextPrecioHamburguesadoble.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextPrecioHamburguesadobleActionPerformed(evt);
+            }
+        });
 
         jTextPrecio_taco_pequeño.setEditable(false);
         jTextPrecio_taco_pequeño.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -1077,7 +1082,7 @@ public class Menu extends javax.swing.JFrame {
         jTextFieldChocolate.setEditable(false);
         jTextFieldChocolate.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
-        jButton2.setText("jButton2");
+        jButton2.setText("CambiarPrecios");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -1911,6 +1916,10 @@ public class Menu extends javax.swing.JFrame {
         Txtcantidadchocolate.setText("");
     }//GEN-LAST:event_Rbchocolate1ActionPerformed
 
+    private void jTextPrecioHamburguesadobleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextPrecioHamburguesadobleActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextPrecioHamburguesadobleActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -2045,7 +2054,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JTextField Txt₡;
     private javax.swing.Box.Filler filler1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButtonRefrescasrPrecios;
+    public static javax.swing.JButton jButtonRefrescasrPrecios;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;

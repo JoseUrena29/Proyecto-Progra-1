@@ -9,7 +9,10 @@ import Getter_and_Setter.Nombre;
 import static Proyecto.Componentes.productos;
 import java.awt.Desktop;
 import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -159,7 +162,7 @@ public class Factura extends javax.swing.JFrame {
         txtpago = new javax.swing.JTextField();
         jButtonIngresarPago = new javax.swing.JButton();
         txtcambio = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
         Buttonpagar = new javax.swing.JButton();
         Buttonabrirreporte = new javax.swing.JButton();
         txtrecibirsubtotal = new javax.swing.JTextField();
@@ -174,6 +177,8 @@ public class Factura extends javax.swing.JFrame {
         jButtonseleccionarfila1 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
+        txtfecha = new javax.swing.JTextField();
 
         jMenu1.setText("jMenu1");
 
@@ -299,8 +304,8 @@ public class Factura extends javax.swing.JFrame {
             }
         });
 
-        jLabel7.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
-        jLabel7.setText("Cambio:");
+        jLabel9.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        jLabel9.setText("Fecha:");
 
         Buttonpagar.setBackground(new java.awt.Color(255, 255, 0));
         Buttonpagar.setFont(new java.awt.Font("Arial Black", 1, 11)); // NOI18N
@@ -391,6 +396,11 @@ public class Factura extends javax.swing.JFrame {
 
         jButton2.setText("Atras");
 
+        jLabel8.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        jLabel8.setText("Cambio:");
+
+        txtfecha.setEditable(false);
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -411,13 +421,17 @@ public class Factura extends javax.swing.JFrame {
                                         .addGap(18, 18, 18)
                                         .addComponent(jButtonMetodoPago, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(txtrecibirsubtotal, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 397, Short.MAX_VALUE)
-                                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(0, 461, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addGap(0, 0, Short.MAX_VALUE)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING))))
+                                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(txtfecha, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(28, 28, 28)))))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -469,9 +483,12 @@ public class Factura extends javax.swing.JFrame {
                                     .addComponent(jButtonseleccionarfila)
                                     .addComponent(jButton1))
                                 .addContainerGap())
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton2))))))
+                            .addComponent(jButton2, javax.swing.GroupLayout.Alignment.TRAILING)))))
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                    .addContainerGap(818, Short.MAX_VALUE)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(272, 272, 272)))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -490,7 +507,7 @@ public class Factura extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtapellido, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addComponent(ButtonCargar, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -519,11 +536,14 @@ public class Factura extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                             .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addComponent(txtcambio, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(14, 14, 14)
                                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                                    .addComponent(txtcambio, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addGap(20, 20, 20)
-                                                .addComponent(Buttonpagar))
+                                                    .addComponent(Buttonpagar)
+                                                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                                        .addComponent(txtfecha)
+                                                        .addContainerGap())))
                                             .addComponent(Buttonabrirreporte)))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -537,12 +557,17 @@ public class Factura extends javax.swing.JFrame {
                                         .addGap(47, 47, 47))))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jButtonseleccionarfila1)
-                                .addGap(0, 0, Short.MAX_VALUE))))
+                                .addContainerGap())))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jButtonseleccionarfila)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton1)
                         .addGap(0, 0, Short.MAX_VALUE))))
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                    .addContainerGap(528, Short.MAX_VALUE)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(33, 33, 33)))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -595,23 +620,21 @@ public class Factura extends javax.swing.JFrame {
     private void jButtonDividirCuentasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDividirCuentasActionPerformed
         Double S = 0.0;
         Double total2 = 0.0;
-       
+
         Double a = 0.0;
-     
+
         Double total33 = 0.0;
 
         for (int i = 0; i < Tabladividir.getRowCount(); i++) {
             S = S + Double.parseDouble(Tabladividir.getValueAt(i, 3).toString());
 
-           
-            total2 = S ;
+            total2 = S;
 
         }
         for (int i = 0; i < Tablafactura.getRowCount(); i++) {
             a = a + Double.parseDouble(Tablafactura.getValueAt(i, 3).toString());
 
- 
-            total33 = a ;
+            total33 = a;
 
         }
 
@@ -648,7 +671,23 @@ public class Factura extends javax.swing.JFrame {
     }//GEN-LAST:event_ButtonabrirreporteActionPerformed
 
     private void ButtonpagarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonpagarActionPerformed
-        Comprobante reporte = new Comprobante(txtnombre.getText(), txtapellido.getText(), new Date().toString(), productos, "src\\Imagenes\\comprobante.png");
+        Date fecha = new Date();
+        SimpleDateFormat formatoFecha = new SimpleDateFormat("MM/dd/YYYY");
+
+        txtfecha.setText(formatoFecha.format(fecha));
+
+        Calendar calendario = Calendar.getInstance();
+
+        calendario.setTime(fecha);
+
+        String dia = calendario.getDisplayName(Calendar.DAY_OF_WEEK, Calendar.LONG, new Locale("es", "ES"));
+
+        int horas = calendario.get(Calendar.HOUR);
+        int minutos = calendario.get(Calendar.MINUTE);
+
+        txtfecha.setText("Día:   " + dia + "   Hora:  " + horas + "  con  " + minutos + "   Minutos.   ");
+
+        Comprobante reporte = new Comprobante(txtnombre.getText(), txtapellido.getText(), txtfecha.getText(), productos, "src\\Imagenes\\comprobante.png", txttotalcompra.getText(), txtcambio.getText());
         reporte.crearReporte();
 
     }//GEN-LAST:event_ButtonpagarActionPerformed
@@ -695,7 +734,7 @@ public class Factura extends javax.swing.JFrame {
     }//GEN-LAST:event_txtnombreActionPerformed
 
     private void jButtonseleccionarfila1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonseleccionarfila1ActionPerformed
-       int fila = Tabladividir.getSelectedRow();
+        int fila = Tabladividir.getSelectedRow();
         try {
             String producto, cantidad, preciounitario, preciototal;
             if (fila == -1) {
@@ -727,10 +766,12 @@ public class Factura extends javax.swing.JFrame {
         U.removeRow(Tablafactura.getSelectedRow());
 
     }
-     public void eliminarfilasdividir() {
+
+    public void eliminarfilasdividir() {
         DefaultTableModel U = (DefaultTableModel) Tabladividir.getModel();
         U.removeRow(Tabladividir.getSelectedRow());
     }
+
     /**
      * @param args the command line arguments
      */
@@ -771,7 +812,7 @@ public class Factura extends javax.swing.JFrame {
     private javax.swing.JButton ButtonCargar;
     private javax.swing.JButton Buttonabrirreporte;
     private javax.swing.JButton Buttonpagar;
-    private javax.swing.JComboBox<String> ComboboxTarjetas;
+    public static javax.swing.JComboBox<String> ComboboxTarjetas;
     private javax.swing.JTable Tabladividir;
     private javax.swing.JTable Tablafactura;
     private javax.swing.JLabel facturacion;
@@ -789,7 +830,8 @@ public class Factura extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuItem jMenuItem1;
@@ -800,6 +842,7 @@ public class Factura extends javax.swing.JFrame {
     private javax.swing.JTextField txtcambio;
     private javax.swing.JTextField txtcuenta1;
     private javax.swing.JTextField txtcuenta2;
+    private javax.swing.JTextField txtfecha;
     private javax.swing.JTextField txtnombre;
     private javax.swing.JTextField txtpago;
     public static javax.swing.JTextField txtrecibirsubtotal;
