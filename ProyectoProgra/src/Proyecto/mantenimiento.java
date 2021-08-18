@@ -381,7 +381,7 @@ public class mantenimiento extends javax.swing.JFrame {
     }//GEN-LAST:event_jguardar_preciosActionPerformed
 
     private void jByeByeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jByeByeActionPerformed
-        Principal1 p = new Principal1();
+        Principal p = new Principal();
         p.setVisible(true);
         this.dispose();
 

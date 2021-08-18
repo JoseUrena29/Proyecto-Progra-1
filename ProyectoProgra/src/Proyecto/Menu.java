@@ -224,7 +224,7 @@ public class Menu extends javax.swing.JFrame {
             if (Rbfresca.isSelected()) {
                 fresca = "Gaseosa Fresca";
                 int cantidadfresca = Integer.parseInt(Txtcantidadfresca.getText());
-                double preciounitariohamdoble = Double.parseDouble(jTextPrecioHamburguesadoble.getText());
+                double preciounitariohamdoble = Double.parseDouble(jTextFieldFresca.getText());
                 double preciototal = preciounitariohamdoble * cantidadfresca;
 
                 Datos Fresca = new Datos();

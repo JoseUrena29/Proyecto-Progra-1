@@ -91,7 +91,7 @@ public class Botones extends javax.swing.JFrame {
         
     }  
     private void jButtonsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonsalirActionPerformed
-        Principal1 p = new Principal1();
+        Principal p = new Principal();
         p.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButtonsalirActionPerformed

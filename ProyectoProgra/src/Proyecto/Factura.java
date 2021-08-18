@@ -239,6 +239,15 @@ public class Factura extends javax.swing.JFrame {
 
             }
         ));
+        Tablafactura.addAncestorListener(new javax.swing.event.AncestorListener() {
+            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
+                TablafacturaAncestorAdded(evt);
+            }
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+            }
+            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
+            }
+        });
         jScrollPane1.setViewportView(Tablafactura);
 
         ButtonCargar.setBackground(new java.awt.Color(0, 0, 51));
@@ -538,12 +547,13 @@ public class Factura extends javax.swing.JFrame {
                                             .addGroup(jPanel1Layout.createSequentialGroup()
                                                 .addComponent(txtcambio, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addGap(14, 14, 14)
-                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                                    .addComponent(Buttonpagar)
-                                                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                                         .addComponent(txtfecha)
-                                                        .addContainerGap())))
+                                                        .addContainerGap())
+                                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                        .addComponent(Buttonpagar)
+                                                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                             .addComponent(Buttonabrirreporte)))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -760,6 +770,10 @@ public class Factura extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         eliminarfilasfactura();
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void TablafacturaAncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_TablafacturaAncestorAdded
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TablafacturaAncestorAdded
 
     public void eliminarfilasfactura() {
         DefaultTableModel U = (DefaultTableModel) Tablafactura.getModel();

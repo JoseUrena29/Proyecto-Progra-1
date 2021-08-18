@@ -266,12 +266,14 @@
                                               <Group type="102" attributes="0">
                                                   <Component id="txtcambio" min="-2" pref="33" max="-2" attributes="0"/>
                                                   <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-                                                  <Group type="103" groupAlignment="3" attributes="0">
-                                                      <Component id="Buttonpagar" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="jLabel9" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
                                                       <Group type="102" alignment="0" attributes="0">
                                                           <Component id="txtfecha" max="32767" attributes="0"/>
                                                           <EmptySpace max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <Group type="103" groupAlignment="3" attributes="0">
+                                                          <Component id="Buttonpagar" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="jLabel9" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
                                                       </Group>
                                                   </Group>
                                               </Group>
@@ -377,6 +379,9 @@
                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="ancestorAdded" listener="javax.swing.event.AncestorListener" parameters="javax.swing.event.AncestorEvent" handler="TablafacturaAncestorAdded"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
