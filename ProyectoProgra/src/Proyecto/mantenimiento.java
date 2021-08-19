@@ -55,7 +55,7 @@ public class mantenimiento extends javax.swing.JFrame {
         jByeBye = new javax.swing.JButton();
         Coca = new javax.swing.JTextField();
         jLabel23 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        traerPrecios = new javax.swing.JButton();
         Pappequeña = new javax.swing.JTextField();
         jLabel24 = new javax.swing.JLabel();
         Papgrande = new javax.swing.JTextField();
@@ -122,10 +122,10 @@ public class mantenimiento extends javax.swing.JFrame {
 
         jLabel23.setText("Papas pequeñas");
 
-        jButton1.setText("Traer precios");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        traerPrecios.setText("Traer precios");
+        traerPrecios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                traerPreciosActionPerformed(evt);
             }
         });
 
@@ -200,7 +200,7 @@ public class mantenimiento extends javax.swing.JFrame {
                                     .addComponent(burripequeños, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addComponent(jguardar_precios)
                     .addComponent(jByeBye)
-                    .addComponent(jButton1))
+                    .addComponent(traerPrecios))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -293,7 +293,7 @@ public class mantenimiento extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(Burrigrandes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                .addComponent(traerPrecios)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jguardar_precios)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -377,7 +377,6 @@ public class mantenimiento extends javax.swing.JFrame {
 
         getter();
 
-
     }//GEN-LAST:event_jguardar_preciosActionPerformed
 
     private void jByeByeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jByeByeActionPerformed
@@ -391,7 +390,7 @@ public class mantenimiento extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_CocaActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void traerPreciosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_traerPreciosActionPerformed
         //comidas
 
         String preciohamsimple = String.valueOf(1000.0);
@@ -440,7 +439,7 @@ public class mantenimiento extends javax.swing.JFrame {
         String preciochocolate = String.valueOf(850.0);
         Chocolate.setText(preciochocolate);
 
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_traerPreciosActionPerformed
 
     private void BatmoraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BatmoraActionPerformed
         // TODO add your handling code here:
@@ -500,7 +499,6 @@ public class mantenimiento extends javax.swing.JFrame {
     private javax.swing.JTextField Tagrande;
     private javax.swing.JTextField Tapequeño;
     private javax.swing.JTextField burripequeños;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jByeBye;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
@@ -521,5 +519,6 @@ public class mantenimiento extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JButton jguardar_precios;
+    private javax.swing.JButton traerPrecios;
     // End of variables declaration//GEN-END:variables
 }

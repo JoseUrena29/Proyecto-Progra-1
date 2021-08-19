@@ -3,13 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Proyecto ;
+package Proyecto;
 
 import Getter_and_Setter.Cantidades;
 import Getter_and_Setter.Datos;
 import Getter_and_Setter.Precios;
 import javax.swing.JOptionPane;
-
 
 /**
  *
@@ -22,16 +21,66 @@ public class Menu extends javax.swing.JFrame {
      */
     public Menu(int comida) {
         initComponents();
-        nombre(comida); 
+        nombre(comida);
+        precios();
     }
-    public Menu(){
-        
+
+    public Menu() {
+
     }
-    public void nombre(int comida){
-        jLabelnombre.setText("Bienvenido a la mesa"+comida);
+
+    public void nombre(int comida) {
+        jLabelnombre.setText("Bienvenido a la mesa" + comida);
     }
-    
-   
+
+    public void precios() {
+        //comida
+        jTextPrecioHAmburguesasimple.setText(String.valueOf(P.getHamburguesa_sim()));
+
+        jTextPrecioHamburguesadoble.setText(String.valueOf(P.getHamburguesa_doble()));
+
+        String precioTacospequeños = String.valueOf(P.getTaco_pequeno());
+        jTextPrecio_taco_pequeño.setText(precioTacospequeños);
+        String precioTacosgrandes = String.valueOf(P.getTaco_grande());
+        jTextPrecio_taco_grande.setText(precioTacosgrandes);
+
+        String preciopapaspequeñas = String.valueOf(P.getPapas_pequeno());
+        jTextPrecio_papas_pequeño.setText(preciopapaspequeñas);
+        String preciopapasgrandes = String.valueOf(P.getPapas_grande());
+        jTextPrecio_papas_grandes.setText(preciopapasgrandes);
+
+        String precionachospequeños = String.valueOf(P.getNachos_pequeno());
+        jTextPrecio_nachos_pequeño.setText(precionachospequeños);
+        String precionachosgrandes = String.valueOf(P.getNachos_grande());
+        jTextPrecio_nachos_grandes.setText(precionachosgrandes);
+
+        String precioburritospequeños = String.valueOf(P.getBurrito_pequeno());
+        jTextPrecio_burrito_pequeño.setText(precioburritospequeños);
+        String precioburritosgrandes = String.valueOf(P.getBurrito_grande());
+        jTextPrecio_burrito_grande.setText(precioburritosgrandes);
+
+        //bebidas
+        String preciococacola = String.valueOf(P.getCoca_cola());
+        jTextFieldCocacola.setText(preciococacola);
+        String preciofresca = String.valueOf(P.getFresca());
+        jTextFieldFresca.setText(preciofresca);
+
+        String preciojugodenaranja = String.valueOf(P.getJugo_naranja());
+        jTextFieldJugo_de_naranja.setText(preciojugodenaranja);
+        String preciofrescodemora = String.valueOf(P.getFresco_mora());
+        jTextFieldFresco_de_mora.setText(preciofrescodemora);
+
+        String preciobatidodefresa = String.valueOf(P.getBatido_fresa());
+        jTextFieldBatido_de_fresa.setText(preciobatidodefresa);
+        String preciobatidodemora = String.valueOf(P.getBatido_mora());
+        jTextFieldBatido_de_mora.setText(preciobatidodemora);
+
+        String preciocafe = String.valueOf(P.getCafe());
+        jTextFieldCafe.setText(preciocafe);
+        String preciochocolate = String.valueOf(P.getChocolate());
+        jTextFieldChocolate.setText(preciochocolate);
+
+    }
 
     Cantidades C = new Cantidades(0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
     Precios P = new Precios(1000.0, 2000.0, 1200.0, 1500.0, 1300.0, 1600.0, 900.0, 1350.0, 1100.0, 1700.0, 1000.0, 1000.0, 600.0, 700.0, 1300.0, 1350.0, 700.0, 850.0);
@@ -330,6 +379,7 @@ public class Menu extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(rootPane, "Verifique los productos agregados en la mesa", "Mensaje de Error", JOptionPane.ERROR_MESSAGE);
 
         }
+
     }
 
     @SuppressWarnings("unchecked")
@@ -1638,7 +1688,7 @@ public class Menu extends javax.swing.JFrame {
         C.setCantidadChocolate(cantidad_chocolate);
     }
     private void Button3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button3ActionPerformed
-  
+
         try {
             getter_setter();
 
@@ -1786,12 +1836,10 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextPrecioHAmburguesasimpleActionPerformed
 
     private void jButtonRefrescasrPreciosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRefrescasrPreciosActionPerformed
-        
+
         //comida
-        
-        
         jTextPrecioHAmburguesasimple.setText(String.valueOf(P.getHamburguesa_sim()));
-       
+
         jTextPrecioHamburguesadoble.setText(String.valueOf(P.getHamburguesa_doble()));
 
         String precioTacospequeños = String.valueOf(P.getTaco_pequeno());
@@ -2086,7 +2134,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldFresco_de_mora1;
     private javax.swing.JTextField jTextFieldJugo_de_naranja;
     private javax.swing.JTextField jTextFieldJugo_de_naranja1;
-    private javax.swing.JTextField jTextPrecioHAmburguesasimple;
+    public static javax.swing.JTextField jTextPrecioHAmburguesasimple;
     private javax.swing.JTextField jTextPrecioHamburguesadoble;
     private javax.swing.JTextField jTextPrecio_burrito_grande;
     private javax.swing.JTextField jTextPrecio_burrito_pequeño;
