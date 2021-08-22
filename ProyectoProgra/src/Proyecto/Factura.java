@@ -29,6 +29,7 @@ public class Factura extends javax.swing.JFrame {
     DefaultTableModel x;
 
     public Factura() {
+
         initComponents();
 
         Tablafactura.setModel(T);
@@ -53,8 +54,6 @@ public class Factura extends javax.swing.JFrame {
         Double Mastercard = 0.15;
         Double BAC = 0.13;
         Double BCR = 0.09;
-        
-        
 
         String descuentos = (String) ComboboxTarjetas.getSelectedItem();
 
@@ -527,16 +526,16 @@ public class Factura extends javax.swing.JFrame {
                                 .addComponent(ComboboxTarjetas, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jButtonMetodoPago))
                             .addComponent(txtcambio, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(35, 35, 35)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(0, 18, Short.MAX_VALUE)
+                                .addGap(0, 9, Short.MAX_VALUE)
                                 .addComponent(Buttonpagar)
-                                .addGap(18, 18, 18)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(txtfecha, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(13, 13, 13))
+                                .addContainerGap())
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(Buttonabrirreporte)
                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
@@ -582,7 +581,6 @@ public class Factura extends javax.swing.JFrame {
                 cantidad = Tablafactura.getValueAt(fila, 1).toString();
                 preciounitario = Tablafactura.getValueAt(fila, 2).toString();
                 preciototal = Tablafactura.getValueAt(fila, 3).toString();
-
                 x = (DefaultTableModel) Tabladividir.getModel();
                 String Seleccion[] = {producto, cantidad, preciounitario, preciototal};
                 x.addRow(Seleccion);
@@ -593,7 +591,17 @@ public class Factura extends javax.swing.JFrame {
         }
 
     }//GEN-LAST:event_jButtonseleccionarfilaActionPerformed
-
+    public void Pasar_datos() {
+        DefaultTableModel modelo1 = (DefaultTableModel) Tabladividir.getModel();
+        DefaultTableModel modelo3 = (DefaultTableModel) Reporte_secundario.Tablasecundaria.getModel();
+        for (int i = 0; i < modelo1.getRowCount(); i++) {
+            Object fila[] = new Object[modelo1.getColumnCount()];
+            for (int j = 0; j < modelo1.getColumnCount(); j++) {
+                fila[j] = modelo1.getValueAt(i, j);
+            }
+            modelo3.addRow(fila);
+        }
+    }
     private void jButtonDividirCuentasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDividirCuentasActionPerformed
         Double S = 0.0;
         Double total2 = 0.0;
@@ -617,6 +625,15 @@ public class Factura extends javax.swing.JFrame {
 
         txtcuenta2.setText(String.valueOf(total2));
         txtcuenta1.setText(String.valueOf(total33));
+        int confirmation = JOptionPane.showConfirmDialog(this, "Desea dividir la cuentas", "Aviso", 0, 2);
+        if (confirmation == 0) {
+            
+            Reporte_secundario r = new Reporte_secundario();
+            Pasar_datos();
+            r.setVisible(true);
+            Reporte_secundario.TxtSubSecundario.setText(txtcuenta2.getText());
+            
+        }
     }//GEN-LAST:event_jButtonDividirCuentasActionPerformed
 
     private void jButtonMetodoPagoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonMetodoPagoActionPerformed
