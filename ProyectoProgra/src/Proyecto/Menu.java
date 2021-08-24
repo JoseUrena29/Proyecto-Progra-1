@@ -30,7 +30,7 @@ public class Menu extends javax.swing.JFrame {
     }
 
     public void nombre(int comida) {
-        jLabelnombre.setText("Bienvenido a la mesa" + comida);
+        jLabelnombre.setText("Bienvenido a la mesa " + comida);
     }
 
     public void precios() {
@@ -476,7 +476,6 @@ public class Menu extends javax.swing.JFrame {
         Txtcantidadcafe = new javax.swing.JTextField();
         filler1 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 32767));
         Txt₡ = new javax.swing.JTextField();
-        jButtonRefrescasrPrecios = new javax.swing.JButton();
         jTextPrecioHAmburguesasimple = new javax.swing.JTextField();
         jTextPrecioHamburguesadoble = new javax.swing.JTextField();
         jTextPrecio_taco_pequeño = new javax.swing.JTextField();
@@ -495,7 +494,6 @@ public class Menu extends javax.swing.JFrame {
         jTextFieldBatido_de_mora = new javax.swing.JTextField();
         jTextFieldCafe = new javax.swing.JTextField();
         jTextFieldChocolate = new javax.swing.JTextField();
-        jButton2 = new javax.swing.JButton();
 
         Rbcafe1.setText("Café");
         Rbcafe1.addActionListener(new java.awt.event.ActionListener() {
@@ -1056,13 +1054,6 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
-        jButtonRefrescasrPrecios.setText("Refrescar precios");
-        jButtonRefrescasrPrecios.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonRefrescasrPreciosActionPerformed(evt);
-            }
-        });
-
         jTextPrecioHAmburguesasimple.setEditable(false);
         jTextPrecioHAmburguesasimple.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextPrecioHAmburguesasimple.addActionListener(new java.awt.event.ActionListener() {
@@ -1132,21 +1123,10 @@ public class Menu extends javax.swing.JFrame {
         jTextFieldChocolate.setEditable(false);
         jTextFieldChocolate.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
-        jButton2.setText("CambiarPrecios");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addComponent(jLabelnombre, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(29, 29, 29)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1271,31 +1251,23 @@ public class Menu extends javax.swing.JFrame {
                                         .addGap(18, 18, 18)
                                         .addComponent(Txtcantidadnachospequeños, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(Rbnachospequeños, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(62, 62, 62)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Rbburritogrande, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(BtnInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Burritos, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Rbburritopequeño, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(62, 62, 62)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Rbburritogrande, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(BtnInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(Burritos, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(Rbburritopequeño, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jTextPrecio_burrito_pequeño, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(Txtcantidadburritopequeño, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jTextPrecio_burrito_grande, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(Txtcantidadburritogrande, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(57, 57, 57))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jButton2)
-                                    .addComponent(jButtonRefrescasrPrecios))
-                                .addGap(80, 80, 80))))
+                                .addComponent(jTextPrecio_burrito_pequeño, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(Txtcantidadburritopequeño, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jTextPrecio_burrito_grande, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(Txtcantidadburritogrande, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(57, 57, 57))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(Button3)
@@ -1325,9 +1297,13 @@ public class Menu extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(148, 148, 148)
                                 .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 402, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(ButtonComprar, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(70, 70, 70))))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addComponent(jLabelnombre, javax.swing.GroupLayout.PREFERRED_SIZE, 313, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1335,7 +1311,7 @@ public class Menu extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabelnombre, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabelnombre, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1496,9 +1472,7 @@ public class Menu extends javax.swing.JFrame {
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                 .addComponent(jTextFieldBatido_de_fresa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(Rbcafe)
-                                            .addComponent(jButton2))
+                                        .addComponent(Rbcafe)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                             .addComponent(Txtcantidadcafe)
@@ -1519,13 +1493,11 @@ public class Menu extends javax.swing.JFrame {
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jTextFieldJugo_de_naranja, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(Txtcantidadjugonaranja, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(18, 18, 18)
+                        .addGap(19, 19, 19)
                         .addComponent(Button3, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 5, Short.MAX_VALUE))
+                        .addGap(0, 10, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(57, 57, 57)
-                        .addComponent(jButtonRefrescasrPrecios, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(57, 297, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel11)
                             .addComponent(Txt₡, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1547,7 +1519,7 @@ public class Menu extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 22, Short.MAX_VALUE))
+                .addGap(0, 14, Short.MAX_VALUE))
         );
 
         pack();
@@ -1835,66 +1807,9 @@ public class Menu extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jTextPrecioHAmburguesasimpleActionPerformed
 
-    private void jButtonRefrescasrPreciosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRefrescasrPreciosActionPerformed
-
-        //comida
-        jTextPrecioHAmburguesasimple.setText(String.valueOf(P.getHamburguesa_sim()));
-
-        jTextPrecioHamburguesadoble.setText(String.valueOf(P.getHamburguesa_doble()));
-
-        String precioTacospequeños = String.valueOf(P.getTaco_pequeno());
-        jTextPrecio_taco_pequeño.setText(precioTacospequeños);
-        String precioTacosgrandes = String.valueOf(P.getTaco_grande());
-        jTextPrecio_taco_grande.setText(precioTacosgrandes);
-
-        String preciopapaspequeñas = String.valueOf(P.getPapas_pequeno());
-        jTextPrecio_papas_pequeño.setText(preciopapaspequeñas);
-        String preciopapasgrandes = String.valueOf(P.getPapas_grande());
-        jTextPrecio_papas_grandes.setText(preciopapasgrandes);
-
-        String precionachospequeños = String.valueOf(P.getNachos_pequeno());
-        jTextPrecio_nachos_pequeño.setText(precionachospequeños);
-        String precionachosgrandes = String.valueOf(P.getNachos_grande());
-        jTextPrecio_nachos_grandes.setText(precionachosgrandes);
-
-        String precioburritospequeños = String.valueOf(P.getBurrito_pequeno());
-        jTextPrecio_burrito_pequeño.setText(precioburritospequeños);
-        String precioburritosgrandes = String.valueOf(P.getBurrito_grande());
-        jTextPrecio_burrito_grande.setText(precioburritosgrandes);
-
-        //bebidas
-        String preciococacola = String.valueOf(P.getCoca_cola());
-        jTextFieldCocacola.setText(preciococacola);
-        String preciofresca = String.valueOf(P.getFresca());
-        jTextFieldFresca.setText(preciofresca);
-
-        String preciojugodenaranja = String.valueOf(P.getJugo_naranja());
-        jTextFieldJugo_de_naranja.setText(preciojugodenaranja);
-        String preciofrescodemora = String.valueOf(P.getFresco_mora());
-        jTextFieldFresco_de_mora.setText(preciofrescodemora);
-
-        String preciobatidodefresa = String.valueOf(P.getBatido_fresa());
-        jTextFieldBatido_de_fresa.setText(preciobatidodefresa);
-        String preciobatidodemora = String.valueOf(P.getBatido_mora());
-        jTextFieldBatido_de_mora.setText(preciobatidodemora);
-
-        String preciocafe = String.valueOf(P.getCafe());
-        jTextFieldCafe.setText(preciocafe);
-        String preciochocolate = String.valueOf(P.getChocolate());
-        jTextFieldChocolate.setText(preciochocolate);
-
-
-    }//GEN-LAST:event_jButtonRefrescasrPreciosActionPerformed
-
     private void jTextFieldBatido_de_fresaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldBatido_de_fresaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextFieldBatido_de_fresaActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        mantenimiento m = new mantenimiento();
-        m.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_jButton2ActionPerformed
 
     private void Rbcafe1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Rbcafe1ActionPerformed
         Txtcantidadcafe.setText("");
@@ -2101,8 +2016,6 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JTextField Txtcantidadtacopequeño;
     private javax.swing.JTextField Txt₡;
     private javax.swing.Box.Filler filler1;
-    private javax.swing.JButton jButton2;
-    public static javax.swing.JButton jButtonRefrescasrPrecios;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;

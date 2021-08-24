@@ -29,7 +29,6 @@ public class Principal extends javax.swing.JFrame {
         MG = new javax.swing.JMenu();
         jMenuItem4 = new javax.swing.JMenuItem();
         cambiarPrecios = new javax.swing.JMenuItem();
-        descuentoTargetas = new javax.swing.JMenuItem();
 
         jMenu4.setText("File");
         jMenuBar3.add(jMenu4);
@@ -139,9 +138,6 @@ public class Principal extends javax.swing.JFrame {
         });
         MG.add(cambiarPrecios);
 
-        descuentoTargetas.setText("Descuentos Targetas");
-        MG.add(descuentoTargetas);
-
         jMenuBar2.add(MG);
 
         setJMenuBar(jMenuBar2);
@@ -187,7 +183,9 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_cambiarPreciosActionPerformed
     private void crear_botones() {
         for (int i = 1; i < Botones.bottotnes + 1; i++) {
-            JButton bo = new JButton("Mesa" + i);
+            JButton bo = new JButton("Mesa " + i);
+            
+          
             jPanelbotones.add(bo);
             Menu M = new Menu(i);
             bo.addActionListener(new ActionListener() {
@@ -244,7 +242,6 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JButton Logo;
     public static javax.swing.JMenu MG;
     private javax.swing.JMenuItem cambiarPrecios;
-    private javax.swing.JMenuItem descuentoTargetas;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu4;

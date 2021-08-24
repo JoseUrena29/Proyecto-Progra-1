@@ -70,6 +70,7 @@ public class Reporte_secundario extends javax.swing.JFrame {
         jPanel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         jLabel5.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 0, 51));
         jLabel5.setText("Subtotal de la compra.");
 
         TxtPago_Secundario.addActionListener(new java.awt.event.ActionListener() {
@@ -79,6 +80,7 @@ public class Reporte_secundario extends javax.swing.JFrame {
         });
 
         jLabel6.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 0, 51));
         jLabel6.setText("Metodo de pago.");
 
         TxtCambio_Secundario.setEditable(false);
@@ -148,6 +150,7 @@ public class Reporte_secundario extends javax.swing.JFrame {
         jLabel9.setText("Total de la compra.");
 
         jLabel10.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(0, 0, 51));
         jLabel10.setText("Ingresar el pago.");
 
         Tablasecundaria.setModel(new javax.swing.table.DefaultTableModel(
@@ -161,6 +164,7 @@ public class Reporte_secundario extends javax.swing.JFrame {
         jScrollPane1.setViewportView(Tablasecundaria);
 
         jLabel8.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(0, 0, 51));
         jLabel8.setText("Cambio:");
 
         TxtTotalCompraSecundaria.setEditable(false);

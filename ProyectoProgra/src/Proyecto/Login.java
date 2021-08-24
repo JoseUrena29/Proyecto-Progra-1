@@ -183,20 +183,7 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_BtnSalirActionPerformed
 
     private void ButtoningresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtoningresarActionPerformed
-        //String usuario = txtusuario.getText();
-        //String contraseña = String.valueOf(txtcontraseña.getText());
-        //String rol = "";
 
-        //if(Rbadministrador.isSelected()){
-        //rol = "Rol1-Administrador";
-        //}else if (Rbempleados.isSelected()){
-        //  rol = "Rol2-Empleados";
-        //}
-        //Datos d = new Datos();
-        //d.setUsuario(usuario);
-        //d.setPassword(contraseña);
-        //d.setRoles(rol);
-        //Componentes.usuarios.add(d);
         String usuario = txtusuario.getText();
         String contraseña = String.valueOf(txtcontraseña.getText());
         String rol = "";

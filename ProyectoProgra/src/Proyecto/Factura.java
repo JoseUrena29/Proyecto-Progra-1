@@ -31,6 +31,8 @@ public class Factura extends javax.swing.JFrame {
     public Factura() {
 
         initComponents();
+        
+        cargar();
 
         Tablafactura.setModel(T);
         T.addColumn("Producto");
@@ -44,7 +46,7 @@ public class Factura extends javax.swing.JFrame {
         ComboboxTarjetas.addItem("BAC");
         ComboboxTarjetas.addItem("BCR");
 
-        cargar();
+        //cargar();
 
     }
 
