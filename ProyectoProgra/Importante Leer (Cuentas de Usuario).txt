@@ -1,8 +1,11 @@
-
+Usuario:
 Administrador
 
+Contraseña
 Admin2525*
 
+Usuario:
 Empleados
 
+Contraseña
 Empleados2525*
