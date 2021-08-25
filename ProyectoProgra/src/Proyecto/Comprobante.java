@@ -109,6 +109,12 @@ public class Comprobante {
 
             documento.add(Chunk.NEWLINE);
             documento.add(new Paragraph("Fecha: " + fecha));
+            documento.add(Chunk.NEWLINE);
+            documento.add(Chunk.NEWLINE);
+            Paragraph texto2 = new Paragraph("Muchas gracias por su visita. Los esperamos pronto! ");
+            texto2.setAlignment(Element.ALIGN_CENTER);
+            documento.add(texto2);
+            
 
             documento.close();
 

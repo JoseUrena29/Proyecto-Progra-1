@@ -63,7 +63,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        LabelBienvenidos.setFont(new java.awt.Font("Monotype Corsiva", 3, 60)); // NOI18N
+        LabelBienvenidos.setFont(new java.awt.Font("Monotype Corsiva", 3, 63)); // NOI18N
         LabelBienvenidos.setForeground(new java.awt.Color(204, 0, 0));
         LabelBienvenidos.setText("Bienvenidos");
 
@@ -191,7 +191,7 @@ public class Login extends javax.swing.JFrame {
         if (Rbadministrador.isSelected()) {
             rol = "Rol1-Administrador";
 
-            if (usuario.equals("3") && contraseña.equals("4")) {
+            if (usuario.equals("Administrador") && contraseña.equals("Admin2525*")) {
                 JOptionPane.showMessageDialog(rootPane, "USUARIO Y CONTRASEÑA CORRECTOS", "Bienvenido al Sistema", JOptionPane.INFORMATION_MESSAGE);
                 Principal P = new Principal();
                 P.setVisible(true);
@@ -205,7 +205,7 @@ public class Login extends javax.swing.JFrame {
 
         } else if (Rbempleados.isSelected()) {
             rol = "Rol2-Empleados";
-            if (usuario.equals("1") && contraseña.equals("2")) {
+            if (usuario.equals("Empleados") && contraseña.equals("Empleados2525*")) {
                 JOptionPane.showMessageDialog(rootPane, "USUARIO Y CONTRASEÑA CORRECTOS");
                 Principal P = new Principal();
                 P.setVisible(true);

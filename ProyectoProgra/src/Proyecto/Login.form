@@ -155,7 +155,7 @@
         <Component class="javax.swing.JLabel" name="LabelBienvenidos">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monotype Corsiva" size="60" style="3"/>
+              <Font name="Monotype Corsiva" size="63" style="3"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="cc" type="rgb"/>

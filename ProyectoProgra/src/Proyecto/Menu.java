@@ -1760,13 +1760,18 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_HamburguesaActionPerformed
 
     private void ButtonComprarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonComprarActionPerformed
+        int confirmation = JOptionPane.showConfirmDialog(this, "¿Desea continuar a la facturación de la compra?", "Aviso", 0, 2);
+        if (confirmation == 0) {
 
-        Factura f = new Factura();
-        f.setVisible(true);
-        this.dispose();
-        Factura.txtrecibirsubtotal.setText(txtotal.getText());
+            Factura f = new Factura();
+            f.setVisible(true);
+            this.dispose();
+            Factura.txtrecibirsubtotal.setText(txtotal.getText());
 
-        cargarproductos();
+            cargarproductos();
+
+        }
+        
     }//GEN-LAST:event_ButtonComprarActionPerformed
 
     private void BtnInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnInicioActionPerformed
