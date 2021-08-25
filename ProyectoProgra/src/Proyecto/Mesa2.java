@@ -21,6 +21,7 @@ public class Mesa2 extends javax.swing.JFrame {
      */
     public Mesa2() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     Cantidades C = new Cantidades(0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);

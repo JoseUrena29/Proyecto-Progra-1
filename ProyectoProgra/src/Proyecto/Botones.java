@@ -19,6 +19,7 @@ public class Botones extends javax.swing.JFrame {
     public static int bottotnes = 8; 
     public Botones() {
         initComponents();
+        setLocationRelativeTo(null);
         ver_cantidad();
     }
     

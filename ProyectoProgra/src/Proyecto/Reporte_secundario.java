@@ -27,6 +27,7 @@ public class Reporte_secundario extends javax.swing.JFrame {
      */
     public Reporte_secundario() {
         initComponents();
+        setLocationRelativeTo(null);
         jComboBoxTarjetasSecundario.addItem("Efectivo");
         jComboBoxTarjetasSecundario.addItem("Visa");
         jComboBoxTarjetasSecundario.addItem("Mastercard");

@@ -8,7 +8,9 @@ public class Principal extends javax.swing.JFrame {
 
     public Principal() {
         initComponents();
+        setLocationRelativeTo(null);
         crear_botones();
+        
     }
 
     @SuppressWarnings("unchecked")

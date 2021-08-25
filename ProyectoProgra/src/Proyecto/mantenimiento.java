@@ -19,6 +19,7 @@ public class mantenimiento extends javax.swing.JFrame {
     public mantenimiento() {
 
         initComponents();
+        setLocationRelativeTo(null);
     }
     Precios P = new Precios(0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
 
