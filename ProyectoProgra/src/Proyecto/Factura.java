@@ -31,7 +31,7 @@ public class Factura extends javax.swing.JFrame {
     public Factura() {
 
         initComponents();
-        
+
         cargar();
 
         Tablafactura.setModel(T);
@@ -47,7 +47,6 @@ public class Factura extends javax.swing.JFrame {
         ComboboxTarjetas.addItem("BCR");
 
         //cargar();
-
     }
 
     public void tarjetas() {
@@ -176,11 +175,12 @@ public class Factura extends javax.swing.JFrame {
         jButtonDividirCuentas = new javax.swing.JButton();
         txtcuenta1 = new javax.swing.JTextField();
         txtcuenta2 = new javax.swing.JTextField();
-        jButtonseleccionarfila = new javax.swing.JButton();
-        jButtonseleccionarfila1 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        btnseleccionarfila = new javax.swing.JButton();
+        btnseleccionarfila1 = new javax.swing.JButton();
+        btnBorrar = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
         txtfecha = new javax.swing.JTextField();
+        jButton2 = new javax.swing.JButton();
 
         jMenu1.setText("jMenu1");
 
@@ -386,24 +386,24 @@ public class Factura extends javax.swing.JFrame {
         txtcuenta2.setEditable(false);
         txtcuenta2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
-        jButtonseleccionarfila.setText("Seleccionar");
-        jButtonseleccionarfila.addActionListener(new java.awt.event.ActionListener() {
+        btnseleccionarfila.setText("Seleccionar");
+        btnseleccionarfila.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonseleccionarfilaActionPerformed(evt);
+                btnseleccionarfilaActionPerformed(evt);
             }
         });
 
-        jButtonseleccionarfila1.setText("Eliminar de esta tabla");
-        jButtonseleccionarfila1.addActionListener(new java.awt.event.ActionListener() {
+        btnseleccionarfila1.setText("Eliminar de esta tabla");
+        btnseleccionarfila1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonseleccionarfila1ActionPerformed(evt);
+                btnseleccionarfila1ActionPerformed(evt);
             }
         });
 
-        jButton1.setText("Borrar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnBorrar.setText("Borrar");
+        btnBorrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnBorrarActionPerformed(evt);
             }
         });
 
@@ -411,6 +411,13 @@ public class Factura extends javax.swing.JFrame {
         jLabel8.setText("Cambio:");
 
         txtfecha.setEditable(false);
+
+        jButton2.setText("Borrar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -472,12 +479,14 @@ public class Factura extends javax.swing.JFrame {
                                     .addComponent(txttotalcompra, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton1)
-                            .addComponent(jButtonseleccionarfila)
+                            .addComponent(btnBorrar)
+                            .addComponent(btnseleccionarfila)
+                            .addComponent(btnseleccionarfila1)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButtonIngresarPago))
-                            .addComponent(jButtonseleccionarfila1)))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jButton2)
+                                    .addComponent(jButtonIngresarPago)))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(210, 210, 210)
                         .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -506,7 +515,10 @@ public class Factura extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButtonseleccionarfila1))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(btnseleccionarfila1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton2)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -536,15 +548,15 @@ public class Factura extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtfecha, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addContainerGap())
+                                    .addComponent(txtfecha, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(Buttonabrirreporte)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addContainerGap())
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButtonseleccionarfila)
+                        .addComponent(btnseleccionarfila)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton1)
+                        .addComponent(btnBorrar)
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
 
@@ -570,7 +582,7 @@ public class Factura extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButtonseleccionarfilaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonseleccionarfilaActionPerformed
+    private void btnseleccionarfilaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnseleccionarfilaActionPerformed
         int fila = Tablafactura.getSelectedRow();
         try {
             String producto, cantidad, preciounitario, preciototal;
@@ -592,7 +604,7 @@ public class Factura extends javax.swing.JFrame {
 
         }
 
-    }//GEN-LAST:event_jButtonseleccionarfilaActionPerformed
+    }//GEN-LAST:event_btnseleccionarfilaActionPerformed
     public void Pasar_datos() {
         DefaultTableModel modelo1 = (DefaultTableModel) Tabladividir.getModel();
         DefaultTableModel modelo3 = (DefaultTableModel) Reporte_secundario.Tablasecundaria.getModel();
@@ -629,13 +641,16 @@ public class Factura extends javax.swing.JFrame {
         txtcuenta1.setText(String.valueOf(total33));
         int confirmation = JOptionPane.showConfirmDialog(this, "Desea dividir la cuentas", "Aviso", 0, 2);
         if (confirmation == 0) {
-            
+
             Reporte_secundario r = new Reporte_secundario();
             Pasar_datos();
             r.setVisible(true);
             Reporte_secundario.TxtSubSecundario.setText(txtcuenta2.getText());
-            
+
         }
+        eliminarfilasdividircuenta();
+        txtcuenta2.setText("0");
+        Factura.txtrecibirsubtotal.setText(txtcuenta1.getText());
     }//GEN-LAST:event_jButtonDividirCuentasActionPerformed
 
     private void jButtonMetodoPagoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonMetodoPagoActionPerformed
@@ -729,7 +744,7 @@ public class Factura extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtnombreActionPerformed
 
-    private void jButtonseleccionarfila1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonseleccionarfila1ActionPerformed
+    private void btnseleccionarfila1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnseleccionarfila1ActionPerformed
         int fila = Tabladividir.getSelectedRow();
         try {
             String producto, cantidad, preciounitario, preciototal;
@@ -751,15 +766,19 @@ public class Factura extends javax.swing.JFrame {
         } catch (Exception e) {
 
         }
-    }//GEN-LAST:event_jButtonseleccionarfila1ActionPerformed
+    }//GEN-LAST:event_btnseleccionarfila1ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrarActionPerformed
         eliminarfilasfactura();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnBorrarActionPerformed
 
     private void TablafacturaAncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_TablafacturaAncestorAdded
         // TODO add your handling code here:
     }//GEN-LAST:event_TablafacturaAncestorAdded
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        eliminarfilasdividir();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     public void eliminarfilasfactura() {
         DefaultTableModel U = (DefaultTableModel) Tablafactura.getModel();
@@ -770,6 +789,14 @@ public class Factura extends javax.swing.JFrame {
     public void eliminarfilasdividir() {
         DefaultTableModel U = (DefaultTableModel) Tabladividir.getModel();
         U.removeRow(Tabladividir.getSelectedRow());
+    }
+
+    public void eliminarfilasdividircuenta() {
+        int fila = Tabladividir.getRowCount();
+        for (int i = fila - 1; i >= 0; i--) {
+            x.removeRow(i);
+            
+        }
     }
 
     /**
@@ -815,14 +842,15 @@ public class Factura extends javax.swing.JFrame {
     public static javax.swing.JComboBox<String> ComboboxTarjetas;
     private javax.swing.JTable Tabladividir;
     private javax.swing.JTable Tablafactura;
+    private javax.swing.JButton btnBorrar;
+    private javax.swing.JButton btnseleccionarfila;
+    private javax.swing.JButton btnseleccionarfila1;
     private javax.swing.JLabel facturacion;
     private javax.swing.Box.Filler filler1;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButtonDividirCuentas;
     private javax.swing.JButton jButtonIngresarPago;
     private javax.swing.JButton jButtonMetodoPago;
-    private javax.swing.JButton jButtonseleccionarfila;
-    private javax.swing.JButton jButtonseleccionarfila1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

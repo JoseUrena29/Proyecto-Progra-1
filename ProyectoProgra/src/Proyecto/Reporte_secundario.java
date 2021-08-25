@@ -141,9 +141,9 @@ public class Reporte_secundario extends javax.swing.JFrame {
             }
         });
 
-        jLabel7.setText("nombre del cliente");
+        jLabel7.setText("Nombre del cliente");
 
-        jLabel12.setText("apellido del cliente");
+        jLabel12.setText("Apellido del cliente");
 
         jLabel9.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(0, 0, 51));
@@ -341,6 +341,7 @@ public class Reporte_secundario extends javax.swing.JFrame {
         } catch (Exception e) {
             JOptionPane.showMessageDialog(rootPane, "No existe el comprobrante solicitado, por favor verifique los datos seleccionados");
         }
+        this.dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
