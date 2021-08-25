@@ -320,9 +320,9 @@ public class Reporte_secundario extends javax.swing.JFrame {
             TxtCambio_Secundario.setText("");
 
         } else {
-            Double pago = Double.parseDouble(TxtPago_Secundario.getText().trim());
-            Double total = Double.parseDouble(TxtTotalCompraSecundaria.getText());
-            Double cambio = pago - total;
+            double pago = Double.parseDouble(TxtPago_Secundario.getText().trim());
+            double total = Double.parseDouble(TxtTotalCompraSecundaria.getText());
+            double cambio = pago - total;
 
             TxtCambio_Secundario.setText(String.valueOf(cambio));
 
