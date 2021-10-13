@@ -192,7 +192,7 @@ public class Login extends javax.swing.JFrame {
         if (Rbadministrador.isSelected()) {
             rol = "Rol1-Administrador";
 
-            if (usuario.equals("Administrador") && contraseña.equals("Admin2525*")) {
+            if (usuario.equals("admin") && contraseña.equals("1234")) {
                 JOptionPane.showMessageDialog(rootPane, "USUARIO Y CONTRASEÑA CORRECTOS", "Bienvenido al Sistema", JOptionPane.INFORMATION_MESSAGE);
                 Principal P = new Principal();
                 P.setVisible(true);
@@ -206,7 +206,7 @@ public class Login extends javax.swing.JFrame {
 
         } else if (Rbempleados.isSelected()) {
             rol = "Rol2-Empleados";
-            if (usuario.equals("Empleados") && contraseña.equals("Empleados2525*")) {
+            if (usuario.equals("empleado") && contraseña.equals("1234")) {
                 JOptionPane.showMessageDialog(rootPane, "USUARIO Y CONTRASEÑA CORRECTOS");
                 Principal P = new Principal();
                 P.setVisible(true);
